@@ -14,6 +14,7 @@
 		3FDE1F301B8C6430006C243F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2F1B8C6430006C243F /* OpenGL.framework */; };
 		3FDE1F321B8C6437006C243F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F311B8C6437006C243F /* CoreVideo.framework */; };
 		3FDE1F361B8C87CB006C243F /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F351B8C87CB006C243F /* libglfw3.a */; };
+		3FDE1F3A1B8D6651006C243F /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE1F381B8D6651006C243F /* Game.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,8 +38,9 @@
 		3FDE1F2D1B8C6429006C243F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3FDE1F2F1B8C6430006C243F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		3FDE1F311B8C6437006C243F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		3FDE1F331B8C6482006C243F /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../../../../usr/local/lib/libglfw3.a; sourceTree = "<group>"; };
 		3FDE1F351B8C87CB006C243F /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = GLFW/lib/libglfw3.a; sourceTree = "<group>"; };
+		3FDE1F381B8D6651006C243F /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		3FDE1F391B8D6651006C243F /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				3FDE1F351B8C87CB006C243F /* libglfw3.a */,
-				3FDE1F331B8C6482006C243F /* libglfw3.a */,
 				3FDE1F311B8C6437006C243F /* CoreVideo.framework */,
 				3FDE1F2F1B8C6430006C243F /* OpenGL.framework */,
 				3FDE1F2D1B8C6429006C243F /* Cocoa.framework */,
@@ -82,11 +83,21 @@
 		3F9E8FEE1B74791900659751 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				3FDE1F371B8D6643006C243F /* Library */,
 				3F9E8FEF1B74791900659751 /* main.cpp */,
 				3F9E8FF61B747B5F00659751 /* md5.cpp */,
 				3F9E8FF71B747B5F00659751 /* md5.h */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		3FDE1F371B8D6643006C243F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				3FDE1F381B8D6651006C243F /* Game.cpp */,
+				3FDE1F391B8D6651006C243F /* Game.h */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FDE1F3A1B8D6651006C243F /* Game.cpp in Sources */,
 				3F9E8FF81B747B5F00659751 /* md5.cpp in Sources */,
 				3F9E8FF01B74791900659751 /* main.cpp in Sources */,
 			);
