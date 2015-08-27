@@ -56,11 +56,6 @@ int main(int argc, const char * argv[]) {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
     GLFWwindow* window = glfwCreateWindow(800, 600, "OpenGL Essentials", nullptr, nullptr);
-    
-    GLint mMajorVersion;
-    GLint mMinorVersion;
-    glGetIntegerv(GL_MAJOR_VERSION, &mMajorVersion);
-    glGetIntegerv(GL_MINOR_VERSION, &mMinorVersion);
     if (window == nullptr)
     {
         return -1;
@@ -73,11 +68,16 @@ int main(int argc, const char * argv[]) {
     cout << "GLSL Version:" << glGetString(GL_SHADING_LANGUAGE_VERSION) << endl;
     
     glViewport(0, 0, 800, 600);
+    GLuint vao;
+    glGenVertexArrays(1, &vao);
+    glBindVertexArray(vao);
     
     while (!glfwWindowShouldClose(window))
     {
-        glClearBufferfv(GL_COLOR, 0, &CornflowerBlue[0]);
+        glClear(GL_COLOR_BUFFER_BIT);
+        glClearColor(0.2, 0.3, 0.8, 1.0);
         
+        glDrawArrays(GL_ARRAY_BUFFER, 0, 0);
         glfwSwapBuffers(window);
         glfwPollEvents();
     }

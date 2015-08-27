@@ -9,21 +9,29 @@
 #ifndef __test__Game__
 #define __test__Game__
 
+
+#include "Common.h"
 namespace OglLibrary{
     class Game
     {
+    protected:
+        float m_Width;
+        float m_Height;
+        GLint mMajorVersion;
+        GLint mMinorVersion;
     public:
         Game();
         ~Game();
-        virtual void Run();
+        virtual bool Run();
         virtual void Exit();
         virtual void Initialize();
         
     protected:
-        virtual void InitializeWindow();
+        virtual bool InitializeWindow();
         virtual void InitializeOpenGL();
         virtual void Shutdown();
-        GLFWwindow* mWindow;
+        GLFWwindow* m_Window;
+        static Game* m_Instance;
     };
 }
 
