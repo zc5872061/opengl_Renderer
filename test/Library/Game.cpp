@@ -10,15 +10,23 @@
 #include <iostream>
 
 
-namespace OglLibrary {
+namespace Library {
     
     Game* Game::m_Instance = nullptr;
+    double Game::m_xClickPos = 0;
+    double Game::m_yClickPos = 0;
     
-    Game::Game()
+    Game::Game(const char* name,float width,float height):
+    m_Name(name),
+    m_Width(width),
+    m_Height(height)
     {
+       
     }
+    
     Game::~Game()
     {
+        mComponents.clear();
     }
     
     bool Game::Run()
@@ -30,17 +38,20 @@ namespace OglLibrary {
             return false;
         }
         InitializeOpenGL();
-
+        Initialize();
         while (!glfwWindowShouldClose(m_Window)) {
-            float ratio;
-            int width, height;
-            glfwGetFramebufferSize(m_Window, &width, &height);
-            ratio = width / (float) height;
-            glViewport(0, 0, width, height);
-
-            glClear(GL_COLOR_BUFFER_BIT);
-            glClear(GL_DEPTH_BUFFER_BIT);
-            glClearColor(255, 255, 255, 255);
+            const glm::vec4 CornflowerBlue = glm::vec4(0.392f, 0.584f, 0.929f, 1.0f);
+            glClearBufferfv(GL_COLOR, 0, &CornflowerBlue[0]);
+            //std::cout<<glfwGetTime()<<std::endl;
+//            float ratio;
+//            int width, height;
+//            glfwGetFramebufferSize(m_Window, &width, &height);
+//            ratio = width / (float) height;
+//            glViewport(0, 0, width, height);
+//
+//            glClear(GL_COLOR_BUFFER_BIT);
+//            glClear(GL_DEPTH_BUFFER_BIT);
+            //glClearColor(255, 255, 255, 255);
             
            // glViewport(0, 0, width, height);
 //            glClear(GL_COLOR_BUFFER_BIT);
@@ -50,14 +61,14 @@ namespace OglLibrary {
 //            glMatrixMode(GL_MODELVIEW);
 //            glLoadIdentity();
             //glRotatef((float) glfwGetTime() * 50.f, 0.f, 0.f, 1.f);
-            glBegin(GL_TRIANGLES);
-            glColor3f(1.f, 0.f, 0.f);
-            glVertex3f(-0.6f, -0.4f, 0.f);
-            glColor3f(0.f, 1.f, 0.f);
-            glVertex3f(0.6f, -0.4f, 0.f);
-            glColor3f(0.f, 0.f, 1.f);
-            glVertex3f(0.f, 0.6f, 0.f);
-            glEnd();
+//            glBegin(GL_TRIANGLES);
+//            glColor3f(1.f, 0.f, 0.f);
+//            glVertex3f(-0.6f, -0.4f, 0.f);
+//            glColor3f(0.f, 1.f, 0.f);
+//            glVertex3f(0.6f, -0.4f, 0.f);
+//            glColor3f(0.f, 0.f, 1.f);
+//            glVertex3f(0.f, 0.6f, 0.f);
+//            glEnd();
             
             
             glfwSwapBuffers(m_Window);
@@ -73,46 +84,83 @@ namespace OglLibrary {
     
     void Game::Initialize()
     {
-       
-            
+        for (GameComponent* component : mComponents)
+        {
+            component->Initialize();
+        }
     }
     
     bool Game::InitializeWindow()
     {
-       
-
         if(!glfwInit())
         {
             std::cout<<"failed to initialize window"<<std::endl;
             return false;
         }
         
+        glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+        glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
+        glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+        glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
         
-        m_Window = glfwCreateWindow(680, 480, "Hello world", nullptr, nullptr);
+        m_Window = glfwCreateWindow(m_Width, m_Height, m_Name.c_str(), nullptr, nullptr);
         if(!m_Window)
         {
             Shutdown();
             return false;
         }
-
-        
+        glfwMakeContextCurrent(m_Window);
+        glfwSetKeyCallback(m_Window, Game::OnKey);
+        glfwSetWindowSizeCallback(m_Window, Game::OnResizeWindow);
+        glfwSetMouseButtonCallback(m_Window,Game::OnMouseClick);
+        glfwSetCursorPosCallback(m_Window,Game::OnMouseCursor);
+        std::cout << "OpenGL Vendor:" << glGetString(GL_VENDOR) <<std::endl;
+        std::cout << "OpenGL Renderer: " << glGetString(GL_RENDERER) <<std::endl;
+        std::cout << "OpenGL Version: " << glGetString(GL_VERSION) <<std::endl;
+        std::cout << "GLSL Version:" << glGetString(GL_SHADING_LANGUAGE_VERSION) <<std::endl;
         return true;
     }
     
     void Game::InitializeOpenGL()
     {
-//        if (glewInit() != GLEW_OK)
-//        {
-//            std::cout<<"fail to initialize opengl"<<std::endl;
-//        }
-//        std::cout<<"Opengl Version"<<glGetString(GL_VERSION)<<std::endl;
-//        std::cout<<"Opengl Version"<<glGetString(GL_EXTENSIONS)<<std::endl;
-//        std::cout<<"Opengl Version"<<glGetString(GL_SHADING_LANGUAGE_VERSION)<<std::endl;
+        if(glewInit() != GLEW_OK)
+        {
+            std::cout<<"glew init failed"<<std::endl;
+        }
+        glGetIntegerv(GL_MAJOR_VERSION, &mMajorVersion);
+        glGetIntegerv(GL_MINOR_VERSION, &mMinorVersion);
     }
     
     void Game::Shutdown()
     {
         glfwDestroyWindow(m_Window);
         glfwTerminate();
+    }
+    
+    void Game::OnKey(GLFWwindow* window, int key, int scancode, int action, int mods)
+    {
+        if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
+        {
+            glfwSetWindowShouldClose(window, GL_TRUE);
+        }
+    }
+    
+    void Game::OnResizeWindow(GLFWwindow* window,int width,int height)
+    {
+        glViewport(0, 0, width, height);
+    }
+
+    void Game::OnMouseCursor(GLFWwindow* window,double xpos,double ypos)
+    {
+        m_xClickPos = xpos;
+        m_yClickPos = ypos;
+    }
+    
+    void Game::OnMouseClick(GLFWwindow* window,int button,int action,int mods)
+    {
+        if(button == GLFW_MOUSE_BUTTON_LEFT)
+        {
+            std::cout<<"xpos:"<<m_xClickPos<<"ypos:"<<m_yClickPos<<std::endl;
+        }
     }
 }

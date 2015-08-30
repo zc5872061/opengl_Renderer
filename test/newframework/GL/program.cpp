@@ -49,10 +49,10 @@ namespace GL {
   std::vector<Shader> Program::createShaders() {
     std::vector<Shader> shaders;
 
-    shaders.push_back(Shader(GL_VERTEX_SHADER, "/Users/chukie/Desktop/Demo/opengl_framework/test/newframework/Shaders/vertex.shader"));
-      shaders.push_back(Shader(GL_FRAGMENT_SHADER,"/Users/chukie/Desktop/Demo/opengl_framework/test/newframework/Shaders/fragment.shader"));
-    shaders.push_back(Shader(GL_TESS_CONTROL_SHADER, "/Users/chukie/Desktop/Demo/opengl_framework/test/newframework/Shaders/tesselation_control.shader"));
-    shaders.push_back(Shader(GL_TESS_EVALUATION_SHADER, "/Users/chukie/Desktop/Demo/opengl_framework/test/newframework/Shaders/tesselation_evaluation.shader"));
+    shaders.push_back(Shader(GL_VERTEX_SHADER, "/Users/chukie/Study/WorkWork/opengl_framework/test/newframework/Shaders/vertex.shader"));
+      shaders.push_back(Shader(GL_FRAGMENT_SHADER,"/Users/chukie/Study/WorkWork/opengl_framework/test/newframework/Shaders/fragment.shader"));
+    shaders.push_back(Shader(GL_TESS_CONTROL_SHADER, "/Users/chukie/Study/WorkWork/opengl_framework/test/newframework/Shaders/tesselation_control.shader"));
+    shaders.push_back(Shader(GL_TESS_EVALUATION_SHADER, "/Users/chukie/Study/WorkWork/opengl_framework/test/newframework/Shaders/tesselation_evaluation.shader"));
 
     return shaders;
   }

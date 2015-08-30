@@ -11,7 +11,11 @@
 
 
 #include "Common.h"
-namespace OglLibrary{
+#include "GameComponent.h"
+#include <string>
+#include <vector>
+
+namespace Library{
     class Game
     {
     protected:
@@ -19,8 +23,12 @@ namespace OglLibrary{
         float m_Height;
         GLint mMajorVersion;
         GLint mMinorVersion;
+        std::string m_Name;
+        static double m_xClickPos;
+        static double m_yClickPos;
+        
     public:
-        Game();
+        Game(const char* name,float width,float height);
         ~Game();
         virtual bool Run();
         virtual void Exit();
@@ -30,8 +38,13 @@ namespace OglLibrary{
         virtual bool InitializeWindow();
         virtual void InitializeOpenGL();
         virtual void Shutdown();
+        static void OnKey(GLFWwindow* window, int key, int scancode, int action, int mods);
+        static void OnResizeWindow(GLFWwindow* window,int width,int height);
+        static void OnMouseClick(GLFWwindow* window,int button,int action,int mods);
+        static void OnMouseCursor(GLFWwindow* window,double xpos,double ypos);
         GLFWwindow* m_Window;
         static Game* m_Instance;
+        std::vector<GameComponent*> mComponents;
     };
 }
 

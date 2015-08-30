@@ -8,9 +8,9 @@
 
 #ifndef test_Common_h
 #define test_Common_h
-//#include <GL/glew.h>
+#include <GL/glew.h>
 #include <OpenGL/gl3.h>
-
+#include <glm/glm.hpp>
 #include <GLFW/glfw3.h>
 
 #endif

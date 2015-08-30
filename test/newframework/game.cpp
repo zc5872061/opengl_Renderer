@@ -60,7 +60,9 @@ namespace Game {
 
     glVertexAttrib4fv(1, triangleColor);
     glVertexAttrib4fv(2, offset);
-
+      
     glDrawArrays(GL_PATCHES, 0, 3);
+      
+    
   }
 }
