@@ -82,6 +82,21 @@ namespace Library {
         glfwSetWindowShouldClose(m_Window, GL_TRUE);
     }
     
+    int Game::ScreenWidth() const
+    {
+        return m_Width;
+    }
+    
+    int Game::ScreenHeight() const
+    {
+        return m_Height;
+    }
+    
+    float Game::AspectRatio() const
+    {
+        return static_cast<float>(m_Width) / m_Height;
+    }
+    
     void Game::Initialize()
     {
         for (GameComponent* component : mComponents)

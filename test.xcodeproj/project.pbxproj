@@ -13,6 +13,9 @@
 		3FDE1F321B8C6437006C243F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F311B8C6437006C243F /* CoreVideo.framework */; };
 		3FDE1F361B8C87CB006C243F /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F351B8C87CB006C243F /* libglfw3.a */; };
 		3FDE1F3D1B8ED64B006C243F /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F3C1B8ED64B006C243F /* libGLEW.a */; };
+		3FDE1F881B931047006C243F /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE1F861B931047006C243F /* Camera.cpp */; };
+		3FDE1F8B1B9322B5006C243F /* VectorHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE1F891B9322B5006C243F /* VectorHelper.cpp */; };
+		3FDE1F8E1B93254C006C243F /* FirstPersonCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE1F8C1B93254C006C243F /* FirstPersonCamera.cpp */; };
 		3FF544381B8F626500CFCAB5 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FF544331B8F626500CFCAB5 /* Game.cpp */; };
 		3FF544391B8F626500CFCAB5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FF544351B8F626500CFCAB5 /* main.cpp */; };
 		3FF5443A1B8F626500CFCAB5 /* md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FF544361B8F626500CFCAB5 /* md5.cpp */; };
@@ -40,6 +43,12 @@
 		3FDE1F311B8C6437006C243F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		3FDE1F351B8C87CB006C243F /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = GLFW/lib/libglfw3.a; sourceTree = "<group>"; };
 		3FDE1F3C1B8ED64B006C243F /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = GLEW/lib/libGLEW.a; sourceTree = "<group>"; };
+		3FDE1F861B931047006C243F /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		3FDE1F871B931047006C243F /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		3FDE1F891B9322B5006C243F /* VectorHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VectorHelper.cpp; sourceTree = "<group>"; };
+		3FDE1F8A1B9322B5006C243F /* VectorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorHelper.h; sourceTree = "<group>"; };
+		3FDE1F8C1B93254C006C243F /* FirstPersonCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FirstPersonCamera.cpp; sourceTree = "<group>"; };
+		3FDE1F8D1B93254C006C243F /* FirstPersonCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstPersonCamera.h; sourceTree = "<group>"; };
 		3FF544321B8F626500CFCAB5 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		3FF544331B8F626500CFCAB5 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		3FF544341B8F626500CFCAB5 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
@@ -112,6 +121,12 @@
 				3FF544411B8F6E0200CFCAB5 /* GameTime.h */,
 				3FF544431B8F80B900CFCAB5 /* GameComponent.cpp */,
 				3FF544441B8F80B900CFCAB5 /* GameComponent.h */,
+				3FDE1F861B931047006C243F /* Camera.cpp */,
+				3FDE1F871B931047006C243F /* Camera.h */,
+				3FDE1F891B9322B5006C243F /* VectorHelper.cpp */,
+				3FDE1F8A1B9322B5006C243F /* VectorHelper.h */,
+				3FDE1F8C1B93254C006C243F /* FirstPersonCamera.cpp */,
+				3FDE1F8D1B93254C006C243F /* FirstPersonCamera.h */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -176,7 +191,10 @@
 				3FF5443A1B8F626500CFCAB5 /* md5.cpp in Sources */,
 				3FF544391B8F626500CFCAB5 /* main.cpp in Sources */,
 				3FF544421B8F6E0200CFCAB5 /* GameTime.cpp in Sources */,
+				3FDE1F881B931047006C243F /* Camera.cpp in Sources */,
 				3FF544381B8F626500CFCAB5 /* Game.cpp in Sources */,
+				3FDE1F8E1B93254C006C243F /* FirstPersonCamera.cpp in Sources */,
+				3FDE1F8B1B9322B5006C243F /* VectorHelper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

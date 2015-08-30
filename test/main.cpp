@@ -14,7 +14,7 @@
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    Library::Game* game = new Library::Game("oglFrameWork",680,480);
+    Library::Game* game = new Library::Game("oglFrameWork",SCREEN_WIDTH,SCREEN_HEIGHT);
     if(!game->Run())
     {
         std::cout<<"game run failed"<<std::endl;

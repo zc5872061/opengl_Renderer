@@ -12,5 +12,9 @@
 #include <OpenGL/gl3.h>
 #include <glm/glm.hpp>
 #include <GLFW/glfw3.h>
+#include <iostream>
+
+const int SCREEN_WIDTH = 680;
+const int SCREEN_HEIGHT = 480;
 
 #endif

@@ -30,6 +30,12 @@ namespace Library{
     public:
         Game(const char* name,float width,float height);
         ~Game();
+        
+        int ScreenWidth() const;
+        int ScreenHeight() const;
+        float AspectRatio() const;
+
+        
         virtual bool Run();
         virtual void Exit();
         virtual void Initialize();

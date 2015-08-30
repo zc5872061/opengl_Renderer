@@ -13,6 +13,7 @@
 
 #include "Common.h"
 
+
 namespace Library
 {
     class Game;
@@ -22,16 +23,16 @@ namespace Library
     {
         public:
             GameComponent();
-            GameComponent(Game& game);
+            GameComponent(Game* game);
             virtual ~GameComponent();
             
             Game* GetGame();
-            void SetGame(Game& game);
+            void SetGame(Game* game);
             bool Enabled() const;
             void SetEnabled(bool enabled);
             
             virtual void Initialize();
-            virtual void Update(const GameTime& gameTime);
+            virtual void Update();
             
         protected:
             Game* mGame;

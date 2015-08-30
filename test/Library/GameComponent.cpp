@@ -7,8 +7,8 @@ namespace Library
     {
     }
     
-    GameComponent::GameComponent(Game& game)
-    : mGame(&game), mEnabled(true)
+    GameComponent::GameComponent(Game* game)
+    : mGame(game), mEnabled(true)
     {
     }
     
@@ -21,9 +21,9 @@ namespace Library
         return mGame;
     }
     
-    void GameComponent::SetGame(Game& game)
+    void GameComponent::SetGame(Game* game)
     {
-        mGame = &game;
+        mGame = game;
     }
     
     bool GameComponent::Enabled() const
@@ -40,7 +40,7 @@ namespace Library
     {
     }
     
-    void GameComponent::Update(const GameTime& gameTime)
+    void GameComponent::Update()
     {
     }
 }
