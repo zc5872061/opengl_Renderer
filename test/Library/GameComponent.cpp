@@ -3,7 +3,7 @@
 namespace Library
 {
     GameComponent::GameComponent()
-    : mGame(nullptr), mEnabled(true)
+    : mGame(nullptr), mEnabled(true),mDrawAble(true)
     {
     }
     

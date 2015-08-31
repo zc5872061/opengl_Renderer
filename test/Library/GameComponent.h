@@ -30,14 +30,17 @@ namespace Library
             void SetGame(Game* game);
             bool Enabled() const;
             void SetEnabled(bool enabled);
-            
+            void SetDrawAble(bool value){mDrawAble = value;}
+            bool GetDrawAble()const{return mDrawAble;}
             virtual void Initialize();
             virtual void Update();
             
         protected:
             Game* mGame;
             bool mEnabled;
-            
+        
+            bool mDrawAble;
+        
         private:
             GameComponent(const GameComponent& rhs);
             GameComponent& operator=(const GameComponent& rhs);

@@ -7,6 +7,7 @@
 //
 
 #include "Game.h"
+#include "DrawableGameComponent.h"
 #include <iostream>
 
 
@@ -40,8 +41,8 @@ namespace Library {
         InitializeOpenGL();
         Initialize();
         while (!glfwWindowShouldClose(m_Window)) {
-            const glm::vec4 CornflowerBlue = glm::vec4(0.392f, 0.584f, 0.929f, 1.0f);
-            glClearBufferfv(GL_COLOR, 0, &CornflowerBlue[0]);
+            //const glm::vec4 CornflowerBlue = glm::vec4(0.392f, 0.584f, 0.929f, 1.0f);
+            //glClearBufferfv(GL_COLOR, 0, &CornflowerBlue[0]);
             //std::cout<<glfwGetTime()<<std::endl;
 //            float ratio;
 //            int width, height;
@@ -70,8 +71,8 @@ namespace Library {
 //            glVertex3f(0.f, 0.6f, 0.f);
 //            glEnd();
             
-            
-            glfwSwapBuffers(m_Window);
+            Draw();
+//            glfwSwapBuffers(m_Window);
             glfwPollEvents();
         }
         return true;
@@ -105,6 +106,18 @@ namespace Library {
         }
     }
     
+    void Game::Draw()
+    {
+        for (GameComponent* component : mComponents)
+        {
+            //if(component->GetDrawAble() == true)
+            //{
+                DrawableGameComponent* drawableGameComponent = dynamic_cast<DrawableGameComponent*>(component);
+                drawableGameComponent->Draw();
+            //}
+        }
+    }
+
     bool Game::InitializeWindow()
     {
         if(!glfwInit())
@@ -138,12 +151,17 @@ namespace Library {
     
     void Game::InitializeOpenGL()
     {
+        glewExperimental = GL_TRUE;
         if(glewInit() != GLEW_OK)
         {
             std::cout<<"glew init failed"<<std::endl;
         }
         glGetIntegerv(GL_MAJOR_VERSION, &mMajorVersion);
         glGetIntegerv(GL_MINOR_VERSION, &mMinorVersion);
+        
+        
+        //GLuint test;
+        //glGenVertexArrays(1, &test);
     }
     
     void Game::Shutdown()

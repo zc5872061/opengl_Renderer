@@ -9,12 +9,18 @@
 #include <iostream>
 #include <ctime>
 #include <map>
-#include "Game.h"
+//#include "Game.h"
+#include "RenderingGame.h"
 
 using namespace std;
+using namespace Library;
+using namespace Rendering;
+
 
 int main(int argc, const char * argv[]) {
-    Library::Game* game = new Library::Game("oglFrameWork",SCREEN_WIDTH,SCREEN_HEIGHT);
+    RenderingGame* game = new RenderingGame("oglFrameWork",SCREEN_WIDTH,SCREEN_HEIGHT);
+    
+//    Library::Game* game = new Library::Game("oglFrameWork",SCREEN_WIDTH,SCREEN_HEIGHT);
     if(!game->Run())
     {
         std::cout<<"game run failed"<<std::endl;

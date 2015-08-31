@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1D2E531B94B11100590E31 /* PointDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D2E511B94B11100590E31 /* PointDemo.cpp */; };
+		3F1D2E561B94B17100590E31 /* DrawableGameComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D2E541B94B17100590E31 /* DrawableGameComponent.cpp */; };
+		3F1D2E591B94B46300590E31 /* Utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D2E581B94B46300590E31 /* Utility.cpp */; };
+		3F45F3501B9360EE0009CF1C /* RenderingGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F45F34E1B9360EE0009CF1C /* RenderingGame.cpp */; };
+		3F45F3531B94AF240009CF1C /* ColorHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F45F3511B94AF240009CF1C /* ColorHelper.cpp */; };
 		3FDE1F2C1B8C6422006C243F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2B1B8C6422006C243F /* IOKit.framework */; };
 		3FDE1F2E1B8C6429006C243F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2D1B8C6429006C243F /* Cocoa.framework */; };
 		3FDE1F301B8C6430006C243F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2F1B8C6430006C243F /* OpenGL.framework */; };
@@ -36,6 +41,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F1D2E511B94B11100590E31 /* PointDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PointDemo.cpp; sourceTree = "<group>"; };
+		3F1D2E521B94B11100590E31 /* PointDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointDemo.h; sourceTree = "<group>"; };
+		3F1D2E541B94B17100590E31 /* DrawableGameComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrawableGameComponent.cpp; sourceTree = "<group>"; };
+		3F1D2E551B94B17100590E31 /* DrawableGameComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawableGameComponent.h; sourceTree = "<group>"; };
+		3F1D2E571B94B2A900590E31 /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		3F1D2E581B94B46300590E31 /* Utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utility.cpp; sourceTree = "<group>"; };
+		3F1D2E5A1B94B5CF00590E31 /* resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resource; sourceTree = "<group>"; };
+		3F45F34E1B9360EE0009CF1C /* RenderingGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingGame.cpp; sourceTree = "<group>"; };
+		3F45F34F1B9360EE0009CF1C /* RenderingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderingGame.h; sourceTree = "<group>"; };
+		3F45F3511B94AF240009CF1C /* ColorHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorHelper.cpp; sourceTree = "<group>"; };
+		3F45F3521B94AF240009CF1C /* ColorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorHelper.h; sourceTree = "<group>"; };
 		3F9E8FEC1B74791900659751 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDE1F2B1B8C6422006C243F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		3FDE1F2D1B8C6429006C243F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -103,10 +119,15 @@
 		3F9E8FEE1B74791900659751 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				3F1D2E5A1B94B5CF00590E31 /* resource */,
 				3FF544311B8F626500CFCAB5 /* Library */,
 				3FF544351B8F626500CFCAB5 /* main.cpp */,
 				3FF544361B8F626500CFCAB5 /* md5.cpp */,
 				3FF544371B8F626500CFCAB5 /* md5.h */,
+				3F45F34E1B9360EE0009CF1C /* RenderingGame.cpp */,
+				3F45F34F1B9360EE0009CF1C /* RenderingGame.h */,
+				3F1D2E511B94B11100590E31 /* PointDemo.cpp */,
+				3F1D2E521B94B11100590E31 /* PointDemo.h */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -127,6 +148,12 @@
 				3FDE1F8A1B9322B5006C243F /* VectorHelper.h */,
 				3FDE1F8C1B93254C006C243F /* FirstPersonCamera.cpp */,
 				3FDE1F8D1B93254C006C243F /* FirstPersonCamera.h */,
+				3F45F3511B94AF240009CF1C /* ColorHelper.cpp */,
+				3F45F3521B94AF240009CF1C /* ColorHelper.h */,
+				3F1D2E541B94B17100590E31 /* DrawableGameComponent.cpp */,
+				3F1D2E551B94B17100590E31 /* DrawableGameComponent.h */,
+				3F1D2E571B94B2A900590E31 /* Utility.h */,
+				3F1D2E581B94B46300590E31 /* Utility.cpp */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -188,11 +215,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FF544451B8F80B900CFCAB5 /* GameComponent.cpp in Sources */,
+				3F45F3531B94AF240009CF1C /* ColorHelper.cpp in Sources */,
 				3FF5443A1B8F626500CFCAB5 /* md5.cpp in Sources */,
 				3FF544391B8F626500CFCAB5 /* main.cpp in Sources */,
 				3FF544421B8F6E0200CFCAB5 /* GameTime.cpp in Sources */,
+				3F1D2E561B94B17100590E31 /* DrawableGameComponent.cpp in Sources */,
+				3F1D2E531B94B11100590E31 /* PointDemo.cpp in Sources */,
 				3FDE1F881B931047006C243F /* Camera.cpp in Sources */,
+				3F1D2E591B94B46300590E31 /* Utility.cpp in Sources */,
 				3FF544381B8F626500CFCAB5 /* Game.cpp in Sources */,
+				3F45F3501B9360EE0009CF1C /* RenderingGame.cpp in Sources */,
 				3FDE1F8E1B93254C006C243F /* FirstPersonCamera.cpp in Sources */,
 				3FDE1F8B1B9322B5006C243F /* VectorHelper.cpp in Sources */,
 			);

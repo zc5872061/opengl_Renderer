@@ -39,7 +39,7 @@ namespace Library{
         virtual bool Run();
         virtual void Exit();
         virtual void Initialize();
-        
+        virtual void Draw();
     protected:
         virtual bool InitializeWindow();
         virtual void InitializeOpenGL();
