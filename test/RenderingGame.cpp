@@ -15,7 +15,8 @@ namespace Rendering
     RenderingGame::RenderingGame(const char* title,float width,float height):
     Game(title,width,height),
     m_Camera(nullptr),
-    mPointDemo(nullptr)
+    mPointDemo(nullptr),
+    mColoredTriangleDemo(nullptr)
     {
         
     }
@@ -23,7 +24,9 @@ namespace Rendering
     void RenderingGame::Initialize()
     {
         mPointDemo = new PointDemo(this,m_Camera);
+        mColoredTriangleDemo = new ColoredTriangleDemo(this,m_Camera);
         mComponents.push_back(mPointDemo);
+        mComponents.push_back(mColoredTriangleDemo);
         Game::Initialize();
     }
     

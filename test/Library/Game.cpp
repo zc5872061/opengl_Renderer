@@ -110,11 +110,11 @@ namespace Library {
     {
         for (GameComponent* component : mComponents)
         {
-            //if(component->GetDrawAble() == true)
-            //{
+            if(component->GetDrawAble() == true)
+            {
                 DrawableGameComponent* drawableGameComponent = dynamic_cast<DrawableGameComponent*>(component);
                 drawableGameComponent->Draw();
-            //}
+            }
         }
     }
 

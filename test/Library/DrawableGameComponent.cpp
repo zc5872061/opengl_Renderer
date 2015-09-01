@@ -24,6 +24,7 @@ namespace Library
     DrawableGameComponent::DrawableGameComponent(Game* game, Camera* camera)
     : GameComponent(game), mVisible(true), mCamera(camera)
     {
+        GameComponent::mDrawAble = true;
     }
     
     DrawableGameComponent::~DrawableGameComponent()

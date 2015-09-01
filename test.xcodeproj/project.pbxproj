@@ -10,6 +10,9 @@
 		3F1D2E531B94B11100590E31 /* PointDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D2E511B94B11100590E31 /* PointDemo.cpp */; };
 		3F1D2E561B94B17100590E31 /* DrawableGameComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D2E541B94B17100590E31 /* DrawableGameComponent.cpp */; };
 		3F1D2E591B94B46300590E31 /* Utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D2E581B94B46300590E31 /* Utility.cpp */; };
+		3F1D2E5D1B95ECB800590E31 /* ColoredTriangleDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D2E5B1B95ECB800590E31 /* ColoredTriangleDemo.cpp */; };
+		3F1D2E601B96065E00590E31 /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D2E5E1B96065E00590E31 /* ShaderProgram.cpp */; };
+		3F1D2E631B96067F00590E31 /* Variable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D2E611B96067F00590E31 /* Variable.cpp */; };
 		3F45F3501B9360EE0009CF1C /* RenderingGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F45F34E1B9360EE0009CF1C /* RenderingGame.cpp */; };
 		3F45F3531B94AF240009CF1C /* ColorHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F45F3511B94AF240009CF1C /* ColorHelper.cpp */; };
 		3FDE1F2C1B8C6422006C243F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2B1B8C6422006C243F /* IOKit.framework */; };
@@ -48,6 +51,12 @@
 		3F1D2E571B94B2A900590E31 /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		3F1D2E581B94B46300590E31 /* Utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utility.cpp; sourceTree = "<group>"; };
 		3F1D2E5A1B94B5CF00590E31 /* resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resource; sourceTree = "<group>"; };
+		3F1D2E5B1B95ECB800590E31 /* ColoredTriangleDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColoredTriangleDemo.cpp; sourceTree = "<group>"; };
+		3F1D2E5C1B95ECB800590E31 /* ColoredTriangleDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColoredTriangleDemo.h; sourceTree = "<group>"; };
+		3F1D2E5E1B96065E00590E31 /* ShaderProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderProgram.cpp; sourceTree = "<group>"; };
+		3F1D2E5F1B96065E00590E31 /* ShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderProgram.h; sourceTree = "<group>"; };
+		3F1D2E611B96067F00590E31 /* Variable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Variable.cpp; sourceTree = "<group>"; };
+		3F1D2E621B96067F00590E31 /* Variable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Variable.h; sourceTree = "<group>"; };
 		3F45F34E1B9360EE0009CF1C /* RenderingGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingGame.cpp; sourceTree = "<group>"; };
 		3F45F34F1B9360EE0009CF1C /* RenderingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderingGame.h; sourceTree = "<group>"; };
 		3F45F3511B94AF240009CF1C /* ColorHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorHelper.cpp; sourceTree = "<group>"; };
@@ -128,6 +137,8 @@
 				3F45F34F1B9360EE0009CF1C /* RenderingGame.h */,
 				3F1D2E511B94B11100590E31 /* PointDemo.cpp */,
 				3F1D2E521B94B11100590E31 /* PointDemo.h */,
+				3F1D2E5B1B95ECB800590E31 /* ColoredTriangleDemo.cpp */,
+				3F1D2E5C1B95ECB800590E31 /* ColoredTriangleDemo.h */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -135,6 +146,10 @@
 		3FF544311B8F626500CFCAB5 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				3F1D2E611B96067F00590E31 /* Variable.cpp */,
+				3F1D2E621B96067F00590E31 /* Variable.h */,
+				3F1D2E5E1B96065E00590E31 /* ShaderProgram.cpp */,
+				3F1D2E5F1B96065E00590E31 /* ShaderProgram.h */,
 				3FF544321B8F626500CFCAB5 /* Common.h */,
 				3FF544331B8F626500CFCAB5 /* Game.cpp */,
 				3FF544341B8F626500CFCAB5 /* Game.h */,
@@ -214,11 +229,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F1D2E5D1B95ECB800590E31 /* ColoredTriangleDemo.cpp in Sources */,
 				3FF544451B8F80B900CFCAB5 /* GameComponent.cpp in Sources */,
 				3F45F3531B94AF240009CF1C /* ColorHelper.cpp in Sources */,
+				3F1D2E631B96067F00590E31 /* Variable.cpp in Sources */,
 				3FF5443A1B8F626500CFCAB5 /* md5.cpp in Sources */,
 				3FF544391B8F626500CFCAB5 /* main.cpp in Sources */,
 				3FF544421B8F6E0200CFCAB5 /* GameTime.cpp in Sources */,
+				3F1D2E601B96065E00590E31 /* ShaderProgram.cpp in Sources */,
 				3F1D2E561B94B17100590E31 /* DrawableGameComponent.cpp in Sources */,
 				3F1D2E531B94B11100590E31 /* PointDemo.cpp in Sources */,
 				3FDE1F881B931047006C243F /* Camera.cpp in Sources */,

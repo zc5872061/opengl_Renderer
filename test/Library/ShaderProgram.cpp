@@ -27,7 +27,7 @@ namespace Library
         }
     }
     
-    GLuint ShaderProgram::CompileShaderFromFile(GLenum shaderType, const std::wstring& filename)
+    GLuint ShaderProgram::CompileShaderFromFile(GLenum shaderType, const std::string& filename)
     {
 //        std::vector<char> shaderSource;
 //        Utility::LoadBinaryFile(filename, shaderSource);
@@ -117,30 +117,31 @@ namespace Library
         glUseProgram(mProgram);
     }
     
-    void ShaderProgram::CreateVertexBuffer(const Model& model, std::vector<GLuint>& vertexBuffers) const
-    {
-        vertexBuffers.reserve(model.Meshes().size());
-        for (Mesh* mesh : model.Meshes())
-        {
-            GLuint vertexBuffer;
-            CreateVertexBuffer(*mesh, vertexBuffer);
-            vertexBuffers.push_back(vertexBuffer);
-        }
-    }
+//    void ShaderProgram::CreateVertexBuffer(const Model& model, std::vector<GLuint>& vertexBuffers) const
+//    {
+//        vertexBuffers.reserve(model.Meshes().size());
+//        for (Mesh* mesh : model.Meshes())
+//        {
+//            GLuint vertexBuffer;
+//            CreateVertexBuffer(*mesh, vertexBuffer);
+//            vertexBuffers.push_back(vertexBuffer);
+//        }
+//    }
     
     void ShaderProgram::Initialize(GLuint vertexArrayObject)
     {
         glBindVertexArray(vertexArrayObject);
     }
     
-    void ShaderProgram::CreateVertexBuffer(const Mesh& mesh, GLuint& vertexBuffer) const
-    {
-        //throw GameException("ShaderProgram::CreateVertexBuffer() not implemented for base class.");
-        assert(false);
-    }
+//    void ShaderProgram::CreateVertexBuffer(const Mesh& mesh, GLuint& vertexBuffer) const
+//    {
+//        //throw GameException("ShaderProgram::CreateVertexBuffer() not implemented for base class.");
+//        assert(false);
+//    }
     
     unsigned int ShaderProgram::VertexSize() const
     {
         //throw GameException("ShaderProgram::VertexSize() not implemented for base class.");
         assert(false);
-    }}
+    }
+}
