@@ -18,6 +18,7 @@ namespace Library
      
     class Camera:public GameComponent
     {
+    public:
         Camera(Game* game);
         Camera(Game* game, float fieldOfView, float aspectRatio, float nearPlaneDistance, float farPlaneDistance);
         
@@ -42,7 +43,7 @@ namespace Library
         
         virtual void Reset();
         virtual void Initialize();
-        virtual void Update(const GameTime& gameTime);
+        virtual void Update();
         virtual void UpdateViewMatrix();
         virtual void UpdateProjectionMatrix();
         virtual void ApplyRotation(const glm::mat4& transform);

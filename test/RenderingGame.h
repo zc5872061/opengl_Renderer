@@ -12,6 +12,7 @@
 #include "Game.h"
 #include "PointDemo.h"
 #include "ColoredTriangleDemo.h"
+#include "CubeDemo.h"
 
 using namespace Library;
 
@@ -33,6 +34,7 @@ namespace Rendering
         FirstPersonCamera* m_Camera;
         PointDemo* mPointDemo;
         ColoredTriangleDemo* mColoredTriangleDemo;
+        CubeDemo* mCubeDemo;
     };
 }
 

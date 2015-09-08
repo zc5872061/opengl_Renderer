@@ -7,6 +7,7 @@
 //
 
 #include "ShaderProgram.h"
+#include "Utility.h"
 
 namespace Library
 {
@@ -29,35 +30,26 @@ namespace Library
     
     GLuint ShaderProgram::CompileShaderFromFile(GLenum shaderType, const std::string& filename)
     {
-//        std::vector<char> shaderSource;
-//        Utility::LoadBinaryFile(filename, shaderSource);
-//        GLchar* sourcePointer = &shaderSource[0];
-//        GLint length = shaderSource.size();
-//        
-//        GLuint shader = glCreateShader(shaderType);
-//        glShaderSource(shader, 1, &sourcePointer, &length);
-//        glCompileShader(shader);
-//        
-//        GLint compileStatus;
-//        glGetShaderiv(shader, GL_COMPILE_STATUS, &compileStatus);
-//        if (compileStatus != GL_TRUE)
-//        {
-//            GLint logLength;
-//            glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &logLength);
-//            
-//            std::string log;
-//            log.reserve(logLength);
-//            
-//            glGetShaderInfoLog(shader, logLength, nullptr, const_cast<GLchar*>(log.c_str()));
-//            
-//            std::stringstream errorMessage;
-//            errorMessage << "glCompileShader() failed.\n" << log.c_str();
-//            
-//            throw GameException(errorMessage.str().c_str());
-//        }
-//        
-//        return shader;
-        return 0;
+        std::vector<char> shaderSource;
+        Utility::LoadBinaryFile(filename, shaderSource);
+        GLchar* sourcePointer = &shaderSource[0];
+        GLint length = (GLint)shaderSource.size();
+        GLuint shader = glCreateShader(shaderType);
+        glShaderSource(shader, 1, &sourcePointer, &length);
+        glCompileShader(shader);
+        GLint compileStatus;
+        glGetShaderiv(shader, GL_COMPILE_STATUS, &compileStatus);
+        if (compileStatus != GL_TRUE)
+        {
+            GLint logLength;
+            glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &logLength);
+            std::string log;
+            log.reserve(logLength);
+            glGetShaderInfoLog(shader, logLength, nullptr, const_cast<GLchar*>(log.c_str()));
+            std::cout << "glCompileShader() failed.\n" << log.c_str()<< std::endl;
+            assert(false);
+        }
+        return shader;
     }
     
     GLuint ShaderProgram::Program()

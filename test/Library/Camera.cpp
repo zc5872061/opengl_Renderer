@@ -9,6 +9,7 @@
 #include "Camera.h"
 #include <glm/gtc/matrix_transform.inl>
 #include "VectorHelper.h"
+#include <iostream>
 
 using namespace::glm;
 
@@ -133,7 +134,7 @@ namespace Library {
         Reset();
     }
     
-    void Camera::Update(const GameTime& gameTime)
+    void Camera::Update()
     {
         UpdateViewMatrix();
     }

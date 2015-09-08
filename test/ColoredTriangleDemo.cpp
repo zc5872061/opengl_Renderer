@@ -7,6 +7,10 @@
 //
 
 #include "ColoredTriangleDemo.h"
+#include "VertexDeclarations.h"
+#include "ColorHelper.h"
+
+using namespace glm;
 
 namespace Rendering
 {
@@ -32,14 +36,40 @@ namespace Rendering
     void ColoredTriangleDemo::Initialize()
     {
         std::vector<ShaderDefinition> shaders;
-        shaders.push_back(ShaderDefinition(GL_VERTEX_SHADER,"/Users/chukie/Study/WorkWork/opengl_framework/test/resource/PointDemo.vert"));
-        shaders.push_back(ShaderDefinition(GL_FRAGMENT_SHADER,"/Users/chukie/Study/WorkWork/opengl_framework/test/resource/PointDemo.frag"));
+        shaders.push_back(ShaderDefinition(GL_VERTEX_SHADER,"/Users/chukie/Study/WorkWork/opengl_framework/test/resource/ColoredTriangleDemo.vert"));
+        shaders.push_back(ShaderDefinition(GL_FRAGMENT_SHADER,"/Users/chukie/Study/WorkWork/opengl_framework/test/resource/ColoredTriangleDemo.frag"));
         mShaderProgram->BuildProgram(shaders);
+        // Create the vertex buffer
+        VertexPositionColor vertices[] =
+        {
+            VertexPositionColor(vec4(0.75f, -0.25f, 0.0f, 1.0f), ColorHelper::Red),
+            VertexPositionColor(vec4(0.0f, 0.5f, 0.0f, 1.0f), ColorHelper::Green),
+            VertexPositionColor(vec4(-0.75f, -0.25f, 0.0f, 1.0f), ColorHelper::Blue)
+        };
         
+        glGenBuffers(1, &mVertexBuffer);
+        glBindBuffer(GL_ARRAY_BUFFER, mVertexBuffer);
+        glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+        
+        // Create vertex array object
+        glGenVertexArrays(1, &mVertexArrayObject);
+        glBindVertexArray(mVertexArrayObject);
+        
+        glVertexAttribPointer(VertexAttributePosition, 4, GL_FLOAT, GL_FALSE, sizeof(VertexPositionColor), (void*)offsetof(VertexPositionColor, Position));
+        glEnableVertexAttribArray(VertexAttributePosition);
+        
+        glVertexAttribPointer(VertexAttributeColor, 4, GL_FLOAT, GL_FALSE, sizeof(VertexPositionColor), (void*)offsetof(VertexPositionColor, Color));
+        glEnableVertexAttribArray(VertexAttributeColor);
+        
+        glBindVertexArray(0);
     }
     
     void ColoredTriangleDemo::Draw()
     {
-        
+        glBindVertexArray(mVertexArrayObject);
+        glBindBuffer(GL_ARRAY_BUFFER, mVertexBuffer);
+        glUseProgram(mShaderProgram->Program());
+        glDrawArrays(GL_TRIANGLES, 0, 3);
+        glBindVertexArray(0);
     }
 }

@@ -7,28 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F1D2E531B94B11100590E31 /* PointDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D2E511B94B11100590E31 /* PointDemo.cpp */; };
-		3F1D2E561B94B17100590E31 /* DrawableGameComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D2E541B94B17100590E31 /* DrawableGameComponent.cpp */; };
-		3F1D2E591B94B46300590E31 /* Utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D2E581B94B46300590E31 /* Utility.cpp */; };
-		3F1D2E5D1B95ECB800590E31 /* ColoredTriangleDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D2E5B1B95ECB800590E31 /* ColoredTriangleDemo.cpp */; };
-		3F1D2E601B96065E00590E31 /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D2E5E1B96065E00590E31 /* ShaderProgram.cpp */; };
-		3F1D2E631B96067F00590E31 /* Variable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D2E611B96067F00590E31 /* Variable.cpp */; };
-		3F45F3501B9360EE0009CF1C /* RenderingGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F45F34E1B9360EE0009CF1C /* RenderingGame.cpp */; };
-		3F45F3531B94AF240009CF1C /* ColorHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F45F3511B94AF240009CF1C /* ColorHelper.cpp */; };
+		3F90B0B41B9F357A0085CF22 /* ColoredTriangleDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0881B9F357A0085CF22 /* ColoredTriangleDemo.cpp */; };
+		3F90B0B51B9F357A0085CF22 /* CubeDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0891B9F357A0085CF22 /* CubeDemo.cpp */; };
+		3F90B0B61B9F357A0085CF22 /* RenderingGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B08B1B9F357A0085CF22 /* RenderingGame.cpp */; };
+		3F90B0B71B9F357A0085CF22 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B08E1B9F357A0085CF22 /* main.cpp */; };
+		3F90B0B81B9F357A0085CF22 /* PointDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B08F1B9F357A0085CF22 /* PointDemo.cpp */; };
+		3F90B0B91B9F357A0085CF22 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0991B9F357A0085CF22 /* Camera.cpp */; };
+		3F90B0BA1B9F357A0085CF22 /* ColorHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B09B1B9F357A0085CF22 /* ColorHelper.cpp */; };
+		3F90B0BB1B9F357A0085CF22 /* DrawableGameComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B09E1B9F357A0085CF22 /* DrawableGameComponent.cpp */; };
+		3F90B0BC1B9F357A0085CF22 /* FirstPersonCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0A01B9F357A0085CF22 /* FirstPersonCamera.cpp */; };
+		3F90B0BD1B9F357A0085CF22 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0A21B9F357A0085CF22 /* Game.cpp */; };
+		3F90B0BE1B9F357A0085CF22 /* GameComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0A41B9F357A0085CF22 /* GameComponent.cpp */; };
+		3F90B0BF1B9F357A0085CF22 /* GameTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0A61B9F357A0085CF22 /* GameTime.cpp */; };
+		3F90B0C01B9F357A0085CF22 /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0A81B9F357A0085CF22 /* ShaderProgram.cpp */; };
+		3F90B0C11B9F357A0085CF22 /* Utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0AA1B9F357A0085CF22 /* Utility.cpp */; };
+		3F90B0C21B9F357A0085CF22 /* Variable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0AC1B9F357A0085CF22 /* Variable.cpp */; };
+		3F90B0C31B9F357A0085CF22 /* VectorHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0AE1B9F357A0085CF22 /* VectorHelper.cpp */; };
+		3F90B0C41B9F357A0085CF22 /* VertexDeclarations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0B01B9F357A0085CF22 /* VertexDeclarations.cpp */; };
+		3F90B0C51B9F357A0085CF22 /* md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0B21B9F357A0085CF22 /* md5.cpp */; };
 		3FDE1F2C1B8C6422006C243F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2B1B8C6422006C243F /* IOKit.framework */; };
 		3FDE1F2E1B8C6429006C243F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2D1B8C6429006C243F /* Cocoa.framework */; };
 		3FDE1F301B8C6430006C243F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2F1B8C6430006C243F /* OpenGL.framework */; };
 		3FDE1F321B8C6437006C243F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F311B8C6437006C243F /* CoreVideo.framework */; };
 		3FDE1F361B8C87CB006C243F /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F351B8C87CB006C243F /* libglfw3.a */; };
 		3FDE1F3D1B8ED64B006C243F /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F3C1B8ED64B006C243F /* libGLEW.a */; };
-		3FDE1F881B931047006C243F /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE1F861B931047006C243F /* Camera.cpp */; };
-		3FDE1F8B1B9322B5006C243F /* VectorHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE1F891B9322B5006C243F /* VectorHelper.cpp */; };
-		3FDE1F8E1B93254C006C243F /* FirstPersonCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE1F8C1B93254C006C243F /* FirstPersonCamera.cpp */; };
-		3FF544381B8F626500CFCAB5 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FF544331B8F626500CFCAB5 /* Game.cpp */; };
-		3FF544391B8F626500CFCAB5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FF544351B8F626500CFCAB5 /* main.cpp */; };
-		3FF5443A1B8F626500CFCAB5 /* md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FF544361B8F626500CFCAB5 /* md5.cpp */; };
-		3FF544421B8F6E0200CFCAB5 /* GameTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FF544401B8F6E0200CFCAB5 /* GameTime.cpp */; };
-		3FF544451B8F80B900CFCAB5 /* GameComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FF544431B8F80B900CFCAB5 /* GameComponent.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,23 +46,48 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3F1D2E511B94B11100590E31 /* PointDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PointDemo.cpp; sourceTree = "<group>"; };
-		3F1D2E521B94B11100590E31 /* PointDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointDemo.h; sourceTree = "<group>"; };
-		3F1D2E541B94B17100590E31 /* DrawableGameComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrawableGameComponent.cpp; sourceTree = "<group>"; };
-		3F1D2E551B94B17100590E31 /* DrawableGameComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawableGameComponent.h; sourceTree = "<group>"; };
-		3F1D2E571B94B2A900590E31 /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
-		3F1D2E581B94B46300590E31 /* Utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utility.cpp; sourceTree = "<group>"; };
-		3F1D2E5A1B94B5CF00590E31 /* resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resource; sourceTree = "<group>"; };
-		3F1D2E5B1B95ECB800590E31 /* ColoredTriangleDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColoredTriangleDemo.cpp; sourceTree = "<group>"; };
-		3F1D2E5C1B95ECB800590E31 /* ColoredTriangleDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColoredTriangleDemo.h; sourceTree = "<group>"; };
-		3F1D2E5E1B96065E00590E31 /* ShaderProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderProgram.cpp; sourceTree = "<group>"; };
-		3F1D2E5F1B96065E00590E31 /* ShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderProgram.h; sourceTree = "<group>"; };
-		3F1D2E611B96067F00590E31 /* Variable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Variable.cpp; sourceTree = "<group>"; };
-		3F1D2E621B96067F00590E31 /* Variable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Variable.h; sourceTree = "<group>"; };
-		3F45F34E1B9360EE0009CF1C /* RenderingGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingGame.cpp; sourceTree = "<group>"; };
-		3F45F34F1B9360EE0009CF1C /* RenderingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderingGame.h; sourceTree = "<group>"; };
-		3F45F3511B94AF240009CF1C /* ColorHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorHelper.cpp; sourceTree = "<group>"; };
-		3F45F3521B94AF240009CF1C /* ColorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorHelper.h; sourceTree = "<group>"; };
+		3F90B0881B9F357A0085CF22 /* ColoredTriangleDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColoredTriangleDemo.cpp; sourceTree = "<group>"; };
+		3F90B0891B9F357A0085CF22 /* CubeDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CubeDemo.cpp; sourceTree = "<group>"; };
+		3F90B08A1B9F357A0085CF22 /* CubeDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeDemo.h; sourceTree = "<group>"; };
+		3F90B08B1B9F357A0085CF22 /* RenderingGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingGame.cpp; sourceTree = "<group>"; };
+		3F90B08C1B9F357A0085CF22 /* RenderingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderingGame.h; sourceTree = "<group>"; };
+		3F90B08D1B9F357A0085CF22 /* ColoredTriangleDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColoredTriangleDemo.h; sourceTree = "<group>"; };
+		3F90B08E1B9F357A0085CF22 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3F90B08F1B9F357A0085CF22 /* PointDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PointDemo.cpp; sourceTree = "<group>"; };
+		3F90B0901B9F357A0085CF22 /* PointDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointDemo.h; sourceTree = "<group>"; };
+		3F90B0921B9F357A0085CF22 /* ColoredTriangleDemo.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColoredTriangleDemo.frag; sourceTree = "<group>"; };
+		3F90B0931B9F357A0085CF22 /* ColoredTriangleDemo.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColoredTriangleDemo.vert; sourceTree = "<group>"; };
+		3F90B0941B9F357A0085CF22 /* CubeDemo.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = CubeDemo.frag; sourceTree = "<group>"; };
+		3F90B0951B9F357A0085CF22 /* CubeDemo.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = CubeDemo.vert; sourceTree = "<group>"; };
+		3F90B0961B9F357A0085CF22 /* PointDemo.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PointDemo.frag; sourceTree = "<group>"; };
+		3F90B0971B9F357A0085CF22 /* PointDemo.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PointDemo.vert; sourceTree = "<group>"; };
+		3F90B0991B9F357A0085CF22 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		3F90B09A1B9F357A0085CF22 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		3F90B09B1B9F357A0085CF22 /* ColorHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorHelper.cpp; sourceTree = "<group>"; };
+		3F90B09C1B9F357A0085CF22 /* ColorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorHelper.h; sourceTree = "<group>"; };
+		3F90B09D1B9F357A0085CF22 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		3F90B09E1B9F357A0085CF22 /* DrawableGameComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrawableGameComponent.cpp; sourceTree = "<group>"; };
+		3F90B09F1B9F357A0085CF22 /* DrawableGameComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawableGameComponent.h; sourceTree = "<group>"; };
+		3F90B0A01B9F357A0085CF22 /* FirstPersonCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FirstPersonCamera.cpp; sourceTree = "<group>"; };
+		3F90B0A11B9F357A0085CF22 /* FirstPersonCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstPersonCamera.h; sourceTree = "<group>"; };
+		3F90B0A21B9F357A0085CF22 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		3F90B0A31B9F357A0085CF22 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		3F90B0A41B9F357A0085CF22 /* GameComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameComponent.cpp; sourceTree = "<group>"; };
+		3F90B0A51B9F357A0085CF22 /* GameComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameComponent.h; sourceTree = "<group>"; };
+		3F90B0A61B9F357A0085CF22 /* GameTime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameTime.cpp; sourceTree = "<group>"; };
+		3F90B0A71B9F357A0085CF22 /* GameTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTime.h; sourceTree = "<group>"; };
+		3F90B0A81B9F357A0085CF22 /* ShaderProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderProgram.cpp; sourceTree = "<group>"; };
+		3F90B0A91B9F357A0085CF22 /* ShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderProgram.h; sourceTree = "<group>"; };
+		3F90B0AA1B9F357A0085CF22 /* Utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utility.cpp; sourceTree = "<group>"; };
+		3F90B0AB1B9F357A0085CF22 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		3F90B0AC1B9F357A0085CF22 /* Variable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Variable.cpp; sourceTree = "<group>"; };
+		3F90B0AD1B9F357A0085CF22 /* Variable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Variable.h; sourceTree = "<group>"; };
+		3F90B0AE1B9F357A0085CF22 /* VectorHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VectorHelper.cpp; sourceTree = "<group>"; };
+		3F90B0AF1B9F357A0085CF22 /* VectorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorHelper.h; sourceTree = "<group>"; };
+		3F90B0B01B9F357A0085CF22 /* VertexDeclarations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VertexDeclarations.cpp; sourceTree = "<group>"; };
+		3F90B0B11B9F357A0085CF22 /* VertexDeclarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexDeclarations.h; sourceTree = "<group>"; };
+		3F90B0B21B9F357A0085CF22 /* md5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = md5.cpp; sourceTree = "<group>"; };
+		3F90B0B31B9F357A0085CF22 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
 		3F9E8FEC1B74791900659751 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDE1F2B1B8C6422006C243F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		3FDE1F2D1B8C6429006C243F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -68,22 +95,6 @@
 		3FDE1F311B8C6437006C243F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		3FDE1F351B8C87CB006C243F /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = GLFW/lib/libglfw3.a; sourceTree = "<group>"; };
 		3FDE1F3C1B8ED64B006C243F /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = GLEW/lib/libGLEW.a; sourceTree = "<group>"; };
-		3FDE1F861B931047006C243F /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
-		3FDE1F871B931047006C243F /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
-		3FDE1F891B9322B5006C243F /* VectorHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VectorHelper.cpp; sourceTree = "<group>"; };
-		3FDE1F8A1B9322B5006C243F /* VectorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorHelper.h; sourceTree = "<group>"; };
-		3FDE1F8C1B93254C006C243F /* FirstPersonCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FirstPersonCamera.cpp; sourceTree = "<group>"; };
-		3FDE1F8D1B93254C006C243F /* FirstPersonCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstPersonCamera.h; sourceTree = "<group>"; };
-		3FF544321B8F626500CFCAB5 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
-		3FF544331B8F626500CFCAB5 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
-		3FF544341B8F626500CFCAB5 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
-		3FF544351B8F626500CFCAB5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		3FF544361B8F626500CFCAB5 /* md5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = md5.cpp; sourceTree = "<group>"; };
-		3FF544371B8F626500CFCAB5 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
-		3FF544401B8F6E0200CFCAB5 /* GameTime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameTime.cpp; sourceTree = "<group>"; };
-		3FF544411B8F6E0200CFCAB5 /* GameTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTime.h; sourceTree = "<group>"; };
-		3FF544431B8F80B900CFCAB5 /* GameComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameComponent.cpp; sourceTree = "<group>"; };
-		3FF544441B8F80B900CFCAB5 /* GameComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameComponent.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +114,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F90B0911B9F357A0085CF22 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				3F90B0921B9F357A0085CF22 /* ColoredTriangleDemo.frag */,
+				3F90B0931B9F357A0085CF22 /* ColoredTriangleDemo.vert */,
+				3F90B0941B9F357A0085CF22 /* CubeDemo.frag */,
+				3F90B0951B9F357A0085CF22 /* CubeDemo.vert */,
+				3F90B0961B9F357A0085CF22 /* PointDemo.frag */,
+				3F90B0971B9F357A0085CF22 /* PointDemo.vert */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		3F90B0981B9F357A0085CF22 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				3F90B0991B9F357A0085CF22 /* Camera.cpp */,
+				3F90B09A1B9F357A0085CF22 /* Camera.h */,
+				3F90B09B1B9F357A0085CF22 /* ColorHelper.cpp */,
+				3F90B09C1B9F357A0085CF22 /* ColorHelper.h */,
+				3F90B09D1B9F357A0085CF22 /* Common.h */,
+				3F90B09E1B9F357A0085CF22 /* DrawableGameComponent.cpp */,
+				3F90B09F1B9F357A0085CF22 /* DrawableGameComponent.h */,
+				3F90B0A01B9F357A0085CF22 /* FirstPersonCamera.cpp */,
+				3F90B0A11B9F357A0085CF22 /* FirstPersonCamera.h */,
+				3F90B0A21B9F357A0085CF22 /* Game.cpp */,
+				3F90B0A31B9F357A0085CF22 /* Game.h */,
+				3F90B0A41B9F357A0085CF22 /* GameComponent.cpp */,
+				3F90B0A51B9F357A0085CF22 /* GameComponent.h */,
+				3F90B0A61B9F357A0085CF22 /* GameTime.cpp */,
+				3F90B0A71B9F357A0085CF22 /* GameTime.h */,
+				3F90B0A81B9F357A0085CF22 /* ShaderProgram.cpp */,
+				3F90B0A91B9F357A0085CF22 /* ShaderProgram.h */,
+				3F90B0AA1B9F357A0085CF22 /* Utility.cpp */,
+				3F90B0AB1B9F357A0085CF22 /* Utility.h */,
+				3F90B0AC1B9F357A0085CF22 /* Variable.cpp */,
+				3F90B0AD1B9F357A0085CF22 /* Variable.h */,
+				3F90B0AE1B9F357A0085CF22 /* VectorHelper.cpp */,
+				3F90B0AF1B9F357A0085CF22 /* VectorHelper.h */,
+				3F90B0B01B9F357A0085CF22 /* VertexDeclarations.cpp */,
+				3F90B0B11B9F357A0085CF22 /* VertexDeclarations.h */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		3F9E8FE31B74791800659751 = {
 			isa = PBXGroup;
 			children = (
@@ -128,49 +184,21 @@
 		3F9E8FEE1B74791900659751 /* test */ = {
 			isa = PBXGroup;
 			children = (
-				3F1D2E5A1B94B5CF00590E31 /* resource */,
-				3FF544311B8F626500CFCAB5 /* Library */,
-				3FF544351B8F626500CFCAB5 /* main.cpp */,
-				3FF544361B8F626500CFCAB5 /* md5.cpp */,
-				3FF544371B8F626500CFCAB5 /* md5.h */,
-				3F45F34E1B9360EE0009CF1C /* RenderingGame.cpp */,
-				3F45F34F1B9360EE0009CF1C /* RenderingGame.h */,
-				3F1D2E511B94B11100590E31 /* PointDemo.cpp */,
-				3F1D2E521B94B11100590E31 /* PointDemo.h */,
-				3F1D2E5B1B95ECB800590E31 /* ColoredTriangleDemo.cpp */,
-				3F1D2E5C1B95ECB800590E31 /* ColoredTriangleDemo.h */,
+				3F90B0881B9F357A0085CF22 /* ColoredTriangleDemo.cpp */,
+				3F90B0891B9F357A0085CF22 /* CubeDemo.cpp */,
+				3F90B08A1B9F357A0085CF22 /* CubeDemo.h */,
+				3F90B08B1B9F357A0085CF22 /* RenderingGame.cpp */,
+				3F90B08C1B9F357A0085CF22 /* RenderingGame.h */,
+				3F90B08D1B9F357A0085CF22 /* ColoredTriangleDemo.h */,
+				3F90B08E1B9F357A0085CF22 /* main.cpp */,
+				3F90B08F1B9F357A0085CF22 /* PointDemo.cpp */,
+				3F90B0901B9F357A0085CF22 /* PointDemo.h */,
+				3F90B0911B9F357A0085CF22 /* resource */,
+				3F90B0981B9F357A0085CF22 /* Library */,
+				3F90B0B21B9F357A0085CF22 /* md5.cpp */,
+				3F90B0B31B9F357A0085CF22 /* md5.h */,
 			);
 			path = test;
-			sourceTree = "<group>";
-		};
-		3FF544311B8F626500CFCAB5 /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				3F1D2E611B96067F00590E31 /* Variable.cpp */,
-				3F1D2E621B96067F00590E31 /* Variable.h */,
-				3F1D2E5E1B96065E00590E31 /* ShaderProgram.cpp */,
-				3F1D2E5F1B96065E00590E31 /* ShaderProgram.h */,
-				3FF544321B8F626500CFCAB5 /* Common.h */,
-				3FF544331B8F626500CFCAB5 /* Game.cpp */,
-				3FF544341B8F626500CFCAB5 /* Game.h */,
-				3FF544401B8F6E0200CFCAB5 /* GameTime.cpp */,
-				3FF544411B8F6E0200CFCAB5 /* GameTime.h */,
-				3FF544431B8F80B900CFCAB5 /* GameComponent.cpp */,
-				3FF544441B8F80B900CFCAB5 /* GameComponent.h */,
-				3FDE1F861B931047006C243F /* Camera.cpp */,
-				3FDE1F871B931047006C243F /* Camera.h */,
-				3FDE1F891B9322B5006C243F /* VectorHelper.cpp */,
-				3FDE1F8A1B9322B5006C243F /* VectorHelper.h */,
-				3FDE1F8C1B93254C006C243F /* FirstPersonCamera.cpp */,
-				3FDE1F8D1B93254C006C243F /* FirstPersonCamera.h */,
-				3F45F3511B94AF240009CF1C /* ColorHelper.cpp */,
-				3F45F3521B94AF240009CF1C /* ColorHelper.h */,
-				3F1D2E541B94B17100590E31 /* DrawableGameComponent.cpp */,
-				3F1D2E551B94B17100590E31 /* DrawableGameComponent.h */,
-				3F1D2E571B94B2A900590E31 /* Utility.h */,
-				3F1D2E581B94B46300590E31 /* Utility.cpp */,
-			);
-			path = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,22 +257,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F1D2E5D1B95ECB800590E31 /* ColoredTriangleDemo.cpp in Sources */,
-				3FF544451B8F80B900CFCAB5 /* GameComponent.cpp in Sources */,
-				3F45F3531B94AF240009CF1C /* ColorHelper.cpp in Sources */,
-				3F1D2E631B96067F00590E31 /* Variable.cpp in Sources */,
-				3FF5443A1B8F626500CFCAB5 /* md5.cpp in Sources */,
-				3FF544391B8F626500CFCAB5 /* main.cpp in Sources */,
-				3FF544421B8F6E0200CFCAB5 /* GameTime.cpp in Sources */,
-				3F1D2E601B96065E00590E31 /* ShaderProgram.cpp in Sources */,
-				3F1D2E561B94B17100590E31 /* DrawableGameComponent.cpp in Sources */,
-				3F1D2E531B94B11100590E31 /* PointDemo.cpp in Sources */,
-				3FDE1F881B931047006C243F /* Camera.cpp in Sources */,
-				3F1D2E591B94B46300590E31 /* Utility.cpp in Sources */,
-				3FF544381B8F626500CFCAB5 /* Game.cpp in Sources */,
-				3F45F3501B9360EE0009CF1C /* RenderingGame.cpp in Sources */,
-				3FDE1F8E1B93254C006C243F /* FirstPersonCamera.cpp in Sources */,
-				3FDE1F8B1B9322B5006C243F /* VectorHelper.cpp in Sources */,
+				3F90B0C11B9F357A0085CF22 /* Utility.cpp in Sources */,
+				3F90B0B61B9F357A0085CF22 /* RenderingGame.cpp in Sources */,
+				3F90B0BB1B9F357A0085CF22 /* DrawableGameComponent.cpp in Sources */,
+				3F90B0BF1B9F357A0085CF22 /* GameTime.cpp in Sources */,
+				3F90B0C31B9F357A0085CF22 /* VectorHelper.cpp in Sources */,
+				3F90B0C01B9F357A0085CF22 /* ShaderProgram.cpp in Sources */,
+				3F90B0B41B9F357A0085CF22 /* ColoredTriangleDemo.cpp in Sources */,
+				3F90B0C41B9F357A0085CF22 /* VertexDeclarations.cpp in Sources */,
+				3F90B0C21B9F357A0085CF22 /* Variable.cpp in Sources */,
+				3F90B0BC1B9F357A0085CF22 /* FirstPersonCamera.cpp in Sources */,
+				3F90B0B71B9F357A0085CF22 /* main.cpp in Sources */,
+				3F90B0B51B9F357A0085CF22 /* CubeDemo.cpp in Sources */,
+				3F90B0C51B9F357A0085CF22 /* md5.cpp in Sources */,
+				3F90B0B91B9F357A0085CF22 /* Camera.cpp in Sources */,
+				3F90B0BE1B9F357A0085CF22 /* GameComponent.cpp in Sources */,
+				3F90B0B81B9F357A0085CF22 /* PointDemo.cpp in Sources */,
+				3F90B0BA1B9F357A0085CF22 /* ColorHelper.cpp in Sources */,
+				3F90B0BD1B9F357A0085CF22 /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,6 +31,7 @@ namespace Library{
         Game(const char* name,float width,float height);
         ~Game();
         
+        GLFWwindow* Window() const {return m_Window;}
         int ScreenWidth() const;
         int ScreenHeight() const;
         float AspectRatio() const;

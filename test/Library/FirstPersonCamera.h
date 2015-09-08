@@ -18,8 +18,8 @@ namespace Library
     {
         
     public:
-        FirstPersonCamera(Game& game);
-        FirstPersonCamera(Game& game, float fieldOfView, float aspectRatio, float nearPlaneDistance, float farPlaneDistance);
+        FirstPersonCamera(Game* game);
+        FirstPersonCamera(Game* game, float fieldOfView, float aspectRatio, float nearPlaneDistance, float farPlaneDistance);
         
         virtual ~FirstPersonCamera();
         
@@ -28,7 +28,7 @@ namespace Library
         float& MovementRate();
         
         virtual void Initialize() override;
-        virtual void Update(const GameTime& gameTime) override;
+        virtual void Update() override;
         
         static const float DefaultMouseSensitivity;
         static const float DefaultRotationRate;
