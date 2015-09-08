@@ -14,6 +14,7 @@
 #include "ShaderProgram.h"
 #include "VertexDeclarations.h"
 #include "VectorHelper.h"
+#include <glm/gtc/matrix_transform.hpp>
 
 using namespace glm;
 
@@ -48,15 +49,15 @@ namespace Rendering
         // Create the vertex buffer object
         VertexPositionColor vertices[] =
         {
-            VertexPositionColor(vec4(-100.0f, +100.0f, -100.0f, 1.0f), ColorHelper::Green),
-            VertexPositionColor(vec4(+100.0f, +100.0f, -100.0f, 1.0f), ColorHelper::Yellow),
-            VertexPositionColor(vec4(+100.0f, +100.0f, +100.0f, 1.0f), ColorHelper::White),
-            VertexPositionColor(vec4(-100.0f, +100.0f, +100.0f, 1.0f), ColorHelper::BlueGreen),
+            VertexPositionColor(vec4(-1.0f, +1.0f, -1.0f, 1.0f), ColorHelper::Green),
+            VertexPositionColor(vec4(+1.0f, +1.0f, -1.0f, 1.0f), ColorHelper::Yellow),
+            VertexPositionColor(vec4(+1.0f, +1.0f, +1.0f, 1.0f), ColorHelper::White),
+            VertexPositionColor(vec4(-1.0f, +1.0f, +1.0f, 1.0f), ColorHelper::BlueGreen),
             
-            VertexPositionColor(vec4(-100.0f, -100.0f, +100.0f, 1.0f), ColorHelper::Blue),
-            VertexPositionColor(vec4(+100.0f, -100.0f, +100.0f, 1.0f), ColorHelper::Purple),
-            VertexPositionColor(vec4(+100.0f, -100.0f, -100.0f, 1.0f), ColorHelper::Red),
-            VertexPositionColor(vec4(-100.0f, -100.0f, -100.0f, 1.0f), ColorHelper::Black)
+            VertexPositionColor(vec4(-1.0f, -1.0f, +1.0f, 1.0f), ColorHelper::Blue),
+            VertexPositionColor(vec4(+1.0f, -1.0f, +1.0f, 1.0f), ColorHelper::Purple),
+            VertexPositionColor(vec4(+1.0f, -1.0f, -1.0f, 1.0f), ColorHelper::Red),
+            VertexPositionColor(vec4(-1.0f, -1.0f, -1.0f, 1.0f), ColorHelper::Black)
         };
         
         glGenBuffers(1, &mVertexBuffer);
@@ -133,11 +134,21 @@ namespace Rendering
             }
             std::cout<<std::endl;
         }
-        
-        glUniformMatrix4fv(mWorldViewProjectionLocation, 1, GL_FALSE, &wvp[0][0]);
+        glm::mat4 Projection = glm::perspective(45.0f, 4.0f / 3.0f, 0.1f, 100.0f);
+        // Camera matrix
+        glm::mat4 View       = glm::lookAt(
+                                           glm::vec3(5,5,5), // Camera is at (4,3,-3), in World Space
+                                           glm::vec3(0,0,0), // and looks at the origin
+                                           glm::vec3(0,1,0)  // Head is up (set to 0,-1,0 to look upside-down)
+                                           );
+        // Model matrix : an identity matrix (model will be at the origin)
+        glm::mat4 Model      = glm::mat4(1.0f);
+        // Our ModelViewProjection : multiplication of our 3 matrices
+        glm::mat4 MVP        = Projection * View * Model; // Remember, matrix multiplication
+        glUniformMatrix4fv(mWorldViewProjectionLocation, 1, GL_FALSE, &MVP[0][0]);
         
         glEnable(GL_CULL_FACE);
-        glFrontFace(GL_CCW);
+        //glFrontFace(GL_CCW);
         
         glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
         glBindVertexArray(0);
