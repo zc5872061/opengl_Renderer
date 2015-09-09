@@ -64,55 +64,55 @@ namespace Library
     
     void FirstPersonCamera::Update()
     {
-        vec2 movementAmount = Vector2Helper::Zero;
-        if (glfwGetKey(mGame->Window(), GLFW_KEY_W))
-        {
-            movementAmount.y = 1.0f;
-        }
-        
-        if (glfwGetKey(mGame->Window(), GLFW_KEY_S))
-        {
-            movementAmount.y = -1.0f;
-        }
-        
-        if (glfwGetKey(mGame->Window(), GLFW_KEY_A))
-        {
-            movementAmount.x = -1.0f;
-        }
-        
-        if (glfwGetKey(mGame->Window(), GLFW_KEY_D))
-        {
-            movementAmount.x = 1.0f;
-        }
-        
-        vec2 rotationAmount = Vector2Helper::Zero;
-        
-        double x, y;
-        glfwGetCursorPos(mGame->Window(), &x, &y);
-        
-        if (glfwGetMouseButton(mGame->Window(), GLFW_MOUSE_BUTTON_LEFT))
-        {
-            rotationAmount.x = static_cast<float>(mLastCursorX - x) * mMouseSensitivity;
-            rotationAmount.y = static_cast<float>(mLastCursorY - y) * mMouseSensitivity;
-        }
-        
-        mLastCursorX = x;
-        mLastCursorY = y;
-        
-//        float elapsedTime = (float)gameTime.ElapsedGameTime();
-        vec2 rotationVector = rotationAmount * mRotationRate ;
+//        vec2 movementAmount = Vector2Helper::Zero;
+//        if (glfwGetKey(mGame->Window(), GLFW_KEY_W))
+//        {
+//            movementAmount.y = 1.0f;
+//        }
 //        
-        mat4 rotationMatrix = rotate(mat4(), rotationVector.y, mRight);
-        rotationMatrix = rotate(rotationMatrix, rotationVector.x, Vector3Helper::Up);
-        ApplyRotation(rotationMatrix);
-        
-        vec2 movement = movementAmount * mMovementRate;
-        
-        vec3 strafe = mRight * movement.x;
-        mPosition += strafe;
-        
-        vec3 forward = mDirection * movement.y;
-        mPosition += forward;
+//        if (glfwGetKey(mGame->Window(), GLFW_KEY_S))
+//        {
+//            movementAmount.y = -1.0f;
+//        }
+//        
+//        if (glfwGetKey(mGame->Window(), GLFW_KEY_A))
+//        {
+//            movementAmount.x = -1.0f;
+//        }
+//        
+//        if (glfwGetKey(mGame->Window(), GLFW_KEY_D))
+//        {
+//            movementAmount.x = 1.0f;
+//        }
+//        
+//        vec2 rotationAmount = Vector2Helper::Zero;
+//        
+//        double x, y;
+//        glfwGetCursorPos(mGame->Window(), &x, &y);
+//        
+//        if (glfwGetMouseButton(mGame->Window(), GLFW_MOUSE_BUTTON_LEFT))
+//        {
+//            rotationAmount.x = static_cast<float>(mLastCursorX - x) * mMouseSensitivity;
+//            rotationAmount.y = static_cast<float>(mLastCursorY - y) * mMouseSensitivity;
+//        }
+//        
+//        mLastCursorX = x;
+//        mLastCursorY = y;
+//        
+////        float elapsedTime = (float)gameTime.ElapsedGameTime();
+//        vec2 rotationVector = rotationAmount * mRotationRate ;
+////        
+//        mat4 rotationMatrix = rotate(mat4(), rotationVector.y, mRight);
+//        rotationMatrix = rotate(rotationMatrix, rotationVector.x, Vector3Helper::Up);
+//        ApplyRotation(rotationMatrix);
+//        
+//        vec2 movement = movementAmount * mMovementRate;
+//        
+//        vec3 strafe = mRight * movement.x;
+//        mPosition += strafe;
+//        
+//        vec3 forward = mDirection * movement.y;
+//        mPosition += forward;
         
         Camera::Update();
     }

@@ -42,8 +42,8 @@ namespace Rendering
         
         // Build the shader program
         std::vector<ShaderDefinition> shaders;
-        shaders.push_back(ShaderDefinition(GL_VERTEX_SHADER, "/Users/chukie/Study/WorkWork/opengl_framework/test/resource/CubeDemo.vert"));
-        shaders.push_back(ShaderDefinition(GL_FRAGMENT_SHADER,"/Users/chukie/Study/WorkWork/opengl_framework/test/resource/CubeDemo.frag"));
+        shaders.push_back(ShaderDefinition(GL_VERTEX_SHADER, "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/CubeDemo.vert"));
+        shaders.push_back(ShaderDefinition(GL_FRAGMENT_SHADER,"/Users/chukie/Desktop/Demo/opengl_framework/test/resource/CubeDemo.frag"));
         mShaderProgram->BuildProgram(shaders);
         
         // Create the vertex buffer object
@@ -145,7 +145,7 @@ namespace Rendering
         glm::mat4 Model      = glm::mat4(1.0f);
         // Our ModelViewProjection : multiplication of our 3 matrices
         glm::mat4 MVP        = Projection * View * Model; // Remember, matrix multiplication
-        glUniformMatrix4fv(mWorldViewProjectionLocation, 1, GL_FALSE, &MVP[0][0]);
+        glUniformMatrix4fv(mWorldViewProjectionLocation, 1, GL_FALSE, &wvp[0][0]);
         
         glEnable(GL_CULL_FACE);
         //glFrontFace(GL_CCW);

@@ -36,8 +36,8 @@ namespace Rendering
     void ColoredTriangleDemo::Initialize()
     {
         std::vector<ShaderDefinition> shaders;
-        shaders.push_back(ShaderDefinition(GL_VERTEX_SHADER,"/Users/chukie/Study/WorkWork/opengl_framework/test/resource/ColoredTriangleDemo.vert"));
-        shaders.push_back(ShaderDefinition(GL_FRAGMENT_SHADER,"/Users/chukie/Study/WorkWork/opengl_framework/test/resource/ColoredTriangleDemo.frag"));
+        shaders.push_back(ShaderDefinition(GL_VERTEX_SHADER,"/Users/chukie/Desktop/Demo/opengl_framework/test/resource/ColoredTriangleDemo.vert"));
+        shaders.push_back(ShaderDefinition(GL_FRAGMENT_SHADER,"/Users/chukie/Desktop/Demo/opengl_framework/test/resource/resource/ColoredTriangleDemo.frag"));
         mShaderProgram->BuildProgram(shaders);
         // Create the vertex buffer
         VertexPositionColor vertices[] =

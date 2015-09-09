@@ -40,6 +40,7 @@ namespace Library{
         virtual bool Run();
         virtual void Exit();
         virtual void Initialize();
+        virtual void Update();
         virtual void Draw();
     protected:
         virtual bool InitializeWindow();

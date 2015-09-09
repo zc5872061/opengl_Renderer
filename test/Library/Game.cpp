@@ -70,7 +70,7 @@ namespace Library {
 //            glColor3f(0.f, 0.f, 1.f);
 //            glVertex3f(0.f, 0.6f, 0.f);
 //            glEnd();
-            
+            Update();
             Draw();
 //            glfwSwapBuffers(m_Window);
             glfwPollEvents();
@@ -105,7 +105,16 @@ namespace Library {
             component->Initialize();
         }
     }
-    
+    void Game::Update()
+    {
+        for (GameComponent* component : mComponents)
+        {
+            if (component->Enabled())
+            {
+                component->Update();
+            }
+        }
+    }
     void Game::Draw()
     {
         for (GameComponent* component : mComponents)

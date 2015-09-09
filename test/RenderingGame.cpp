@@ -36,7 +36,7 @@ namespace Rendering
         mComponents.push_back(mCubeDemo);
         //mComponents.push_back(mColoredTriangleDemo);
         Game::Initialize();
-        m_Camera->SetPosition(200, 200, 200);
+        m_Camera->SetPosition(0, 5, 10);
         m_Camera->ApplyRotation(rotate(mat4(), 30.0f, Vector3Helper::Left));
     }
     
