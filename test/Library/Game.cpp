@@ -40,6 +40,7 @@ namespace Library {
         }
         InitializeOpenGL();
         Initialize();
+        
         while (!glfwWindowShouldClose(m_Window)) {
             //const glm::vec4 CornflowerBlue = glm::vec4(0.392f, 0.584f, 0.929f, 1.0f);
             //glClearBufferfv(GL_COLOR, 0, &CornflowerBlue[0]);
@@ -70,6 +71,9 @@ namespace Library {
 //            glColor3f(0.f, 0.f, 1.f);
 //            glVertex3f(0.f, 0.6f, 0.f);
 //            glEnd();
+            m_GameClock.UpdateGameTime(m_GameTime);
+            std::cout<<m_GameTime.TotalGameTime()<<std::endl;
+            std::cout<<m_GameTime.ElapsedGameTime()<<std::endl;
             Update();
             Draw();
 //            glfwSwapBuffers(m_Window);

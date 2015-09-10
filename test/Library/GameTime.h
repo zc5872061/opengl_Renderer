@@ -15,19 +15,18 @@ namespace Library {
     {
     public:
         GameTime();
-        ~GameTime();
+        GameTime(double totalGameTime, double elapsedGameTime);
         
-        void initialize();
-        void shutDown();
-        double getElapsedTime();
+        double TotalGameTime() const;
+        void SetTotalGameTime(double totalGameTime);
+        
+        double ElapsedGameTime() const;
+        void SetElapsedGameTime(double elapsedGameTime);
+
         
     private:
-        double	m_startTimeInMicroSec;
-        double	m_endTimeInMicroSec;
-        bool	m_stopped;
-        
-        timeval m_startCount;
-        timeval m_endCount;
+        double mTotalGameTime;
+        double mElapsedGameTime;
     };
 }
 

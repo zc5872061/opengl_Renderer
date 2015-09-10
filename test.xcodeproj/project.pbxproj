@@ -31,6 +31,7 @@
 		3FDE1F321B8C6437006C243F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F311B8C6437006C243F /* CoreVideo.framework */; };
 		3FDE1F361B8C87CB006C243F /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F351B8C87CB006C243F /* libglfw3.a */; };
 		3FDE1F3D1B8ED64B006C243F /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F3C1B8ED64B006C243F /* libGLEW.a */; };
+		3FDE1FB61BA1AF35006C243F /* GameClock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE1FB41BA1AF35006C243F /* GameClock.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -95,6 +96,8 @@
 		3FDE1F311B8C6437006C243F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		3FDE1F351B8C87CB006C243F /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = GLFW/lib/libglfw3.a; sourceTree = "<group>"; };
 		3FDE1F3C1B8ED64B006C243F /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = GLEW/lib/libGLEW.a; sourceTree = "<group>"; };
+		3FDE1FB41BA1AF35006C243F /* GameClock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameClock.cpp; sourceTree = "<group>"; };
+		3FDE1FB51BA1AF35006C243F /* GameClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameClock.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,8 @@
 				3F90B0AF1B9F357A0085CF22 /* VectorHelper.h */,
 				3F90B0B01B9F357A0085CF22 /* VertexDeclarations.cpp */,
 				3F90B0B11B9F357A0085CF22 /* VertexDeclarations.h */,
+				3FDE1FB41BA1AF35006C243F /* GameClock.cpp */,
+				3FDE1FB51BA1AF35006C243F /* GameClock.h */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 			files = (
 				3F90B0C11B9F357A0085CF22 /* Utility.cpp in Sources */,
 				3F90B0B61B9F357A0085CF22 /* RenderingGame.cpp in Sources */,
+				3FDE1FB61BA1AF35006C243F /* GameClock.cpp in Sources */,
 				3F90B0BB1B9F357A0085CF22 /* DrawableGameComponent.cpp in Sources */,
 				3F90B0BF1B9F357A0085CF22 /* GameTime.cpp in Sources */,
 				3F90B0C31B9F357A0085CF22 /* VectorHelper.cpp in Sources */,

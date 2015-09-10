@@ -45,73 +45,9 @@
             timestampString = "463424636.350589"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "CubeDemo::Draw()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "test/CubeDemo.cpp"
-            timestampString = "463424636.350589"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
-            landmarkName = "CubeDemo::Draw()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "test/CubeDemo.cpp"
-            timestampString = "463424636.350589"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "105"
             endingLineNumber = "105"
             landmarkName = "CubeDemo::Initialize()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "test/CubeDemo.cpp"
-            timestampString = "463424636.350589"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "CubeDemo::Initialize()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "test/Library/Camera.cpp"
-            timestampString = "463468422.82159"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "Camera::UpdateProjectionMatrix()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -138,7 +74,7 @@
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chukie/Desktop/Demo/opengl_framework/test/Library/Camera.cpp"
-                  timestampString = "463495790.675289"
+                  timestampString = "463584377.126854"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
@@ -153,60 +89,12 @@
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chukie/Desktop/Demo/opengl_framework/test/Library/Camera.cpp"
-                  timestampString = "463495790.675415"
+                  timestampString = "463584377.127066"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
                   endingLineNumber = "50"
                   offsetFromSymbolStart = "40">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "test/Library/Camera.cpp"
-            timestampString = "463467175.933237"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "Camera::Camera(Game* game)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Library::Camera::Camera(Library::Game*)"
-                  moduleName = "test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chukie/Desktop/Demo/opengl_framework/test/Library/Camera.cpp"
-                  timestampString = "463495790.676026"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Library::Camera::Camera(Library::Game*)"
-                  moduleName = "test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chukie/Desktop/Demo/opengl_framework/test/Library/Camera.cpp"
-                  timestampString = "463495790.676153"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "20">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -233,22 +121,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "test/CubeDemo.cpp"
-            timestampString = "463467481.725236"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "CubeDemo::Draw()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "test/Library/Camera.cpp"
             timestampString = "463467530.004709"
             startingColumnNumber = "9223372036854775807"
@@ -265,13 +137,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "test/Library/Camera.cpp"
-            timestampString = "463468428.955811"
+            filePath = "test/Library/Game.cpp"
+            timestampString = "463584376.799302"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
-            landmarkName = "Camera::UpdateViewMatrix()"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "Game::Run()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

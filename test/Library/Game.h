@@ -12,6 +12,8 @@
 
 #include "Common.h"
 #include "GameComponent.h"
+#include "GameTime.h"
+#include "GameClock.h"
 #include <string>
 #include <vector>
 
@@ -52,6 +54,8 @@ namespace Library{
         static void OnMouseCursor(GLFWwindow* window,double xpos,double ypos);
         GLFWwindow* m_Window;
         static Game* m_Instance;
+        GameTime m_GameTime;
+        GameClock m_GameClock;
         std::vector<GameComponent*> mComponents;
     };
 }
