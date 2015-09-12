@@ -32,6 +32,8 @@
 		3FDE1F361B8C87CB006C243F /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F351B8C87CB006C243F /* libglfw3.a */; };
 		3FDE1F3D1B8ED64B006C243F /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F3C1B8ED64B006C243F /* libGLEW.a */; };
 		3FDE1FB61BA1AF35006C243F /* GameClock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE1FB41BA1AF35006C243F /* GameClock.cpp */; };
+		3FDE1FB91BA42834006C243F /* Grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE1FB71BA42834006C243F /* Grid.cpp */; };
+		3FDE1FBC1BA42E1F006C243F /* BasicEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE1FBA1BA42E1F006C243F /* BasicEffect.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -98,6 +100,10 @@
 		3FDE1F3C1B8ED64B006C243F /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = GLEW/lib/libGLEW.a; sourceTree = "<group>"; };
 		3FDE1FB41BA1AF35006C243F /* GameClock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameClock.cpp; sourceTree = "<group>"; };
 		3FDE1FB51BA1AF35006C243F /* GameClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameClock.h; sourceTree = "<group>"; };
+		3FDE1FB71BA42834006C243F /* Grid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Grid.cpp; sourceTree = "<group>"; };
+		3FDE1FB81BA42834006C243F /* Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grid.h; sourceTree = "<group>"; };
+		3FDE1FBA1BA42E1F006C243F /* BasicEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasicEffect.cpp; sourceTree = "<group>"; };
+		3FDE1FBB1BA42E1F006C243F /* BasicEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicEffect.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,10 @@
 				3F90B0B11B9F357A0085CF22 /* VertexDeclarations.h */,
 				3FDE1FB41BA1AF35006C243F /* GameClock.cpp */,
 				3FDE1FB51BA1AF35006C243F /* GameClock.h */,
+				3FDE1FB71BA42834006C243F /* Grid.cpp */,
+				3FDE1FB81BA42834006C243F /* Grid.h */,
+				3FDE1FBA1BA42E1F006C243F /* BasicEffect.cpp */,
+				3FDE1FBB1BA42E1F006C243F /* BasicEffect.h */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -264,6 +274,7 @@
 			files = (
 				3F90B0C11B9F357A0085CF22 /* Utility.cpp in Sources */,
 				3F90B0B61B9F357A0085CF22 /* RenderingGame.cpp in Sources */,
+				3FDE1FBC1BA42E1F006C243F /* BasicEffect.cpp in Sources */,
 				3FDE1FB61BA1AF35006C243F /* GameClock.cpp in Sources */,
 				3F90B0BB1B9F357A0085CF22 /* DrawableGameComponent.cpp in Sources */,
 				3F90B0BF1B9F357A0085CF22 /* GameTime.cpp in Sources */,
@@ -281,6 +292,7 @@
 				3F90B0B81B9F357A0085CF22 /* PointDemo.cpp in Sources */,
 				3F90B0BA1B9F357A0085CF22 /* ColorHelper.cpp in Sources */,
 				3F90B0BD1B9F357A0085CF22 /* Game.cpp in Sources */,
+				3FDE1FB91BA42834006C243F /* Grid.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -79,7 +79,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "139"
             endingLineNumber = "139"
-            landmarkName = "Camera::Update()"
+            landmarkName = "Camera::Update(GameTime gametime)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
