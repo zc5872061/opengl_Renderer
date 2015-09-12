@@ -108,32 +108,32 @@ namespace Rendering
         }
     }
     
-    void CubeDemo::Draw()
+    void CubeDemo::Draw(GameTime gametime)
     {
         glBindVertexArray(mVertexArrayObject);
         glBindBuffer(GL_ARRAY_BUFFER, mVertexBuffer);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, mIndexBuffer);
         
         glUseProgram(mShaderProgram->Program());
-        
-        for(int i = 0 ; i < 4; i ++)
-        {
-            for(int j = 0 ; j < 4; j ++)
-            {
-                std::cout<<mWorldMatrix[i][j]<< "             ";
-            }
-            std::cout<<std::endl;
-        }
+        //std::cout<<"times:"<<glfwGetTime()<<std::endl;
+//        for(int i = 0 ; i < 4; i ++)
+//        {
+//            for(int j = 0 ; j < 4; j ++)
+//            {
+//                std::cout<<mWorldMatrix[i][j]<< "             ";
+//            }
+//            std::cout<<std::endl;
+//        }
         
         mat4 wvp = mCamera->ViewProjectionMatrix() * mWorldMatrix;
-        for(int i = 0 ; i < 4; i ++)
-        {
-            for(int j = 0 ; j < 4; j ++)
-            {
-                std::cout<<wvp[i][j]<< "             ";
-            }
-            std::cout<<std::endl;
-        }
+//        for(int i = 0 ; i < 4; i ++)
+//        {
+//            for(int j = 0 ; j < 4; j ++)
+//            {
+//                std::cout<<wvp[i][j]<< "             ";
+//            }
+//            std::cout<<std::endl;
+//        }
         glm::mat4 Projection = glm::perspective(45.0f, 4.0f / 3.0f, 0.1f, 100.0f);
         // Camera matrix
         glm::mat4 View       = glm::lookAt(
