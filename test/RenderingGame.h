@@ -28,7 +28,7 @@ namespace Rendering
         RenderingGame(const char* title,float width,float height);
     protected:
         virtual void Initialize() override;
-        virtual void Draw() override;
+        virtual void Draw(GameTime gametime) override;
         virtual void Shutdown() override;
     private:
         FirstPersonCamera* m_Camera;

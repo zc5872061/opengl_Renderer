@@ -32,7 +32,7 @@ namespace Library
         Camera* GetCamera();
         void SetCamera(Camera* camera);
         
-        virtual void Draw();
+        virtual void Draw(GameTime gametime);
         
     protected:
         bool mVisible;

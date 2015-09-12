@@ -12,7 +12,7 @@
 #pragma once
 
 #include "Common.h"
-
+#include "GameTime.h"
 
 namespace Library
 {
@@ -33,7 +33,7 @@ namespace Library
             void SetDrawAble(bool value){mDrawAble = value;}
             bool GetDrawAble()const{return mDrawAble;}
             virtual void Initialize();
-            virtual void Update();
+            virtual void Update(GameTime gametime);
             
         protected:
             Game* mGame;

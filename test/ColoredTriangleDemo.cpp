@@ -64,7 +64,7 @@ namespace Rendering
         glBindVertexArray(0);
     }
     
-    void ColoredTriangleDemo::Draw()
+    void ColoredTriangleDemo::Draw(GameTime gametime)
     {
         glBindVertexArray(mVertexArrayObject);
         glBindBuffer(GL_ARRAY_BUFFER, mVertexBuffer);

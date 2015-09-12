@@ -43,7 +43,7 @@ namespace Library
         
         virtual void Reset();
         virtual void Initialize();
-        virtual void Update();
+        virtual void Update(GameTime gametime) override;
         virtual void UpdateViewMatrix();
         virtual void UpdateProjectionMatrix();
         virtual void ApplyRotation(const glm::mat4& transform);

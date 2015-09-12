@@ -21,7 +21,7 @@ namespace Rendering
         ~PointDemo();
         
         virtual void Initialize() override;
-        virtual void Draw() override;
+        virtual void Draw(GameTime gametime) override;
         
     private:
         PointDemo();

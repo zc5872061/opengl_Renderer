@@ -1,5 +1,7 @@
 #include "GameComponent.h"
 
+using namespace Library;
+
 namespace Library
 {
     GameComponent::GameComponent()
@@ -42,7 +44,7 @@ namespace Library
     {
     }
     
-    void GameComponent::Update()
+    void GameComponent::Update(GameTime gametime)
     {
     }
 }

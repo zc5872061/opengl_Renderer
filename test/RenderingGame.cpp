@@ -40,12 +40,12 @@ namespace Rendering
         m_Camera->ApplyRotation(rotate(mat4(), 30.0f, Vector3Helper::Left));
     }
     
-    void RenderingGame::Draw()
+    void RenderingGame::Draw(GameTime gametime)
     {
         static const GLfloat one = 1.0f;
         glClearBufferfv(GL_COLOR, 0, &ColorHelper::CornflowerBlue[0]);
         glClearBufferfv(GL_DEPTH, 0, &one);
-        Game::Draw();
+        Game::Draw(gametime);
         
         glfwSwapBuffers(m_Window);
     }

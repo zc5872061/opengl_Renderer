@@ -81,7 +81,7 @@ namespace Rendering
         glGenVertexArrays(1, &mVertexArrayObject);
     }
     
-    void PointDemo::Draw()
+    void PointDemo::Draw(GameTime gametime)
     {
         glBindVertexArray(mVertexArrayObject);
         glUseProgram(mShaderProgram);

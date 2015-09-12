@@ -21,7 +21,7 @@ namespace Rendering
         ~CubeDemo();
         
         virtual void Initialize() override;
-        virtual void Draw() override;
+        virtual void Draw(GameTime gametime) override;
         
     private:
         enum VertexAttribute

@@ -134,7 +134,7 @@ namespace Library {
         Reset();
     }
     
-    void Camera::Update()
+    void Camera::Update(GameTime gametime)
     {
         UpdateViewMatrix();
     }

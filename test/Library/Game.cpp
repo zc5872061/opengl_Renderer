@@ -74,8 +74,11 @@ namespace Library {
             m_GameClock.UpdateGameTime(m_GameTime);
             std::cout<<m_GameTime.TotalGameTime()<<std::endl;
             std::cout<<m_GameTime.ElapsedGameTime()<<std::endl;
-            Update();
-            Draw();
+            int frequense = 1.0 / m_GameTime.ElapsedGameTime();
+            
+            std::cout<<"frequense :" << frequense <<std::endl;
+            Update(m_GameTime);
+            Draw(m_GameTime);
 //            glfwSwapBuffers(m_Window);
             glfwPollEvents();
         }
@@ -109,24 +112,24 @@ namespace Library {
             component->Initialize();
         }
     }
-    void Game::Update()
+    void Game::Update(GameTime gametime)
     {
         for (GameComponent* component : mComponents)
         {
             if (component->Enabled())
             {
-                component->Update();
+                component->Update(gametime);
             }
         }
     }
-    void Game::Draw()
+    void Game::Draw(GameTime gametime)
     {
         for (GameComponent* component : mComponents)
         {
             if(component->GetDrawAble() == true)
             {
                 DrawableGameComponent* drawableGameComponent = dynamic_cast<DrawableGameComponent*>(component);
-                drawableGameComponent->Draw();
+                drawableGameComponent->Draw(gametime);
             }
         }
     }

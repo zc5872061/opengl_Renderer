@@ -42,8 +42,8 @@ namespace Library{
         virtual bool Run();
         virtual void Exit();
         virtual void Initialize();
-        virtual void Update();
-        virtual void Draw();
+        virtual void Update(GameTime gametime);
+        virtual void Draw(GameTime gametime);
     protected:
         virtual bool InitializeWindow();
         virtual void InitializeOpenGL();

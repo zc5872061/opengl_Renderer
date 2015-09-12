@@ -51,7 +51,7 @@ namespace Library
         mCamera = camera;
     }
     
-    void DrawableGameComponent::Draw()
+    void DrawableGameComponent::Draw(GameTime gametime)
     {
     }
 }

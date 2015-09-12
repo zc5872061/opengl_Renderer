@@ -28,7 +28,7 @@ namespace Library
         float& MovementRate();
         
         virtual void Initialize() override;
-        virtual void Update() override;
+        virtual void Update(GameTime gametime) override;
         
         static const float DefaultMouseSensitivity;
         static const float DefaultRotationRate;
