@@ -13,6 +13,10 @@
 namespace Library {
     class BasicEffect:public ShaderProgram
     {
+        SHADER_VARIABLE_DECLARATION(WorldViewProjection)
+    public:
+        BasicEffect();
+        ~BasicEffect();
         
     };
 }

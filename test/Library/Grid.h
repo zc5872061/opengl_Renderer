@@ -18,6 +18,18 @@ namespace Library {
         Grid(Game* game,Camera* camera);
         ~Grid();
         
+        
+        const glm::vec3& Position() const;
+        const glm::vec4& Color() const;
+        const GLuint Size() const;
+        const GLuint Scale() const;
+        
+        void SetPosition(const glm::vec3& position);
+        void SetPosition(float x, float y, float z);
+        void SetColor(const glm::vec4& color);
+        void SetSize(GLuint size);
+        void SetScale(GLuint scale);
+        
         virtual void Initialize() override;
         virtual void Draw(GameTime gameTime) override;
     private:
