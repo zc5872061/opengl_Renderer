@@ -42,8 +42,8 @@ namespace Rendering
         
         // Build the shader program
         std::vector<ShaderDefinition> shaders;
-        shaders.push_back(ShaderDefinition(GL_VERTEX_SHADER, "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/CubeDemo.vert"));
-        shaders.push_back(ShaderDefinition(GL_FRAGMENT_SHADER,"/Users/chukie/Desktop/Demo/opengl_framework/test/resource/CubeDemo.frag"));
+        shaders.push_back(ShaderDefinition(GL_VERTEX_SHADER, "/Users/chukie/Study/WorkWork/opengl_framework/test/resource/CubeDemo.vert"));
+        shaders.push_back(ShaderDefinition(GL_FRAGMENT_SHADER,"/Users/chukie/Study/WorkWork/opengl_framework/test/resource/CubeDemo.frag"));
         mShaderProgram->BuildProgram(shaders);
         
         // Create the vertex buffer object

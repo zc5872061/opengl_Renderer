@@ -11,6 +11,9 @@
 #include <map>
 //#include "Game.h"
 #include "RenderingGame.h"
+#include <assimp/include/scene.h>
+#include <assimp/include/Importer.hpp>
+#include <assimp/include/postprocess.h>
 
 using namespace std;
 using namespace Library;
@@ -18,6 +21,10 @@ using namespace Rendering;
 
 
 int main(int argc, const char * argv[]) {
+    Assimp::Importer importer;
+    unsigned int flags = aiProcess_Triangulate | aiProcess_JoinIdenticalVertices | aiProcess_SortByPType;
+    const aiScene* scene = importer.ReadFile("", flags);
+    //int i = scene->mFlags;
     RenderingGame* game = new RenderingGame("oglFrameWork",SCREEN_WIDTH,SCREEN_HEIGHT);
     
 //    Library::Game* game = new Library::Game("oglFrameWork",SCREEN_WIDTH,SCREEN_HEIGHT);
