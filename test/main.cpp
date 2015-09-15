@@ -14,6 +14,7 @@
 #include <assimp/include/scene.h>
 #include <assimp/include/Importer.hpp>
 #include <assimp/include/postprocess.h>
+#include <soil/SOIL.h>
 
 using namespace std;
 using namespace Library;
@@ -24,6 +25,9 @@ int main(int argc, const char * argv[]) {
     Assimp::Importer importer;
     unsigned int flags = aiProcess_Triangulate | aiProcess_JoinIdenticalVertices | aiProcess_SortByPType;
     const aiScene* scene = importer.ReadFile("", flags);
+    
+    SOIL_load_OGL_texture("Content\\Textures\\EarthComposite.jpg", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_NTSC_SAFE_RGB );
+    
     //int i = scene->mFlags;
     RenderingGame* game = new RenderingGame("oglFrameWork",SCREEN_WIDTH,SCREEN_HEIGHT);
     

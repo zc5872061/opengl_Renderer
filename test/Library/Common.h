@@ -14,6 +14,7 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <assert.h>
+#include "Util.h"
 
 const int SCREEN_WIDTH = 680;
 const int SCREEN_HEIGHT = 480;

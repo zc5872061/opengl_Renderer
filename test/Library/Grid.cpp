@@ -9,6 +9,7 @@
 #include "Grid.h"
 #include "VectorHelper.h"
 
+
 using namespace Library;
 
 using namespace glm;
@@ -39,8 +40,8 @@ namespace Library {
     void Grid::Initialize()
     {
         std::vector<ShaderDefinition> shaders;
-        shaders.push_back(ShaderDefinition(GL_VERTEX_SHADER,"/Users/chukie/Desktop/Demo/opengl_framework/test/resource/BasicEffect.vert"));
-        shaders.push_back(ShaderDefinition(GL_FRAGMENT_SHADER,"/Users/chukie/Desktop/Demo/opengl_framework/test/resource/BasicEffect.frag"));
+        shaders.push_back(ShaderDefinition(GL_VERTEX_SHADER,bassicVertexShaderStr));
+        shaders.push_back(ShaderDefinition(GL_FRAGMENT_SHADER,bassicFragShaderStr));
         mShaderProgram.BuildProgram(shaders);
         
         InitializeGrid();

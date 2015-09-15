@@ -41,8 +41,8 @@
                   symbolName = "Library::Camera::Camera(Library::Game*, float, float, float, float)"
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chukie/Desktop/Demo/opengl_framework/test/Library/Camera.cpp"
-                  timestampString = "464010181.271087"
+                  urlString = "file:///Users/chukie/Study/WorkWork/opengl_framework/test/Library/Camera.cpp"
+                  timestampString = "464025187.91884"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
@@ -56,8 +56,8 @@
                   symbolName = "Library::Camera::Camera(Library::Game*, float, float, float, float)"
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chukie/Desktop/Demo/opengl_framework/test/Library/Camera.cpp"
-                  timestampString = "464010181.271307"
+                  urlString = "file:///Users/chukie/Study/WorkWork/opengl_framework/test/Library/Camera.cpp"
+                  timestampString = "464025187.919039"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
@@ -96,6 +96,22 @@
             startingLineNumber = "30"
             endingLineNumber = "30"
             landmarkName = "BasicEffect::Initialize(GLuint vertexArrayObject)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test/CubeDemo.cpp"
+            timestampString = "464024228.203615"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "CubeDemo::Initialize()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
