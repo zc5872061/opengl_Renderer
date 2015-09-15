@@ -54,21 +54,21 @@ namespace Library
     
     #define SHADER_VARIABLE_DECLARATION(VariableName)   \
         public:											\
-    Variable& VariableName() const;					\
+    Variable* VariableName() const;					\
     private:											\
     Variable* m ## VariableName;
     
     
     #define SHADER_VARIABLE_DEFINITION(ShaderProgram, VariableName)	\
-    Variable& ShaderProgram::VariableName() const				\
+    Variable* ShaderProgram::VariableName() const				\
     {															\
-        return *m ## VariableName;								\
+        return m ## VariableName;								\
     }
         
     #define SHADER_VARIABLE_INITIALIZATION(VariableName) m ## VariableName(NULL)
         
     #define SHADER_VARIABLE_INSTANTIATE(VariableName)															\
-        m ## VariableName = new Variable(*this, #VariableName);													\
+        m ## VariableName = new Variable(this, #VariableName);													\
         mVariables.push_back(m ## VariableName);																\
         mVariablesByName.insert(std::pair<std::string, Variable*>(m ## VariableName->Name(), m ## VariableName));
 }

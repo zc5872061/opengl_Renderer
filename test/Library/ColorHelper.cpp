@@ -22,7 +22,7 @@ namespace Library
     const glm::vec4 ColorHelper::Yellow =			glm::vec4(1.0f, 1.0f, 0.0f, 1.0f);
     const glm::vec4 ColorHelper::BlueGreen =		glm::vec4(0.0f, 1.0f, 1.0f, 1.0f);
     const glm::vec4 ColorHelper::Purple =			glm::vec4(1.0f, 0.0f, 1.0f, 1.0f);
-    const glm::vec4 ColorHelper::CornflowerBlue =	glm::vec4(0.392f, 0.584f, 0.929f, 1.0f);
+    const glm::vec4 ColorHelper::CornflowerBlue =	glm::vec4(49.0/255.0f, 77.0/255.0f, 121.0/255.0f, 1.0f);
     const glm::vec4 ColorHelper::Wheat =			glm::vec4(0.961f, 0.871f, 0.702f, 1.0f);
     const glm::vec4 ColorHelper::LightGray =		glm::vec4(0.5f, 0.5f, 0.5f, 1.0f);
     

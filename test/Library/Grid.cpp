@@ -15,7 +15,7 @@ using namespace glm;
 
 namespace Library {
     
-    const GLuint Grid::DefaultSize = 160;
+    const GLuint Grid::DefaultSize = 10;
     const GLuint Grid::DefaultScale = 16;
     const glm::vec4 Grid::DefaultColor = glm::vec4(0.961f, 0.871f, 0.702f, 1.0f);
     
@@ -38,12 +38,56 @@ namespace Library {
     
     void Grid::Initialize()
     {
+        std::vector<ShaderDefinition> shaders;
+        shaders.push_back(ShaderDefinition(GL_VERTEX_SHADER,"/Users/chukie/Desktop/Demo/opengl_framework/test/resource/BasicEffect.vert"));
+        shaders.push_back(ShaderDefinition(GL_FRAGMENT_SHADER,"/Users/chukie/Desktop/Demo/opengl_framework/test/resource/BasicEffect.frag"));
+        mShaderProgram.BuildProgram(shaders);
         
+        InitializeGrid();
+        // Create the vertex array object
+        glGenVertexArrays(1, &mVertexArrayObject);
+        mShaderProgram.Initialize(mVertexArrayObject);
+        glBindVertexArray(0);
+        
+    }
+    
+    void Grid::InitializeGrid()
+    {
+        mVertexCount = (mSize + 1)*4;
+        VertexPositionColor* vertices = new VertexPositionColor[mVertexCount];
+        float adjustedScale = mScale * 0.1f;
+        float maxPosition = mSize * adjustedScale / 2;
+        
+        for (unsigned int i = 0, j = 0; i < mSize + 1; i++, j = 4 * i)
+        {
+            float position = maxPosition - (i * adjustedScale);
+            
+            // Vertical line
+            vertices[j] = VertexPositionColor(vec4(position, 0.0f, maxPosition, 1.0f), mColor);
+            vertices[j + 1] = VertexPositionColor(vec4(position, 0.0f, -maxPosition, 1.0f), mColor);
+            
+            // Horizontal line
+            vertices[j + 2] = VertexPositionColor(vec4(maxPosition, 0.0f, position, 1.0f), mColor);
+            vertices[j + 3] = VertexPositionColor(vec4(-maxPosition, 0.0f, position, 1.0f), mColor);
+        }
+        
+        glDeleteBuffers(1, &mVertexBuffer);
+        
+        mShaderProgram.CreateVertexBuffer(vertices, mVertexCount, mVertexBuffer);
     }
     
     void Grid::Draw(GameTime gameTime)
     {
+        glBindVertexArray(mVertexArrayObject);
+        glBindBuffer(GL_ARRAY_BUFFER, mVertexBuffer);
         
+        mShaderProgram.Use();
+        
+        mat4 wvp = mCamera->ViewProjectionMatrix() * mWorldMatrix;
+        *(mShaderProgram.WorldViewProjection()) << wvp;
+        
+        glDrawArrays(GL_LINES, 0, mVertexCount);
+        glBindVertexArray(0);
     }
     
     const glm::vec3& Grid::Position() const

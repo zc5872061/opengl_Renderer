@@ -21,7 +21,8 @@ namespace Rendering
     m_Camera(nullptr),
     mPointDemo(nullptr),
     mColoredTriangleDemo(nullptr),
-    mCubeDemo(nullptr)
+    mCubeDemo(nullptr),
+    mGrid(nullptr)
     {
         
     }
@@ -31,9 +32,14 @@ namespace Rendering
         m_Camera = new FirstPersonCamera(this);
         mComponents.push_back(m_Camera);
         mPointDemo = new PointDemo(this,m_Camera);
+        
         mColoredTriangleDemo = new ColoredTriangleDemo(this,m_Camera);
         mCubeDemo = new CubeDemo(this,m_Camera);
         mComponents.push_back(mCubeDemo);
+        
+        mGrid = new Grid(this,m_Camera);
+        mComponents.push_back(mGrid);
+        
         //mComponents.push_back(mColoredTriangleDemo);
         Game::Initialize();
         m_Camera->SetPosition(0, 5, 10);

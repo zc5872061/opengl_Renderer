@@ -10,6 +10,8 @@
 
 #include "Common.h"
 #include "DrawableGameComponent.h"
+#include "BasicEffect.h"
+#include "Camera.h"
 
 namespace Library {
     class Grid:public DrawableGameComponent
@@ -36,6 +38,9 @@ namespace Library {
         static const GLuint DefaultSize;
         static const GLuint DefaultScale;
         static const glm::vec4 DefaultColor;
+        void InitializeGrid();
+        
+        BasicEffect mShaderProgram;
         
         GLuint mVertexArrayObject;
         GLuint mVertexBuffer;

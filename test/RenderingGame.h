@@ -13,6 +13,7 @@
 #include "PointDemo.h"
 #include "ColoredTriangleDemo.h"
 #include "CubeDemo.h"
+#include "Grid.h"
 
 using namespace Library;
 
@@ -35,6 +36,7 @@ namespace Rendering
         PointDemo* mPointDemo;
         ColoredTriangleDemo* mColoredTriangleDemo;
         CubeDemo* mCubeDemo;
+        Grid* mGrid;
     };
 }
 
