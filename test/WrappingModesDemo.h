@@ -41,7 +41,7 @@ namespace Rendering {
         void CreateVertexBuffer(VertexPositionTexture* vertices, GLuint vertexCount, GLuint& vertexBuffer);
         void CreateIndexBuffer(unsigned int* indices, GLuint indexCount, GLuint& indexBuffer);
         void OnKey(int key, int scancode, int action, int mods);
-        
+        GLuint loadBMP_custom(const char * imagepath);
         ShaderProgram* mShaderProgram;
         GLuint mVertexArrayObject;
         GLuint mVertexBuffer;

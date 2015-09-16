@@ -36,11 +36,13 @@ namespace Rendering
         
         mColoredTriangleDemo = new ColoredTriangleDemo(this,m_Camera);
         //mComponents.push_back(mColoredTriangleDemo);
-        mCubeDemo = new CubeDemo(this,m_Camera);
-        //mComponents.push_back(mCubeDemo);
         
+       
         mGrid = new Grid(this,m_Camera);
         mComponents.push_back(mGrid);
+        
+        mCubeDemo = new CubeDemo(this,m_Camera);
+        mComponents.push_back(mCubeDemo);
         
         mWrapDemo = new WrappingModesDemo(this,m_Camera);
         mComponents.push_back(mWrapDemo);
