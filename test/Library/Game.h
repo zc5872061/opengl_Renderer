@@ -30,6 +30,7 @@ namespace Library{
         static double m_yClickPos;
         
     public:
+        typedef std::function<void(int, int, int, int)> KeyboardHandler;
         Game(const char* name,float width,float height);
         ~Game();
         

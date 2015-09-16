@@ -14,6 +14,7 @@
 #include "ColoredTriangleDemo.h"
 #include "CubeDemo.h"
 #include "Grid.h"
+#include "WrappingModesDemo.h"
 
 using namespace Library;
 
@@ -37,6 +38,7 @@ namespace Rendering
         ColoredTriangleDemo* mColoredTriangleDemo;
         CubeDemo* mCubeDemo;
         Grid* mGrid;
+        WrappingModesDemo* mWrapDemo;
     };
 }
 

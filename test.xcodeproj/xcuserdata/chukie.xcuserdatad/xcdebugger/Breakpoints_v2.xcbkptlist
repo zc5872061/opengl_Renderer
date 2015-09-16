@@ -41,8 +41,8 @@
                   symbolName = "Library::Camera::Camera(Library::Game*, float, float, float, float)"
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chukie/Study/WorkWork/opengl_framework/test/Library/Camera.cpp"
-                  timestampString = "464025187.91884"
+                  urlString = "file:///Users/chukie/Desktop/Demo/opengl_framework/test/Library/Camera.cpp"
+                  timestampString = "464101389.300667"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
@@ -56,8 +56,8 @@
                   symbolName = "Library::Camera::Camera(Library::Game*, float, float, float, float)"
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chukie/Study/WorkWork/opengl_framework/test/Library/Camera.cpp"
-                  timestampString = "464025187.919039"
+                  urlString = "file:///Users/chukie/Desktop/Demo/opengl_framework/test/Library/Camera.cpp"
+                  timestampString = "464101389.300858"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
@@ -73,38 +73,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "test/Library/Variable.cpp"
-            timestampString = "464009634.525349"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "Variable::Variable(ShaderProgram* shaderProgram,const std::string&amp; name)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "test/Library/BasicEffect.cpp"
-            timestampString = "464009725.037268"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "BasicEffect::Initialize(GLuint vertexArrayObject)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "test/CubeDemo.cpp"
             timestampString = "464024228.203615"
             startingColumnNumber = "9223372036854775807"
@@ -112,6 +80,54 @@
             startingLineNumber = "46"
             endingLineNumber = "46"
             landmarkName = "CubeDemo::Initialize()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test/WrappingModesDemo.cpp"
+            timestampString = "464101276.183514"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "WrappingModesDemo::Draw(GameTime gametime)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test/WrappingModesDemo.cpp"
+            timestampString = "464101387.415633"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "WrappingModesDemo::Initialize()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test/WrappingModesDemo.cpp"
+            timestampString = "464101529.665515"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "WrappingModesDemo::CreateVertexBuffer(VertexPositionTexture* vertices, GLuint vertexCount, GLuint&amp; vertexBuffer)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
