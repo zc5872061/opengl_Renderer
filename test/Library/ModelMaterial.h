@@ -1,8 +1,8 @@
 //
-//  Mesh.h
+//  ModelMaterial.h
 //  test
 //
-//  Created by Chukie on 15/9/14.
+//  Created by Chukie on 15/9/17.
 //  Copyright (c) 2015年 Chukie. All rights reserved.
 //
 
@@ -11,9 +11,8 @@
 #include "Common.h"
 
 namespace Library {
-    class Mesh
+    class ModelMaterial
     {
-    public:
         
     };
 }

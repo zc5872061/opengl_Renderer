@@ -41,8 +41,8 @@
                   symbolName = "Library::Camera::Camera(Library::Game*, float, float, float, float)"
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chukie/Study/WorkWork/opengl_framework/test/Library/Camera.cpp"
-                  timestampString = "464106648.672528"
+                  urlString = "file:///Users/chukie/Desktop/Demo/opengl_framework/test/Library/Camera.cpp"
+                  timestampString = "464151568.752593"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
@@ -56,8 +56,8 @@
                   symbolName = "Library::Camera::Camera(Library::Game*, float, float, float, float)"
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chukie/Study/WorkWork/opengl_framework/test/Library/Camera.cpp"
-                  timestampString = "464106648.672794"
+                  urlString = "file:///Users/chukie/Desktop/Demo/opengl_framework/test/Library/Camera.cpp"
+                  timestampString = "464151568.752917"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test/CubeDemo.cpp"
-            timestampString = "464103993.071972"
+            timestampString = "464024228.203615"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "CubeDemo::Initialize()"
             landmarkType = "5">
          </BreakpointContent>
@@ -89,13 +89,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "test/Library/Grid.cpp"
-            timestampString = "464106489.872567"
+            filePath = "test/WrappingModesDemo.cpp"
+            timestampString = "464101276.183514"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "Grid::Draw(GameTime gameTime)"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "WrappingModesDemo::Initialize()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -106,11 +106,89 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test/WrappingModesDemo.cpp"
-            timestampString = "464111073.369936"
+            timestampString = "464101387.415633"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "WrappingModesDemo::~WrappingModesDemo()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rendering::WrappingModesDemo::~WrappingModesDemo()"
+                  moduleName = "test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chukie/Desktop/Demo/opengl_framework/test/WrappingModesDemo.cpp"
+                  timestampString = "464151568.755513"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "340">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rendering::WrappingModesDemo::~WrappingModesDemo()"
+                  moduleName = "test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chukie/Desktop/Demo/opengl_framework/test/WrappingModesDemo.cpp"
+                  timestampString = "464151568.755715"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "358">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rendering::WrappingModesDemo::~WrappingModesDemo()"
+                  moduleName = "test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chukie/Desktop/Demo/opengl_framework/test/WrappingModesDemo.cpp"
+                  timestampString = "464151568.755861"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "21">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Rendering::WrappingModesDemo::~WrappingModesDemo()"
+                  moduleName = "test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chukie/Desktop/Demo/opengl_framework/test/WrappingModesDemo.cpp"
+                  timestampString = "464151568.756039"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "34">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test/WrappingModesDemo.cpp"
+            timestampString = "464151532.118991"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "WrappingModesDemo::Draw(GameTime gametime)"
             landmarkType = "5">
          </BreakpointContent>

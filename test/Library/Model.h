@@ -6,9 +6,22 @@
 //  Copyright (c) 2015年 Chukie. All rights reserved.
 //
 
-#ifndef __test__Model__
-#define __test__Model__
+#pragma once
 
-#include <stdio.h>
+#include "Common.h"
 
-#endif /* defined(__test__Model__) */
+namespace Library {
+    
+    class Game;
+    class Mesh;
+    class ModelMaterial;
+    class AnimationClip;
+    
+    class Model
+    {
+        Model(Game* game, const std::string filename, bool flipUVs = false);
+        ~Model();
+        
+        
+    };
+}

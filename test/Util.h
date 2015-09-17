@@ -11,7 +11,7 @@
 
 using namespace std;
 
-#define HOME
+//#define HOME
 
 #ifdef HOME
 #define cubeVertexShaderStr  "/Users/chukie/Study/WorkWork/opengl_framework/test/resource/CubeDemo.vert"
@@ -21,6 +21,8 @@ using namespace std;
 #define WrappingVStr "/Users/chukie/Study/WorkWork/opengl_framework/test/resource/WrappingModesDemo.vert"
 #define WrappingFStr "/Users/chukie/Study/WorkWork/opengl_framework/test/resource/WrappingModesDemo.frag"
 #define imgStr "/Users/chukie/Study/WorkWork/opengl_framework/test/resource/Cover.tga"
+#define img1Str "/Users/chukie/Study/WorkWork/opengl_framework/test/resource/Cover.jpg"
+#define
 #else
 #define cubeVertexShaderStr  "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/CubeDemo.vert"
 #define cubeFragShaderStr  "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/CubeDemo.frag"
@@ -29,5 +31,6 @@ using namespace std;
 #define WrappingVStr  "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/WrappingModesDemo.vert"
 #define WrappingFStr "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/WrappingModesDemo.frag"
 #define imgStr "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/Cover.tga"
+#define img1Str "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/Cover.jpg"
 #endif
 

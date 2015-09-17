@@ -56,10 +56,10 @@ namespace Rendering {
         // Create the vertex buffer
         VertexPositionTexture vertices[] =
         {
-            VertexPositionTexture(vec4(-halfSize+5, 0.0f,         0.0, 1.0f), vec2(0.0f, 3.0f)),
+            VertexPositionTexture(vec4(-halfSize+5, 0.0f,         0.0, 1.0f), vec2(0.0f,1.0f)),
             VertexPositionTexture(vec4(-halfSize+5, size + 0.0f,  0.0f, 1.0f), vec2(0.0f, 0.0f)),
-            VertexPositionTexture(vec4(halfSize+5,  size + 0.0f,  0.0f, 1.0f), vec2(3.0f, 0.0f)),
-            VertexPositionTexture(vec4(halfSize+5,  0.0f,         0.0f, 1.0f), vec2(3.0f, 3.0f))
+            VertexPositionTexture(vec4(halfSize+5,  size + 0.0f,  0.0f, 1.0f), vec2(1.0f, 0.0f)),
+            VertexPositionTexture(vec4(halfSize+5,  0.0f,         0.0f, 1.0f), vec2(1.0f, 1.0f))
         };
         
         CreateVertexBuffer(vertices, 4, mVertexBuffer);
@@ -79,8 +79,8 @@ namespace Rendering {
         mWorldViewProjectionLocation = glGetUniformLocation(mShaderProgram->Program(), "WorldViewProjection");
         assert(mWorldViewProjectionLocation != -1);
         
-        //mColorTexture = loadBMP_custom("/Users/chukie/Study/WorkWork/opengl_framework/test/resource/uvtemplate.bmp");
-        mColorTexture = SOIL_load_OGL_texture("/Users/chukie/Study/WorkWork/opengl_framework/test/resource/Cover.jpg", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_NTSC_SAFE_RGB );
+        mColorTexture = loadBMP_custom("/Users/chukie/Desktop/Demo/opengl_framework/test/resource/uvtemplate.bmp");
+        //mColorTexture = SOIL_load_OGL_texture(img1Str, SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_NTSC_SAFE_RGB );
         assert(mColorTexture != 0);
         
 //        mTextureSamplers.resize(WrappingModeEnd);
@@ -142,7 +142,8 @@ namespace Rendering {
         glBindBuffer(GL_ARRAY_BUFFER, mVertexBuffer);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, mIndexBuffer);
         glBindTexture(GL_TEXTURE_2D, mColorTexture);
-        
+        //int w;
+        //glGetTexLevelParameteriv(GL_TEXTURE_2D, 0, GL_TEXTURE_WIDTH, &w);
         //glBindSampler(0, mTextureSamplersByWrappingMode[mActiveWrappingMode]);
         
         glUseProgram(mShaderProgram->Program());

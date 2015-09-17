@@ -35,6 +35,7 @@
 		3FDE1FB91BA42834006C243F /* Grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE1FB71BA42834006C243F /* Grid.cpp */; };
 		3FDE1FBC1BA42E1F006C243F /* BasicEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE1FBA1BA42E1F006C243F /* BasicEffect.cpp */; };
 		3FEA522A1BA93BDF00E7F0D8 /* WrappingModesDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA52281BA93BDF00E7F0D8 /* WrappingModesDemo.cpp */; };
+		3FEA52331BAA9DB000E7F0D8 /* ModelMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA52311BAA9DB000E7F0D8 /* ModelMaterial.cpp */; };
 		3FEEDFE31BA7251100389E97 /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FEEDFE11BA7251100389E97 /* Mesh.cpp */; };
 		3FEEDFE61BA7288F00389E97 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FEEDFE41BA7288F00389E97 /* Model.cpp */; };
 		3FEEDFEA1BA8729200389E97 /* libassimpd.3.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FEA52241BA7DE9400E7F0D8 /* libassimpd.3.1.1.dylib */; };
@@ -120,6 +121,8 @@
 		3FEA522B1BA99B8300E7F0D8 /* WrappingModesDemo.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = WrappingModesDemo.frag; sourceTree = "<group>"; };
 		3FEA522C1BA99B8300E7F0D8 /* WrappingModesDemo.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = WrappingModesDemo.vert; sourceTree = "<group>"; };
 		3FEA522D1BA99C5400E7F0D8 /* Cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cover.jpg; sourceTree = "<group>"; };
+		3FEA52311BAA9DB000E7F0D8 /* ModelMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelMaterial.cpp; sourceTree = "<group>"; };
+		3FEA52321BAA9DB000E7F0D8 /* ModelMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelMaterial.h; sourceTree = "<group>"; };
 		3FEEDFE11BA7251100389E97 /* Mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
 		3FEEDFE21BA7251100389E97 /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
 		3FEEDFE41BA7288F00389E97 /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
@@ -179,6 +182,8 @@
 				3FEEDFED1BA87B2900389E97 /* soil */,
 				3F90B0991B9F357A0085CF22 /* Camera.cpp */,
 				3F90B09A1B9F357A0085CF22 /* Camera.h */,
+				3FEA52311BAA9DB000E7F0D8 /* ModelMaterial.cpp */,
+				3FEA52321BAA9DB000E7F0D8 /* ModelMaterial.h */,
 				3F90B09B1B9F357A0085CF22 /* ColorHelper.cpp */,
 				3F90B09C1B9F357A0085CF22 /* ColorHelper.h */,
 				3F90B09D1B9F357A0085CF22 /* Common.h */,
@@ -335,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FEA52331BAA9DB000E7F0D8 /* ModelMaterial.cpp in Sources */,
 				3FEEDFFA1BA87B2900389E97 /* SOIL.c in Sources */,
 				3F90B0C11B9F357A0085CF22 /* Utility.cpp in Sources */,
 				3FEEDFE61BA7288F00389E97 /* Model.cpp in Sources */,
