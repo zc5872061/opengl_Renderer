@@ -11,8 +11,32 @@
 #include "Common.h"
 
 namespace Library {
+    
+    class Model;
+    enum TextureType
+    {
+        TextureTypeDifffuse = 0,
+        TextureTypeSpecularMap,
+        TextureTypeAmbient,
+        TextureTypeEmissive,
+        TextureTypeHeightmap,
+        TextureTypeNormalMap,
+        TextureTypeSpecularPowerMap,
+        TextureTypeDisplacementMap,
+        TextureTypeLightMap,
+        TextureTypeEnd
+    };
+    
     class ModelMaterial
     {
+        friend class Model;
+    public:
+        ModelMaterial(Model& model);
+        ~ModelMaterial();
         
+    protected:
+        Model& mModel;
+        std::string mName;
+        std::map<TextureType,std::vector<std::string>*> mTextures;
     };
 }

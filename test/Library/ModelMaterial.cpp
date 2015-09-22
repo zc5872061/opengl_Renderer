@@ -7,3 +7,13 @@
 //
 
 #include "ModelMaterial.h"
+#include "Model.h"
+
+
+namespace Library {
+    ModelMaterial::ModelMaterial(Model& model):
+    mModel(model)
+    {
+        
+    }
+}

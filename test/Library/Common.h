@@ -13,7 +13,10 @@
 #include <glm/glm.hpp>
 #include <GLFW/glfw3.h>
 #include <iostream>
+#include <string>
+#include <map>
 #include <assert.h>
+#include <vector>
 #include "Util.h"
 
 const int SCREEN_WIDTH = 680;

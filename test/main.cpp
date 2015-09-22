@@ -34,6 +34,6 @@ int main(int argc, const char * argv[]) {
 //        std::cout<<"game exit"<<std::endl;
 //    }
 //    
-    Model* model = new Model("/Users/chukie/Desktop/dragon.obj");
+    Model* model = new Model("/Users/chukie/Study/WorkWork/opengl_framework/test/resource/dragon.obj",true);
     return 0;
 }
