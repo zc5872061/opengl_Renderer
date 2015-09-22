@@ -11,15 +11,10 @@
 #include "Common.h"
 
 namespace Library {
-    
-    class Game;
-    class Mesh;
-    class ModelMaterial;
-    class AnimationClip;
-    
     class Model
     {
-        Model(Game* game, const std::string filename, bool flipUVs = false);
+    public:
+        Model(std::string modelFile);
         ~Model();
         
         

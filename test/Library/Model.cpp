@@ -11,31 +11,36 @@
 #include <assimp/include/scene.h>
 #include <assimp/include/postprocess.h>
 #include <assimp/include/cimport.h>
-
+#include <vector>
 
 
 namespace Library {
-    Model::Model(Game* game, const std::string filename, bool flipUVs)
+    Model::Model(std::string modelFile)
     {
         Assimp::Importer importer;
-        unsigned int flags = aiProcess_Triangulate | aiProcess_JoinIdenticalVertices | aiProcess_SortByPType;
-        if(flipUVs)
-        {
-            flags |= aiProcess_FlipUVs;
-        }
+        unsigned int flags = aiProcess_Triangulate | aiProcess_JoinIdenticalVertices | aiProcess_SortByPType | aiProcess_FlipUVs;
+        const aiScene* scene = importer.ReadFile(modelFile, flags);
         
-        const aiScene* scene = importer.ReadFile(filename, flags);
-        //const aiScene* scene = aiImportFile(filename.c_str(), aiProcessPreset_TargetRealtime_MaxQuality);
         assert(scene != nullptr);
         
-        if(scene->HasMaterials())
+        std::vector<aiMaterial*> materials;
+        std::vector<aiMesh*> meshs;
+        
+        if (scene->HasMaterials())
         {
-            //read materials
+            for (unsigned int i = 0; i < scene->mNumMaterials; i++)
+            {
+                materials.push_back(scene->mMaterials[i]);
+            }
         }
         
         if(scene->HasMeshes())
         {
-            //read meshs
+            for(unsigned int i = 0; i < scene->mNumMeshes; i++)
+            {
+                aiMesh* tempMesh = scene->mMeshes[i];
+                meshs.push_back(scene->mMeshes[i]);
+            }
         }
         
         
