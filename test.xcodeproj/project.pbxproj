@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F82C2341BB2ABC600A1B99C /* ModelDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F82C2321BB2ABC600A1B99C /* ModelDemo.cpp */; };
 		3F90B0B41B9F357A0085CF22 /* ColoredTriangleDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0881B9F357A0085CF22 /* ColoredTriangleDemo.cpp */; };
 		3F90B0B51B9F357A0085CF22 /* CubeDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0891B9F357A0085CF22 /* CubeDemo.cpp */; };
 		3F90B0B61B9F357A0085CF22 /* RenderingGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B08B1B9F357A0085CF22 /* RenderingGame.cpp */; };
@@ -58,6 +59,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F82C2321BB2ABC600A1B99C /* ModelDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelDemo.cpp; sourceTree = "<group>"; };
+		3F82C2351BB2ABEE00A1B99C /* ModelDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelDemo.h; sourceTree = "<group>"; };
 		3F90B0881B9F357A0085CF22 /* ColoredTriangleDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColoredTriangleDemo.cpp; sourceTree = "<group>"; };
 		3F90B0891B9F357A0085CF22 /* CubeDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CubeDemo.cpp; sourceTree = "<group>"; };
 		3F90B08A1B9F357A0085CF22 /* CubeDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeDemo.h; sourceTree = "<group>"; };
@@ -247,6 +250,8 @@
 		3F9E8FEE1B74791900659751 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				3F82C2351BB2ABEE00A1B99C /* ModelDemo.h */,
+				3F82C2321BB2ABC600A1B99C /* ModelDemo.cpp */,
 				3FEEDFE91BA86D1600389E97 /* Util.h */,
 				3FEA52281BA93BDF00E7F0D8 /* WrappingModesDemo.cpp */,
 				3FEA52291BA93BDF00E7F0D8 /* WrappingModesDemo.h */,
@@ -366,6 +371,7 @@
 				3F90B0BE1B9F357A0085CF22 /* GameComponent.cpp in Sources */,
 				3FEA522A1BA93BDF00E7F0D8 /* WrappingModesDemo.cpp in Sources */,
 				3F90B0B81B9F357A0085CF22 /* PointDemo.cpp in Sources */,
+				3F82C2341BB2ABC600A1B99C /* ModelDemo.cpp in Sources */,
 				3F90B0BA1B9F357A0085CF22 /* ColorHelper.cpp in Sources */,
 				3F90B0BD1B9F357A0085CF22 /* Game.cpp in Sources */,
 				3FDE1FB91BA42834006C243F /* Grid.cpp in Sources */,

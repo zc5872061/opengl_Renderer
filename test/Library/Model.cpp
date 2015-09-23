@@ -51,7 +51,10 @@ namespace Library {
     
     Model::~Model()
     {
-        
+        for(Mesh* mesh:mMeshes)
+        {
+            delete mesh;
+        }
     }
     
     const std::vector<Mesh*>& Model::Meshes() const

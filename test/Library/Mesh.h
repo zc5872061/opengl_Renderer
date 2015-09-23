@@ -20,7 +20,7 @@ namespace Library {
         friend class Model;
     public:
         Mesh(Model& model,aiMesh& mesh);
-        
+        void CreateIndexBuffer(GLuint& indexBuffer);
         Model& mModel;
         ModelMaterial* mMaterial;
         std::string mName;
