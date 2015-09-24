@@ -44,7 +44,7 @@ namespace Library {
             for(unsigned int i = 0; i < mesh.mNumVertices; i++)
             {
                 aiVector3D n = mesh.mNormals[i];
-                std::cout<<"vertics normals:"<< n.x << " " << n.y << " " << n.z <<std::endl;
+                //std::cout<<"vertics normals:"<< n.x << " " << n.y << " " << n.z <<std::endl;
                 mNormals.push_back(glm::vec3(n.x,n.y,n.z));
                 
             }
@@ -66,8 +66,36 @@ namespace Library {
             }
         }
         
-        // Texture Coordinates
-        //unsigned int uvChannelCount = mesh.GetNumUVChannels();
+        // Vertex Colors
+        unsigned int colorChannelCount = mesh.GetNumColorChannels();
+        for (unsigned int i = 0; i < colorChannelCount; i++)
+        {
+            std::vector<glm::vec4>* vertexColors = new std::vector<glm::vec4>();
+            vertexColors->reserve(mesh.mNumVertices);
+            mVertexColors.push_back(vertexColors);
+            
+            aiColor4D* aiVertexColors = mesh.mColors[i];
+            for (unsigned int j = 0; j < mesh.mNumVertices; j++)
+            {
+                aiColor4D c = aiVertexColors[j];
+                vertexColors->push_back(glm::vec4(c.r, c.g, c.b, c.a));
+            }
+        }
+        
+        //Indexs
+        if(mesh.HasFaces())
+        {
+            mFaceCount = mesh.mNumFaces;
+            for(unsigned int i = 0; i < mFaceCount; i++)
+            {
+                aiFace* face = &mesh.mFaces[i];
+                for(unsigned int j = 0; j < face->mNumIndices; j ++)
+                {
+                    int i = face->mIndices[j];
+                    mIndices.push_back(face->mIndices[j]);
+                }
+            }
+        }
         
     }
     

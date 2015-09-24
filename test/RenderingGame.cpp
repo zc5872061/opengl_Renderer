@@ -23,7 +23,8 @@ namespace Rendering
     mColoredTriangleDemo(nullptr),
     mCubeDemo(nullptr),
     mGrid(nullptr),
-    mWrapDemo(nullptr)
+    mWrapDemo(nullptr),
+    mModelDemo(nullptr)
     {
         
     }
@@ -39,15 +40,21 @@ namespace Rendering
         
        
         mGrid = new Grid(this,m_Camera);
-        mComponents.push_back(mGrid);
+        //mComponents.push_back(mGrid);
         
         mCubeDemo = new CubeDemo(this,m_Camera);
-        mComponents.push_back(mCubeDemo);
+        //mComponents.push_back(mCubeDemo);
         
         mWrapDemo = new WrappingModesDemo(this,m_Camera);
-        mComponents.push_back(mWrapDemo);
+        //mComponents.push_back(mWrapDemo);
+        
+        
+       
         
         //mComponents.push_back(mColoredTriangleDemo);
+        
+        mModelDemo = new ModelDemo(this,m_Camera);
+        mComponents.push_back(mModelDemo);
         Game::Initialize();
         m_Camera->SetPosition(0, 5, 10);
         m_Camera->ApplyRotation(rotate(mat4(), 30.0f, Vector3Helper::Left));

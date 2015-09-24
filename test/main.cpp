@@ -23,18 +23,18 @@ using namespace Rendering;
 
 
 int main(int argc, const char * argv[]) {
-//    RenderingGame* game = new RenderingGame("oglFrameWork",SCREEN_WIDTH,SCREEN_HEIGHT);
-//
-//    if(!game->Run())
-//    {
-//        std::cout<<"game run failed"<<std::endl;
-//    }
-//    else
-//    {
-//        std::cout<<"game exit"<<std::endl;
-//    }
-//    
+    RenderingGame* game = new RenderingGame("oglFrameWork",SCREEN_WIDTH,SCREEN_HEIGHT);
+
+    if(!game->Run())
+    {
+        std::cout<<"game run failed"<<std::endl;
+    }
+    else
+    {
+        std::cout<<"game exit"<<std::endl;
+    }
+    
     //Model* model = new Model("/Users/chukie/Study/WorkWork/opengl_framework/test/resource/dragon.obj",true);
-    Model* model = new Model("/Users/chukie/Desktop/dragon.obj",true);
-    return 0;
+//    Model* model = new Model("/Users/chukie/Desktop/dragon.obj",true);
+//    return 0;
 }

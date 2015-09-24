@@ -21,7 +21,7 @@ namespace Library {
     {
         friend class Mesh;
     public:
-        Model(std::string modelFile,bool flipUVs);
+        Model(std::string modelFile,bool flipUVs = false);
         ~Model();
         
         const std::vector<Mesh*>& Meshes() const;

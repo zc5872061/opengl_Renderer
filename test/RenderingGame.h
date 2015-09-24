@@ -15,6 +15,7 @@
 #include "CubeDemo.h"
 #include "Grid.h"
 #include "WrappingModesDemo.h"
+#include "ModelDemo.h"
 
 using namespace Library;
 
@@ -39,6 +40,7 @@ namespace Rendering
         CubeDemo* mCubeDemo;
         Grid* mGrid;
         WrappingModesDemo* mWrapDemo;
+        ModelDemo* mModelDemo;
     };
 }
 

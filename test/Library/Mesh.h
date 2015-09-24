@@ -21,6 +21,9 @@ namespace Library {
     public:
         Mesh(Model& model,aiMesh& mesh);
         void CreateIndexBuffer(GLuint& indexBuffer);
+        const std::vector<glm::vec3>& Vertices() const {return mVertics;}
+        const std::vector<std::vector<glm::vec4>*>& VertexColors() const {return mVertexColors;}
+        const std::vector<unsigned int>& Indices() const {return mIndices;}
         Model& mModel;
         ModelMaterial* mMaterial;
         std::string mName;
