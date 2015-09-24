@@ -8,7 +8,7 @@
 
 #include "ModelDemo.h"
 #include "ColorHelper.h"
-
+#include "Camera.h"
 
 
 namespace Rendering {
@@ -45,8 +45,8 @@ namespace Rendering {
         shaders.push_back(ShaderDefinition(GL_FRAGMENT_SHADER,ModelDemoFStr));
         mShaderProgram.BuildProgram(shaders);
         
-        mModel = new Model("/Users/chukie/Desktop/dragon.obj",true);
-        
+       // mModel = new Model("/Users/chukie/Desktop/dragon.obj",true);
+        mModel = new Model("/Users/chukie/Study/WorkWork/opengl_framework/test/resource/dragon.obj",true);
         Mesh* mesh = mModel->Meshes().at(0);
         CreateVertexBuffer(*mesh, mVertexBuffer);
         mesh->CreateIndexBuffer(mIndexBuffer);
@@ -71,7 +71,17 @@ namespace Rendering {
     
     void ModelDemo::Draw(GameTime gametime)
     {
+        glBindVertexArray(mVertexArrayObject);
+        glBindBuffer(GL_ARRAY_BUFFER,mVertexBuffer);
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,mIndexBuffer);
         
+        mShaderProgram.Use();
+        mat4 wvp = mCamera->ViewProjectionMatrix() * mWorldMatrix;
+        glUniformMatrix4fv(mWorldViewProjectionLocation, 1, GL_FALSE, &wvp[0][0]);
+        glEnable(GL_CULL_FACE);
+        glFrontFace(GL_CCW);
+        
+        glDrawElements(GL_TRIANGLES, mIndexCount, GL_UNSIGNED_INT, 0);
     }
     
     void ModelDemo::CreateVertexBuffer(const Mesh& mesh, GLuint& vertexBuffer)

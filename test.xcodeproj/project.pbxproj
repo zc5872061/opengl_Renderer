@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F290BBE1BB45CED00FDEC2E /* SkyBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F290BBC1BB45CED00FDEC2E /* SkyBox.cpp */; };
 		3F82C2341BB2ABC600A1B99C /* ModelDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F82C2321BB2ABC600A1B99C /* ModelDemo.cpp */; };
 		3F90B0B41B9F357A0085CF22 /* ColoredTriangleDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0881B9F357A0085CF22 /* ColoredTriangleDemo.cpp */; };
 		3F90B0B51B9F357A0085CF22 /* CubeDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0891B9F357A0085CF22 /* CubeDemo.cpp */; };
@@ -59,6 +60,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F290BBC1BB45CED00FDEC2E /* SkyBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SkyBox.cpp; sourceTree = "<group>"; };
+		3F290BBD1BB45CED00FDEC2E /* SkyBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyBox.h; sourceTree = "<group>"; };
 		3F82C2321BB2ABC600A1B99C /* ModelDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelDemo.cpp; sourceTree = "<group>"; };
 		3F82C2351BB2ABEE00A1B99C /* ModelDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelDemo.h; sourceTree = "<group>"; };
 		3F82C2361BB4128D00A1B99C /* ModelDemo.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ModelDemo.frag; sourceTree = "<group>"; };
@@ -224,6 +227,8 @@
 				3FEEDFE21BA7251100389E97 /* Mesh.h */,
 				3FEEDFE41BA7288F00389E97 /* Model.cpp */,
 				3FEEDFE51BA7288F00389E97 /* Model.h */,
+				3F290BBC1BB45CED00FDEC2E /* SkyBox.cpp */,
+				3F290BBD1BB45CED00FDEC2E /* SkyBox.h */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -353,6 +358,7 @@
 				3FEEDFFA1BA87B2900389E97 /* SOIL.c in Sources */,
 				3F90B0C11B9F357A0085CF22 /* Utility.cpp in Sources */,
 				3FEEDFE61BA7288F00389E97 /* Model.cpp in Sources */,
+				3F290BBE1BB45CED00FDEC2E /* SkyBox.cpp in Sources */,
 				3F90B0B61B9F357A0085CF22 /* RenderingGame.cpp in Sources */,
 				3FDE1FBC1BA42E1F006C243F /* BasicEffect.cpp in Sources */,
 				3FDE1FB61BA1AF35006C243F /* GameClock.cpp in Sources */,
