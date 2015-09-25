@@ -45,8 +45,8 @@ namespace Rendering {
         shaders.push_back(ShaderDefinition(GL_FRAGMENT_SHADER,ModelDemoFStr));
         mShaderProgram.BuildProgram(shaders);
         
-       // mModel = new Model("/Users/chukie/Desktop/dragon.obj",true);
-        mModel = new Model("/Users/chukie/Study/WorkWork/opengl_framework/test/resource/dragon.obj",true);
+        mModel = new Model("/Users/chukie/Desktop/dragon.obj",true);
+        //mModel = new Model("/Users/chukie/Study/WorkWork/opengl_framework/test/resource/dragon.obj",true);
         Mesh* mesh = mModel->Meshes().at(0);
         CreateVertexBuffer(*mesh, mVertexBuffer);
         mesh->CreateIndexBuffer(mIndexBuffer);

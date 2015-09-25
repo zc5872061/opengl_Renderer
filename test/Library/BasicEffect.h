@@ -10,6 +10,7 @@
 #include "ShaderProgram.h"
 #include "VertexDeclarations.h"
 #include "Variable.h"
+#include "Mesh.h"
 
 namespace Library {
     class BasicEffect:public ShaderProgram
@@ -19,6 +20,7 @@ namespace Library {
         BasicEffect();
         ~BasicEffect();
         virtual void Initialize(GLuint vertexArrayObject) override;
+        void createVertexBuffer(Mesh& mesh, GLuint& vertexBuffer) const;
         void CreateVertexBuffer(VertexPositionColor* vertices, unsigned int vertexCount, GLuint& vertexBuffer) const;
         virtual unsigned int VertexSize() const;
     private:

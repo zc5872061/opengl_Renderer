@@ -11,7 +11,7 @@
 
 using namespace std;
 
-#define HOME
+//#define HOME
 
 #ifdef HOME
 #define cubeVertexShaderStr  "/Users/chukie/Study/WorkWork/opengl_framework/test/resource/CubeDemo.vert"
@@ -33,7 +33,17 @@ using namespace std;
 #define WrappingFStr "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/WrappingModesDemo.frag"
 #define ModelDemoVStr  "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/ModelDemo.vert"
 #define ModelDemoFStr "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/ModelDemo.frag"
-#define imgStr "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/Cover.tga"
-#define img1Str "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/Cover.jpg"
+#define SkyBoxVStr  "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/Skybox.vert"
+#define SkyBoxFStr "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/Skybox.frag"
+#define imgStr "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/Cover.jpg"
+
+#define sphereModel "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/Sphere.obj"
+
+#define imgxPos "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/posx.jpg"
+#define imgxNeg "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/negx.jpg"
+#define imgyPos "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/posy.jpg"
+#define imgyNeg "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/negy.jpg"
+#define imgzPos "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/posz.jpg"
+#define imgzNeg "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/negz.jpg"
 #endif
 

@@ -80,7 +80,7 @@ namespace Rendering {
         assert(mWorldViewProjectionLocation != -1);
         
         mColorTexture = loadBMP_custom("/Users/chukie/Desktop/Demo/opengl_framework/test/resource/uvtemplate.bmp");
-        //mColorTexture = SOIL_load_OGL_texture(img1Str, SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_NTSC_SAFE_RGB );
+        //mColorTexture = SOIL_load_OGL_texture(imgStr, SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_NTSC_SAFE_RGB );
         assert(mColorTexture != 0);
         
 //        mTextureSamplers.resize(WrappingModeEnd);

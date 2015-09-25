@@ -66,6 +66,15 @@
 		3F82C2351BB2ABEE00A1B99C /* ModelDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelDemo.h; sourceTree = "<group>"; };
 		3F82C2361BB4128D00A1B99C /* ModelDemo.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ModelDemo.frag; sourceTree = "<group>"; };
 		3F82C2371BB4128D00A1B99C /* ModelDemo.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ModelDemo.vert; sourceTree = "<group>"; };
+		3F82C23A1BB5380A00A1B99C /* Skybox.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Skybox.frag; sourceTree = "<group>"; };
+		3F82C23B1BB5380A00A1B99C /* Skybox.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Skybox.vert; sourceTree = "<group>"; };
+		3F82C23C1BB53B5000A1B99C /* negx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = negx.jpg; sourceTree = "<group>"; };
+		3F82C23D1BB53B5000A1B99C /* negy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = negy.jpg; sourceTree = "<group>"; };
+		3F82C23E1BB53B5000A1B99C /* negz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = negz.jpg; sourceTree = "<group>"; };
+		3F82C23F1BB53B5000A1B99C /* posx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = posx.jpg; sourceTree = "<group>"; };
+		3F82C2401BB53B5000A1B99C /* posy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = posy.jpg; sourceTree = "<group>"; };
+		3F82C2411BB53B5000A1B99C /* posz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = posz.jpg; sourceTree = "<group>"; };
+		3F82C2421BB53F6500A1B99C /* Sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sphere.obj; sourceTree = "<group>"; };
 		3F90B0881B9F357A0085CF22 /* ColoredTriangleDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColoredTriangleDemo.cpp; sourceTree = "<group>"; };
 		3F90B0891B9F357A0085CF22 /* CubeDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CubeDemo.cpp; sourceTree = "<group>"; };
 		3F90B08A1B9F357A0085CF22 /* CubeDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeDemo.h; sourceTree = "<group>"; };
@@ -169,6 +178,15 @@
 		3F90B0911B9F357A0085CF22 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				3F82C2421BB53F6500A1B99C /* Sphere.obj */,
+				3F82C23C1BB53B5000A1B99C /* negx.jpg */,
+				3F82C23D1BB53B5000A1B99C /* negy.jpg */,
+				3F82C23E1BB53B5000A1B99C /* negz.jpg */,
+				3F82C23F1BB53B5000A1B99C /* posx.jpg */,
+				3F82C2401BB53B5000A1B99C /* posy.jpg */,
+				3F82C2411BB53B5000A1B99C /* posz.jpg */,
+				3F82C23A1BB5380A00A1B99C /* Skybox.frag */,
+				3F82C23B1BB5380A00A1B99C /* Skybox.vert */,
 				3F82C2361BB4128D00A1B99C /* ModelDemo.frag */,
 				3F82C2371BB4128D00A1B99C /* ModelDemo.vert */,
 				3FEA522D1BA99C5400E7F0D8 /* Cover.jpg */,

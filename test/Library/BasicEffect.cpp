@@ -7,6 +7,7 @@
 //
 
 #include "BasicEffect.h"
+#include "ColorHelper.h"
 
 using namespace Library;
 using namespace::glm;
@@ -37,6 +38,34 @@ namespace Library {
         glEnableVertexAttribArray(VertexAttributeColor);
     }
     
+    void BasicEffect::createVertexBuffer(Mesh& mesh, GLuint& vertexBuffer) const
+    {
+        const std::vector<vec3>& sourceVertices = mesh.Vertices();
+        
+        std::vector<VertexPositionColor> vertices;
+        vertices.reserve(sourceVertices.size());
+        if (mesh.VertexColors().size() > 0)
+        {
+            std::vector<vec4>* vertexColors = mesh.VertexColors().at(0);
+            assert(vertexColors->size() == sourceVertices.size());
+            
+            for (unsigned int i = 0; i < sourceVertices.size(); i++)
+            {
+                vec3 position = sourceVertices.at(i);
+                vec4 color = vertexColors->at(i);
+                vertices.push_back(VertexPositionColor(vec4(position.x, position.y, position.z, 1.0f), color));
+            }
+        }
+        else
+        {
+            for (unsigned int i = 0; i < sourceVertices.size(); i++)
+            {
+                vec3 position = sourceVertices.at(i);
+                vertices.push_back(VertexPositionColor(vec4(position.x, position.y, position.z, 1.0f), ColorHelper::White));
+            }
+        }
+        CreateVertexBuffer(&vertices[0], (unsigned int)vertices.size(), vertexBuffer);
+    }
     
     void BasicEffect::CreateVertexBuffer(VertexPositionColor* vertices, unsigned int vertexCount, GLuint& vertexBuffer) const
     {

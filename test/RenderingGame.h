@@ -16,6 +16,7 @@
 #include "Grid.h"
 #include "WrappingModesDemo.h"
 #include "ModelDemo.h"
+#include "SkyBox.h"
 
 using namespace Library;
 
@@ -41,6 +42,7 @@ namespace Rendering
         Grid* mGrid;
         WrappingModesDemo* mWrapDemo;
         ModelDemo* mModelDemo;
+        SkyBox* mSkyBox;
     };
 }
 
