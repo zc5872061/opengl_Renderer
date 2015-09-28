@@ -25,7 +25,8 @@ namespace Rendering
     mGrid(nullptr),
     mWrapDemo(nullptr),
     mModelDemo(nullptr),
-    mSkyBox(nullptr)
+    mSkyBox(nullptr),
+    mAmbientLightingDemo(nullptr)
     {
         
     }
@@ -36,13 +37,16 @@ namespace Rendering
         mComponents.push_back(m_Camera);
         mPointDemo = new PointDemo(this,m_Camera);
         
+        mAmbientLightingDemo = new AmbientLightingDemo(this,m_Camera);
+        mComponents.push_back(mAmbientLightingDemo);
+        
         mColoredTriangleDemo = new ColoredTriangleDemo(this,m_Camera);
         //mComponents.push_back(mColoredTriangleDemo);
         mSkyBox = new SkyBox(this,m_Camera,imgxPos,imgxNeg,imgyPos,imgyNeg,imgzPos,imgzNeg,10.0);
         mComponents.push_back(mSkyBox);
        
-//        mGrid = new Grid(this,m_Camera);
-//        mComponents.push_back(mGrid);
+        mGrid = new Grid(this,m_Camera);
+        mComponents.push_back(mGrid);
         
         mCubeDemo = new CubeDemo(this,m_Camera);
         //mComponents.push_back(mCubeDemo);
@@ -52,8 +56,8 @@ namespace Rendering
         
         //mComponents.push_back(mColoredTriangleDemo);
 //        
-//        mModelDemo = new ModelDemo(this,m_Camera);
-//        mComponents.push_back(mModelDemo);
+        mModelDemo = new ModelDemo(this,m_Camera);
+        //mComponents.push_back(mModelDemo);
         
         Game::Initialize();
         m_Camera->SetPosition(0, 5, 10);

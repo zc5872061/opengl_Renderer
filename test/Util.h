@@ -36,7 +36,7 @@ using namespace std;
 #define SkyBoxVStr  "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/Skybox.vert"
 #define SkyBoxFStr "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/Skybox.frag"
 #define imgStr "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/Cover.jpg"
-
+#define earthImgStr "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/EarthComposite.jpg"
 #define sphereModel "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/Sphere.obj"
 
 #define imgxPos "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/posx.jpg"
@@ -45,5 +45,9 @@ using namespace std;
 #define imgyNeg "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/negy.jpg"
 #define imgzPos "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/posz.jpg"
 #define imgzNeg "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/negz.jpg"
+
+#define AmbientLightVStr  "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/AmbientLightingDemo.vert"
+#define AmbientLightFStr "/Users/chukie/Desktop/Demo/opengl_framework/test/resource/AmbientLightingDemo.frag"
+
 #endif
 

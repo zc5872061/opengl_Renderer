@@ -10,6 +10,9 @@
 		3F290BBE1BB45CED00FDEC2E /* SkyBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F290BBC1BB45CED00FDEC2E /* SkyBox.cpp */; };
 		3F82C2341BB2ABC600A1B99C /* ModelDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F82C2321BB2ABC600A1B99C /* ModelDemo.cpp */; };
 		3F82C2451BB8EB8300A1B99C /* Light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F82C2431BB8EB8300A1B99C /* Light.cpp */; };
+		3F82C2481BB8EE1500A1B99C /* AmbientLightingDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F82C2461BB8EE1500A1B99C /* AmbientLightingDemo.cpp */; };
+		3F82C2511BB97C1A00A1B99C /* DiffuseLightingDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F82C24F1BB97C1A00A1B99C /* DiffuseLightingDemo.cpp */; };
+		3F82C2541BB97F3F00A1B99C /* DirectionalLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F82C2521BB97F3F00A1B99C /* DirectionalLight.cpp */; };
 		3F90B0B41B9F357A0085CF22 /* ColoredTriangleDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0881B9F357A0085CF22 /* ColoredTriangleDemo.cpp */; };
 		3F90B0B51B9F357A0085CF22 /* CubeDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0891B9F357A0085CF22 /* CubeDemo.cpp */; };
 		3F90B0B61B9F357A0085CF22 /* RenderingGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B08B1B9F357A0085CF22 /* RenderingGame.cpp */; };
@@ -78,6 +81,15 @@
 		3F82C2421BB53F6500A1B99C /* Sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sphere.obj; sourceTree = "<group>"; };
 		3F82C2431BB8EB8300A1B99C /* Light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Light.cpp; sourceTree = "<group>"; };
 		3F82C2441BB8EB8300A1B99C /* Light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Light.h; sourceTree = "<group>"; };
+		3F82C2461BB8EE1500A1B99C /* AmbientLightingDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AmbientLightingDemo.cpp; sourceTree = "<group>"; };
+		3F82C2471BB8EE1500A1B99C /* AmbientLightingDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmbientLightingDemo.h; sourceTree = "<group>"; };
+		3F82C2491BB91B3700A1B99C /* AmbientLightingDemo.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = AmbientLightingDemo.frag; sourceTree = "<group>"; };
+		3F82C24A1BB91B3700A1B99C /* AmbientLightingDemo.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = AmbientLightingDemo.vert; sourceTree = "<group>"; };
+		3F82C24B1BB91E2000A1B99C /* EarthComposite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EarthComposite.jpg; sourceTree = "<group>"; };
+		3F82C24F1BB97C1A00A1B99C /* DiffuseLightingDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DiffuseLightingDemo.cpp; sourceTree = "<group>"; };
+		3F82C2501BB97C1A00A1B99C /* DiffuseLightingDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffuseLightingDemo.h; sourceTree = "<group>"; };
+		3F82C2521BB97F3F00A1B99C /* DirectionalLight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DirectionalLight.cpp; path = Library/DirectionalLight.cpp; sourceTree = "<group>"; };
+		3F82C2531BB97F3F00A1B99C /* DirectionalLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DirectionalLight.h; path = Library/DirectionalLight.h; sourceTree = "<group>"; };
 		3F90B0881B9F357A0085CF22 /* ColoredTriangleDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColoredTriangleDemo.cpp; sourceTree = "<group>"; };
 		3F90B0891B9F357A0085CF22 /* CubeDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CubeDemo.cpp; sourceTree = "<group>"; };
 		3F90B08A1B9F357A0085CF22 /* CubeDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeDemo.h; sourceTree = "<group>"; };
@@ -181,6 +193,9 @@
 		3F90B0911B9F357A0085CF22 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				3F82C24B1BB91E2000A1B99C /* EarthComposite.jpg */,
+				3F82C2491BB91B3700A1B99C /* AmbientLightingDemo.frag */,
+				3F82C24A1BB91B3700A1B99C /* AmbientLightingDemo.vert */,
 				3F82C2421BB53F6500A1B99C /* Sphere.obj */,
 				3F82C23C1BB53B5000A1B99C /* negx.jpg */,
 				3F82C23D1BB53B5000A1B99C /* negy.jpg */,
@@ -282,8 +297,14 @@
 		3F9E8FEE1B74791900659751 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				3F82C24F1BB97C1A00A1B99C /* DiffuseLightingDemo.cpp */,
+				3F82C2501BB97C1A00A1B99C /* DiffuseLightingDemo.h */,
+				3F82C2521BB97F3F00A1B99C /* DirectionalLight.cpp */,
+				3F82C2531BB97F3F00A1B99C /* DirectionalLight.h */,
 				3F82C2351BB2ABEE00A1B99C /* ModelDemo.h */,
 				3F82C2321BB2ABC600A1B99C /* ModelDemo.cpp */,
+				3F82C2461BB8EE1500A1B99C /* AmbientLightingDemo.cpp */,
+				3F82C2471BB8EE1500A1B99C /* AmbientLightingDemo.h */,
 				3FEEDFE91BA86D1600389E97 /* Util.h */,
 				3FEA52281BA93BDF00E7F0D8 /* WrappingModesDemo.cpp */,
 				3FEA52291BA93BDF00E7F0D8 /* WrappingModesDemo.h */,
@@ -384,6 +405,7 @@
 				3F290BBE1BB45CED00FDEC2E /* SkyBox.cpp in Sources */,
 				3F90B0B61B9F357A0085CF22 /* RenderingGame.cpp in Sources */,
 				3FDE1FBC1BA42E1F006C243F /* BasicEffect.cpp in Sources */,
+				3F82C2481BB8EE1500A1B99C /* AmbientLightingDemo.cpp in Sources */,
 				3FDE1FB61BA1AF35006C243F /* GameClock.cpp in Sources */,
 				3F90B0BB1B9F357A0085CF22 /* DrawableGameComponent.cpp in Sources */,
 				3F90B0BF1B9F357A0085CF22 /* GameTime.cpp in Sources */,
@@ -395,6 +417,7 @@
 				3FEEDFF91BA87B2900389E97 /* image_helper.c in Sources */,
 				3F90B0C21B9F357A0085CF22 /* Variable.cpp in Sources */,
 				3FEEDFFB1BA87B2900389E97 /* stb_image_aug.c in Sources */,
+				3F82C2511BB97C1A00A1B99C /* DiffuseLightingDemo.cpp in Sources */,
 				3F82C2451BB8EB8300A1B99C /* Light.cpp in Sources */,
 				3F90B0BC1B9F357A0085CF22 /* FirstPersonCamera.cpp in Sources */,
 				3FEEDFF81BA87B2900389E97 /* image_DXT.c in Sources */,
@@ -404,6 +427,7 @@
 				3F90B0B91B9F357A0085CF22 /* Camera.cpp in Sources */,
 				3F90B0BE1B9F357A0085CF22 /* GameComponent.cpp in Sources */,
 				3FEA522A1BA93BDF00E7F0D8 /* WrappingModesDemo.cpp in Sources */,
+				3F82C2541BB97F3F00A1B99C /* DirectionalLight.cpp in Sources */,
 				3F90B0B81B9F357A0085CF22 /* PointDemo.cpp in Sources */,
 				3F82C2341BB2ABC600A1B99C /* ModelDemo.cpp in Sources */,
 				3F90B0BA1B9F357A0085CF22 /* ColorHelper.cpp in Sources */,

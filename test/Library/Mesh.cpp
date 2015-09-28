@@ -97,6 +97,22 @@ namespace Library {
             }
         }
         
+        // Texture Coordinates
+        unsigned int uvChannelCount = mesh.GetNumUVChannels();
+        for (unsigned int i = 0; i < uvChannelCount; i++)
+        {
+            std::vector<glm::vec3>* textureCoordinates = new std::vector<glm::vec3>();
+            textureCoordinates->reserve(mesh.mNumVertices);
+            mTextureCoordinates.push_back(textureCoordinates);
+            
+            aiVector3D* aiTextureCoordinates = mesh.mTextureCoords[i];
+            for (unsigned int j = 0; j < mesh.mNumVertices; j++)
+            {
+                aiVector3D uv = aiTextureCoordinates[j];
+                textureCoordinates->push_back(glm::vec3(uv.x, uv.y, uv.z));
+            }
+        }
+        
     }
     
     void Mesh::CreateIndexBuffer(GLuint& indexBuffer)

@@ -85,8 +85,8 @@ namespace Library {
     
     void SkyBox::Update(GameTime gametime)
     {
-        //mWorldMatrix = translate(mat4(), mCamera->Position()) * mScaleMatrix;
-        mWorldMatrix = translate(mat4(), vec3(1.0)) * mScaleMatrix;
+        mWorldMatrix = translate(mat4(), mCamera->Position()) * mScaleMatrix;
+        //mWorldMatrix = translate(mat4(), vec3(1.0)) * mScaleMatrix;
     }
     
     void SkyBox::Draw(GameTime gametime)

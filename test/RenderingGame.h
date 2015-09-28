@@ -17,6 +17,7 @@
 #include "WrappingModesDemo.h"
 #include "ModelDemo.h"
 #include "SkyBox.h"
+#include "AmbientLightingDemo.h"
 
 using namespace Library;
 
@@ -43,6 +44,7 @@ namespace Rendering
         WrappingModesDemo* mWrapDemo;
         ModelDemo* mModelDemo;
         SkyBox* mSkyBox;
+        AmbientLightingDemo* mAmbientLightingDemo;
     };
 }
 
