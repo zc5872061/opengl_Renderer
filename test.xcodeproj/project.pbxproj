@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F290BBE1BB45CED00FDEC2E /* SkyBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F290BBC1BB45CED00FDEC2E /* SkyBox.cpp */; };
 		3F82C2341BB2ABC600A1B99C /* ModelDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F82C2321BB2ABC600A1B99C /* ModelDemo.cpp */; };
+		3F82C2451BB8EB8300A1B99C /* Light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F82C2431BB8EB8300A1B99C /* Light.cpp */; };
 		3F90B0B41B9F357A0085CF22 /* ColoredTriangleDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0881B9F357A0085CF22 /* ColoredTriangleDemo.cpp */; };
 		3F90B0B51B9F357A0085CF22 /* CubeDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0891B9F357A0085CF22 /* CubeDemo.cpp */; };
 		3F90B0B61B9F357A0085CF22 /* RenderingGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B08B1B9F357A0085CF22 /* RenderingGame.cpp */; };
@@ -75,6 +76,8 @@
 		3F82C2401BB53B5000A1B99C /* posy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = posy.jpg; sourceTree = "<group>"; };
 		3F82C2411BB53B5000A1B99C /* posz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = posz.jpg; sourceTree = "<group>"; };
 		3F82C2421BB53F6500A1B99C /* Sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sphere.obj; sourceTree = "<group>"; };
+		3F82C2431BB8EB8300A1B99C /* Light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Light.cpp; sourceTree = "<group>"; };
+		3F82C2441BB8EB8300A1B99C /* Light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Light.h; sourceTree = "<group>"; };
 		3F90B0881B9F357A0085CF22 /* ColoredTriangleDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColoredTriangleDemo.cpp; sourceTree = "<group>"; };
 		3F90B0891B9F357A0085CF22 /* CubeDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CubeDemo.cpp; sourceTree = "<group>"; };
 		3F90B08A1B9F357A0085CF22 /* CubeDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeDemo.h; sourceTree = "<group>"; };
@@ -247,6 +250,8 @@
 				3FEEDFE51BA7288F00389E97 /* Model.h */,
 				3F290BBC1BB45CED00FDEC2E /* SkyBox.cpp */,
 				3F290BBD1BB45CED00FDEC2E /* SkyBox.h */,
+				3F82C2431BB8EB8300A1B99C /* Light.cpp */,
+				3F82C2441BB8EB8300A1B99C /* Light.h */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -390,6 +395,7 @@
 				3FEEDFF91BA87B2900389E97 /* image_helper.c in Sources */,
 				3F90B0C21B9F357A0085CF22 /* Variable.cpp in Sources */,
 				3FEEDFFB1BA87B2900389E97 /* stb_image_aug.c in Sources */,
+				3F82C2451BB8EB8300A1B99C /* Light.cpp in Sources */,
 				3F90B0BC1B9F357A0085CF22 /* FirstPersonCamera.cpp in Sources */,
 				3FEEDFF81BA87B2900389E97 /* image_DXT.c in Sources */,
 				3F90B0B71B9F357A0085CF22 /* main.cpp in Sources */,
