@@ -14,17 +14,31 @@
 #include <assimp/include/scene.h>
 #include <assimp/include/Importer.hpp>
 #include <assimp/include/postprocess.h>
+#include <CoreFoundation/CoreFoundation.h>
 #include <soil/SOIL.h>
 #include "VertexDeclarations.h"
 #include "Model.h"
+#include <stdio.h>
+
+
 using namespace std;
 using namespace Library;
 using namespace Rendering;
 
 
 int main(int argc, const char * argv[]) {
+#ifdef __APPLE__
+    CFBundleRef mainBundle = CFBundleGetMainBundle();
+    CFURLRef resourceURL = CFBundleCopyResourcesDirectoryURL(mainBundle);
+    char path[PATH_MAX];
+    if(!CFURLGetFileSystemRepresentation(resourceURL,TRUE, (UInt8*)path, PATH_MAX))
+    {
+        
+    }
+#endif
+    //FILE * file = fopen("../Resource/Cover.jpg","rb");
     RenderingGame* game = new RenderingGame("oglFrameWork",SCREEN_WIDTH,SCREEN_HEIGHT);
-
+    
     if(!game->Run())
     {
         std::cout<<"game run failed"<<std::endl;

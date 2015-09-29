@@ -13,6 +13,8 @@
 		3F82C2481BB8EE1500A1B99C /* AmbientLightingDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F82C2461BB8EE1500A1B99C /* AmbientLightingDemo.cpp */; };
 		3F82C2511BB97C1A00A1B99C /* DiffuseLightingDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F82C24F1BB97C1A00A1B99C /* DiffuseLightingDemo.cpp */; };
 		3F82C2541BB97F3F00A1B99C /* DirectionalLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F82C2521BB97F3F00A1B99C /* DirectionalLight.cpp */; };
+		3F82C2561BBA3C5E00A1B99C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F82C2551BBA3C5E00A1B99C /* CoreFoundation.framework */; };
+		3F82C2791BBA7F8800A1B99C /* CkThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F82C2771BBA7F8800A1B99C /* CkThread.cpp */; };
 		3F90B0B41B9F357A0085CF22 /* ColoredTriangleDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0881B9F357A0085CF22 /* ColoredTriangleDemo.cpp */; };
 		3F90B0B51B9F357A0085CF22 /* CubeDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B0891B9F357A0085CF22 /* CubeDemo.cpp */; };
 		3F90B0B61B9F357A0085CF22 /* RenderingGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B08B1B9F357A0085CF22 /* RenderingGame.cpp */; };
@@ -54,12 +56,12 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		3F9E8FEA1B74791900659751 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -90,6 +92,9 @@
 		3F82C2501BB97C1A00A1B99C /* DiffuseLightingDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffuseLightingDemo.h; sourceTree = "<group>"; };
 		3F82C2521BB97F3F00A1B99C /* DirectionalLight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DirectionalLight.cpp; path = Library/DirectionalLight.cpp; sourceTree = "<group>"; };
 		3F82C2531BB97F3F00A1B99C /* DirectionalLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DirectionalLight.h; path = Library/DirectionalLight.h; sourceTree = "<group>"; };
+		3F82C2551BBA3C5E00A1B99C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		3F82C2771BBA7F8800A1B99C /* CkThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CkThread.cpp; path = thread/CkThread.cpp; sourceTree = "<group>"; };
+		3F82C2781BBA7F8800A1B99C /* CkThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CkThread.h; path = thread/CkThread.h; sourceTree = "<group>"; };
 		3F90B0881B9F357A0085CF22 /* ColoredTriangleDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColoredTriangleDemo.cpp; sourceTree = "<group>"; };
 		3F90B0891B9F357A0085CF22 /* CubeDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CubeDemo.cpp; sourceTree = "<group>"; };
 		3F90B08A1B9F357A0085CF22 /* CubeDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeDemo.h; sourceTree = "<group>"; };
@@ -177,6 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F82C2561BBA3C5E00A1B99C /* CoreFoundation.framework in Frameworks */,
 				3FEEDFEA1BA8729200389E97 /* libassimpd.3.1.1.dylib in Frameworks */,
 				3FDE1F3D1B8ED64B006C243F /* libGLEW.a in Frameworks */,
 				3FDE1F361B8C87CB006C243F /* libglfw3.a in Frameworks */,
@@ -190,6 +196,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F82C2751BBA7F3D00A1B99C /* net */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = net;
+			sourceTree = "<group>";
+		};
+		3F82C2761BBA7F6400A1B99C /* thread */ = {
+			isa = PBXGroup;
+			children = (
+				3F82C2771BBA7F8800A1B99C /* CkThread.cpp */,
+				3F82C2781BBA7F8800A1B99C /* CkThread.h */,
+			);
+			name = thread;
+			sourceTree = "<group>";
+		};
 		3F90B0911B9F357A0085CF22 /* resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +247,8 @@
 		3F90B0981B9F357A0085CF22 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				3F82C2761BBA7F6400A1B99C /* thread */,
+				3F82C2751BBA7F3D00A1B99C /* net */,
 				3FEEDFED1BA87B2900389E97 /* soil */,
 				3F90B0991B9F357A0085CF22 /* Camera.cpp */,
 				3F90B09A1B9F357A0085CF22 /* Camera.h */,
@@ -274,6 +298,7 @@
 		3F9E8FE31B74791800659751 = {
 			isa = PBXGroup;
 			children = (
+				3F82C2551BBA3C5E00A1B99C /* CoreFoundation.framework */,
 				3FEA52241BA7DE9400E7F0D8 /* libassimpd.3.1.1.dylib */,
 				3FDE1F3C1B8ED64B006C243F /* libGLEW.a */,
 				3FDE1F351B8C87CB006C243F /* libglfw3.a */,
@@ -417,6 +442,7 @@
 				3FEEDFF91BA87B2900389E97 /* image_helper.c in Sources */,
 				3F90B0C21B9F357A0085CF22 /* Variable.cpp in Sources */,
 				3FEEDFFB1BA87B2900389E97 /* stb_image_aug.c in Sources */,
+				3F82C2791BBA7F8800A1B99C /* CkThread.cpp in Sources */,
 				3F82C2511BB97C1A00A1B99C /* DiffuseLightingDemo.cpp in Sources */,
 				3F82C2451BB8EB8300A1B99C /* Light.cpp in Sources */,
 				3F90B0BC1B9F357A0085CF22 /* FirstPersonCamera.cpp in Sources */,
@@ -478,6 +504,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SYMROOT = "$(PROJECT_DIR)/build";
 			};
 			name = Debug;
 		};
@@ -513,6 +540,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SYMROOT = "$(PROJECT_DIR)/build";
 			};
 			name = Release;
 		};
@@ -534,6 +562,7 @@
 					"$(PROJECT_DIR)/soil/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "$(PROJECT_DIR)/build";
 			};
 			name = Debug;
 		};
@@ -555,6 +584,7 @@
 					"$(PROJECT_DIR)/soil/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "$(PROJECT_DIR)/build";
 			};
 			name = Release;
 		};
