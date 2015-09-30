@@ -68,4 +68,10 @@ dependencies: \
   /Users/chukie/Desktop/Demo/opengl_framework/test/Library/Model.h \
   /Users/chukie/Desktop/Demo/opengl_framework/test/Library/ShaderProgram.h \
   /Users/chukie/Desktop/Demo/opengl_framework/test/Library/Variable.h \
-  /Users/chukie/Desktop/Demo/opengl_framework/test/Library/Light.h
+  /Users/chukie/Desktop/Demo/opengl_framework/test/Library/Light.h \
+  /Users/chukie/Desktop/Demo/opengl_framework/test/Library/DirectionalLight.h \
+  /Users/chukie/Desktop/Demo/opengl_framework/soil/SOIL.h \
+  /Users/chukie/Desktop/Demo/opengl_framework/test/Library/VertexDeclarations.h \
+  /Users/chukie/Desktop/Demo/opengl_framework/test/Library/ColorHelper.h \
+  /Users/chukie/Desktop/Demo/opengl_framework/test/Library/Game.h \
+  /Users/chukie/Desktop/Demo/opengl_framework/test/Library/GameClock.h

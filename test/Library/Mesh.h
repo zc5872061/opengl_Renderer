@@ -25,6 +25,7 @@ namespace Library {
         const std::vector<std::vector<glm::vec4>*>& VertexColors() const {return mVertexColors;}
         const std::vector<unsigned int>& Indices() const {return mIndices;}
         const std::vector<std::vector<glm::vec3>*>& TextureCoordinates() const {return mTextureCoordinates;}
+        const std::vector<glm::vec3>& Normals() const {return mNormals;}
         Model& mModel;
         ModelMaterial* mMaterial;
         std::string mName;

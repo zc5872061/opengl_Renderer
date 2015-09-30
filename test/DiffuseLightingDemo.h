@@ -11,6 +11,7 @@
 #include "Mesh.h"
 #include "ShaderProgram.h"
 #include "Light.h"
+#include "DirectionalLight.h"
 
 using namespace Library;
 
@@ -18,7 +19,7 @@ namespace Library {
     class DiffuseLightingDemo:public DrawableGameComponent
     {
     public:
-        DiffuseLightingDemo();
+        DiffuseLightingDemo(Game* game,Camera* camera);
         ~DiffuseLightingDemo();
         
         virtual void Initialize();
@@ -34,6 +35,7 @@ namespace Library {
         
         void CreateVertexBuffer(const Mesh& mesh, GLuint& vertexBuffer);
         void UpdateAmbientLight(const GameTime& gameTime);
+        void UpdateDirectionalLight(const GameTime& gameTime);
         
         ShaderProgram mShaderProgram;
         GLuint mVertexArrayObject;
@@ -48,6 +50,8 @@ namespace Library {
         GLuint mIndexCount;
         GLuint mColorTexture;
         Light* mAmbientLight;
-
+        DirectionLight* mDirectionLight;
+        
+        Model* mModel;
     };
 }

@@ -22,4 +22,6 @@
 const int SCREEN_WIDTH = 680;
 const int SCREEN_HEIGHT = 480;
 
+#define DeleteObject(object) if((object) != NULL) { delete object; object = NULL; }
+
 #endif
