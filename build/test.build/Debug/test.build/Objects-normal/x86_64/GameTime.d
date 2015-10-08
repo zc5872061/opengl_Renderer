@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/chukie/Desktop/Demo/opengl_framework/test/Library/GameTime.cpp \
-  /Users/chukie/Desktop/Demo/opengl_framework/test/Library/GameTime.h
+  /Users/chukie/Study/WorkWork/opengl_framework/test/Library/GameTime.cpp \
+  /Users/chukie/Study/WorkWork/opengl_framework/test/Library/GameTime.h

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3F9E8FEB1B74791900659751"
-               BuildableName = "test"
-               BlueprintName = "test"
-               ReferencedContainer = "container:test.xcodeproj">
+               BuildableName = "OglFramework"
+               BlueprintName = "OglFramework"
+               ReferencedContainer = "container:OglFramework.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F9E8FEB1B74791900659751"
-            BuildableName = "test"
-            BlueprintName = "test"
-            ReferencedContainer = "container:test.xcodeproj">
+            BuildableName = "OglFramework"
+            BlueprintName = "OglFramework"
+            ReferencedContainer = "container:OglFramework.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F9E8FEB1B74791900659751"
-            BuildableName = "test"
-            BlueprintName = "test"
-            ReferencedContainer = "container:test.xcodeproj">
+            BuildableName = "OglFramework"
+            BlueprintName = "OglFramework"
+            ReferencedContainer = "container:OglFramework.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F9E8FEB1B74791900659751"
-            BuildableName = "test"
-            BlueprintName = "test"
-            ReferencedContainer = "container:test.xcodeproj">
+            BuildableName = "OglFramework"
+            BlueprintName = "OglFramework"
+            ReferencedContainer = "container:OglFramework.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
