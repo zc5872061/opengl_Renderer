@@ -90,7 +90,9 @@ namespace Library {
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, mIndexBuffer);
         mShaderProgram.Use();
         
-        mat4 wvp = mCamera->ViewProjectionMatrix() * mWorldMatrix;
+        mWorldMatrix = mat4();
+        mat4 mScaleMatrix = glm::scale(mat4(), vec3(1,1,1));
+        mat4 wvp = mCamera->ViewProjectionMatrix() * mWorldMatrix*mScaleMatrix;
         *(mShaderProgram.WorldViewProjection()) << wvp;
         *(mShaderProgram.World()) << mWorldMatrix;
         *mShaderProgram.AmbientColor() << mAmbientLight->Color();
@@ -108,6 +110,41 @@ namespace Library {
         glDrawElements(GL_TRIANGLES, mIndexCount, GL_UNSIGNED_INT, 0);
         
         glBindVertexArray(0);
+        
+        glBindVertexArray(mVertexArrayObject);
+        glBindBuffer(GL_ARRAY_BUFFER, mVertexBuffer);
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, mIndexBuffer);
+        mShaderProgram.Use();
+        
+        
+        vec4 m4 = mWorldMatrix[3];
+        
+
+        m4.y = -2;
+        
+        mWorldMatrix[3] = m4;
+        
+        
+        mScaleMatrix = glm::scale(mat4(), vec3(1,-1,1));
+        wvp = mCamera->ViewProjectionMatrix() * mWorldMatrix*mScaleMatrix;
+        *(mShaderProgram.WorldViewProjection()) << wvp;
+        *(mShaderProgram.World()) << mWorldMatrix;
+        *mShaderProgram.AmbientColor() << mAmbientLight->Color();
+        *mShaderProgram.LightColor() << mDirectionalLight->Color();
+        *mShaderProgram.LightDirection() << mDirectionalLight->Direction();
+        *mShaderProgram.CameraPosition() << mCamera->Position();
+        *mShaderProgram.SpecularColor() << mSpecularColor;
+        *mShaderProgram.SpecularPower() << mSpecularPower;
+        
+        glBindTexture(GL_TEXTURE_2D, mColorTexture);
+        
+        glEnable(GL_CULL_FACE);
+        glFrontFace(GL_CCW);
+        
+        glDrawElements(GL_TRIANGLES, mIndexCount, GL_UNSIGNED_INT, 0);
+        
+        glBindVertexArray(0);
+        
     }
     
     void BlinnPhongDemo::UpdateAmbientLight(const GameTime& gameTime)

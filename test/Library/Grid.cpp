@@ -16,7 +16,7 @@ using namespace glm;
 
 namespace Library {
     
-    const GLuint Grid::DefaultSize = 10;
+    const GLuint Grid::DefaultSize = 50;
     const GLuint Grid::DefaultScale = 16;
     const glm::vec4 Grid::DefaultColor = glm::vec4(0.961f, 0.871f, 0.702f, 1.0f);
     
