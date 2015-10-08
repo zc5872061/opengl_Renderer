@@ -37,6 +37,8 @@ namespace Library {
         void UpdateAmbientLight(const GameTime& gameTime);
         void UpdateDirectionalLight(const GameTime& gameTime);
         
+        static const glm::vec2 LightRotationRate;
+        
         ShaderProgram mShaderProgram;
         GLuint mVertexArrayObject;
         GLuint mVertexBuffer;

@@ -18,6 +18,9 @@
 #include "ModelDemo.h"
 #include "SkyBox.h"
 #include "AmbientLightingDemo.h"
+#include "DiffuseLightingDemo.h"
+#include "BlinnPhongDemo.h"
+#include "ProxyModel.h"
 
 using namespace Library;
 
@@ -45,6 +48,9 @@ namespace Rendering
         ModelDemo* mModelDemo;
         SkyBox* mSkyBox;
         AmbientLightingDemo* mAmbientLightingDemo;
+        DiffuseLightingDemo* mDiffuseLightingDemo;
+        BlinnPhongDemo* mBlinnPhongDemo;
+        ProxyModel* mProxyModel;
     };
 }
 

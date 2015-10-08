@@ -26,7 +26,10 @@ namespace Rendering
     mWrapDemo(nullptr),
     mModelDemo(nullptr),
     mSkyBox(nullptr),
-    mAmbientLightingDemo(nullptr)
+    mAmbientLightingDemo(nullptr),
+    mDiffuseLightingDemo(nullptr),
+    mBlinnPhongDemo(nullptr),
+    mProxyModel(nullptr)
     {
         
     }
@@ -37,8 +40,7 @@ namespace Rendering
         mComponents.push_back(m_Camera);
         mPointDemo = new PointDemo(this,m_Camera);
         
-        mAmbientLightingDemo = new AmbientLightingDemo(this,m_Camera);
-        mComponents.push_back(mAmbientLightingDemo);
+        
         
         mColoredTriangleDemo = new ColoredTriangleDemo(this,m_Camera);
         //mComponents.push_back(mColoredTriangleDemo);
@@ -58,6 +60,18 @@ namespace Rendering
 //        
         mModelDemo = new ModelDemo(this,m_Camera);
         //mComponents.push_back(mModelDemo);
+        mAmbientLightingDemo = new AmbientLightingDemo(this,m_Camera);
+        //mComponents.push_back(mAmbientLightingDemo);
+        
+        mDiffuseLightingDemo = new DiffuseLightingDemo(this,m_Camera);
+        //mComponents.push_back(mDiffuseLightingDemo);
+        
+        mBlinnPhongDemo = new BlinnPhongDemo(this,m_Camera);
+        mComponents.push_back(mBlinnPhongDemo);
+        
+        
+        mProxyModel = new ProxyModel(this,m_Camera);
+        //mComponents.push_back(mProxyModel);
         
         Game::Initialize();
         m_Camera->SetPosition(0, 5, 10);
