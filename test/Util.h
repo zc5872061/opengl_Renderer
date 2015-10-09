@@ -25,8 +25,10 @@ using namespace std;
 #define DiffuseLightingFStr             "../Resource/shader/DiffuseLightingDemo.frag"
 #define AmbientLightVStr                "../Resource/shader/AmbientLightingDemo.vert"
 #define AmbientLightFStr                "../Resource/shader/AmbientLightingDemo.frag"
-#define BlinnPhongVStr                "../Resource/shader/BlinnPhongDemo.vert"
-#define BlinnPhongFStr                "../Resource/shader/BlinnPhongDemo.frag"
+#define BlinnPhongVStr                  "../Resource/shader/BlinnPhongDemo.vert"
+#define BlinnPhongFStr                  "../Resource/shader/BlinnPhongDemo.frag"
+#define FontVstr                        "../Resource/shader/font.vert"
+#define FontFstr                        "../Resource/shader/font.frag"
 
 
 #define imgxPos                         "../Resource/pic/posx.jpg"

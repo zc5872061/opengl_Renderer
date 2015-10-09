@@ -55,6 +55,8 @@
 		3FEEDFFB1BA87B2900389E97 /* stb_image_aug.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FEEDFF41BA87B2900389E97 /* stb_image_aug.c */; };
 		3FF3BEE51BBE30A1008BD1AD /* BlinnPhongEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3BEE31BBE30A1008BD1AD /* BlinnPhongEffect.cpp */; };
 		3FF3BEE81BBE4B8C008BD1AD /* BlinnPhongDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3BEE61BBE4B8C008BD1AD /* BlinnPhongDemo.cpp */; };
+		3FF48B441BC7A26F00CB3B38 /* FontManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FF48B421BC7A26F00CB3B38 /* FontManager.cpp */; };
+		3FF48B481BC7D30500CB3B38 /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF48B471BC7D30500CB3B38 /* libfreetype.6.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -163,6 +165,10 @@
 		3FF3BEE41BBE30A1008BD1AD /* BlinnPhongEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlinnPhongEffect.h; path = effect/BlinnPhongEffect.h; sourceTree = "<group>"; };
 		3FF3BEE61BBE4B8C008BD1AD /* BlinnPhongDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlinnPhongDemo.cpp; sourceTree = "<group>"; };
 		3FF3BEE71BBE4B8C008BD1AD /* BlinnPhongDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlinnPhongDemo.h; sourceTree = "<group>"; };
+		3FF48B421BC7A26F00CB3B38 /* FontManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FontManager.cpp; sourceTree = "<group>"; };
+		3FF48B431BC7A26F00CB3B38 /* FontManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontManager.h; sourceTree = "<group>"; };
+		3FF48B451BC7D2F700CB3B38 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = freetype/lib/libfreetype.a; sourceTree = "<group>"; };
+		3FF48B471BC7D30500CB3B38 /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreetype.6.dylib; path = freetype/lib/libfreetype.6.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF48B481BC7D30500CB3B38 /* libfreetype.6.dylib in Frameworks */,
 				3F82C2561BBA3C5E00A1B99C /* CoreFoundation.framework in Frameworks */,
 				3FEEDFEA1BA8729200389E97 /* libassimpd.3.1.1.dylib in Frameworks */,
 				3FDE1F3D1B8ED64B006C243F /* libGLEW.a in Frameworks */,
@@ -249,6 +256,8 @@
 				3F82C2441BB8EB8300A1B99C /* Light.h */,
 				3F1884F61BC5301D006784AE /* ProxyModel.cpp */,
 				3F1884F71BC5301D006784AE /* ProxyModel.h */,
+				3FF48B421BC7A26F00CB3B38 /* FontManager.cpp */,
+				3FF48B431BC7A26F00CB3B38 /* FontManager.h */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -256,6 +265,8 @@
 		3F9E8FE31B74791800659751 = {
 			isa = PBXGroup;
 			children = (
+				3FF48B471BC7D30500CB3B38 /* libfreetype.6.dylib */,
+				3FF48B451BC7D2F700CB3B38 /* libfreetype.a */,
 				3FF3BEE11BBD46C7008BD1AD /* Resource */,
 				3F82C2551BBA3C5E00A1B99C /* CoreFoundation.framework */,
 				3FEA52241BA7DE9400E7F0D8 /* libassimpd.3.1.1.dylib */,
@@ -427,6 +438,7 @@
 				3F90B0B51B9F357A0085CF22 /* CubeDemo.cpp in Sources */,
 				3F90B0C51B9F357A0085CF22 /* md5.cpp in Sources */,
 				3F90B0B91B9F357A0085CF22 /* Camera.cpp in Sources */,
+				3FF48B441BC7A26F00CB3B38 /* FontManager.cpp in Sources */,
 				3F90B0BE1B9F357A0085CF22 /* GameComponent.cpp in Sources */,
 				3FEA522A1BA93BDF00E7F0D8 /* WrappingModesDemo.cpp in Sources */,
 				3F82C2541BB97F3F00A1B99C /* DirectionalLight.cpp in Sources */,
@@ -531,12 +543,14 @@
 					"$(PROJECT_DIR)/glm",
 					"$(PROJECT_DIR)/GLEW/include/",
 					"$(PROJECT_DIR)/",
+					"$(PROJECT_DIR)/freetype/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/GLFW/lib",
 					"$(PROJECT_DIR)/GLEW/lib",
 					"$(PROJECT_DIR)/assimp/lib",
 					"$(PROJECT_DIR)/soil/lib",
+					"$(PROJECT_DIR)/freetype/lib",
 				);
 				PRODUCT_NAME = OglFramework;
 				SYMROOT = "$(PROJECT_DIR)/build";
@@ -553,12 +567,14 @@
 					"$(PROJECT_DIR)/glm",
 					"$(PROJECT_DIR)/GLEW/include/",
 					"$(PROJECT_DIR)/",
+					"$(PROJECT_DIR)/freetype/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/GLFW/lib",
 					"$(PROJECT_DIR)/GLEW/lib",
 					"$(PROJECT_DIR)/assimp/lib",
 					"$(PROJECT_DIR)/soil/lib",
+					"$(PROJECT_DIR)/freetype/lib",
 				);
 				PRODUCT_NAME = OglFramework;
 				SYMROOT = "$(PROJECT_DIR)/build";
