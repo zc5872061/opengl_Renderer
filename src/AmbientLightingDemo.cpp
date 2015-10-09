@@ -10,8 +10,8 @@
 #include "VertexDeclarations.h"
 #include "Camera.h"
 #include "Util.h"
-#include "SOIL.h"
 #include "Game.h"
+#include <soil/SOIL.h>
 
 
 namespace Library {

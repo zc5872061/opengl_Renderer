@@ -8,7 +8,7 @@
 
 #include "SkyBox.h"
 #include <glm/glm/gtc/matrix_transform.inl>
-#include "SOIL.h"
+#include <soil/SOIL.h>
 #include "Camera.h"
 
 using namespace Library;

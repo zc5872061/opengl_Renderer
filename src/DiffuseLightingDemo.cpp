@@ -7,13 +7,13 @@
 //
 
 #include "DiffuseLightingDemo.h"
-#include "SOIL.h"
 #include "VertexDeclarations.h"
 #include "ColorHelper.h"
 #include "Game.h"
 #include "Camera.h"
 #include "VectorHelper.h"
 #include <glm/glm/gtx/transform.hpp>
+#include <soil/SOIL.h>
 
 using namespace glm;
 

@@ -8,9 +8,9 @@
 
 #include "BlinnPhongDemo.h"
 #include "ColorHelper.h"
-#include "SOIL.h"
 #include "VectorHelper.h"
 #include <glm/glm/gtx/transform.hpp>
+#include <soil/SOIL.h>
 
 using namespace Library;
 

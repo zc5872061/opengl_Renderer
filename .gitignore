@@ -4,3 +4,13 @@ test.xcodeproj/project.xcworkspace/xcuserdata/chukie.xcuserdatad/UserInterfaceSt
 *.hmap
 
 *.LinkFileList
+
+*.d
+
+*.dia
+
+*.o
+
+build/Debug/OglFramework
+
+build/Debug/OglFramework

@@ -5,7 +5,7 @@
 //  Created by Chukie on 15/9/16.
 //  Copyright (c) 2015年 Chukie. All rights reserved.
 //
-#include "SOIL.h"
+#include <soil/SOIL.h>
 #include "WrappingModesDemo.h"
 #include "ColorHelper.h"
 #include "Camera.h"
