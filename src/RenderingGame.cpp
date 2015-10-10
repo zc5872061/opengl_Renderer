@@ -45,10 +45,10 @@ namespace Rendering
         mColoredTriangleDemo = new ColoredTriangleDemo(this,m_Camera);
         //mComponents.push_back(mColoredTriangleDemo);
         mSkyBox = new SkyBox(this,m_Camera,imgxPos,imgxNeg,imgyPos,imgyNeg,imgzPos,imgzNeg,10.0);
-        mComponents.push_back(mSkyBox);
+        //mComponents.push_back(mSkyBox);
        
         mGrid = new Grid(this,m_Camera);
-        mComponents.push_back(mGrid);
+        //mComponents.push_back(mGrid);
         
         mCubeDemo = new CubeDemo(this,m_Camera);
         //mComponents.push_back(mCubeDemo);
@@ -76,6 +76,7 @@ namespace Rendering
         Game::Initialize();
         m_Camera->SetPosition(0, 5, 10);
         m_Camera->ApplyRotation(rotate(mat4(), 30.0f, Vector3Helper::Left));
+        
     }
     
     void RenderingGame::Draw(GameTime gametime)
@@ -83,7 +84,10 @@ namespace Rendering
         static const GLfloat one = 1.0f;
         glClearBufferfv(GL_COLOR, 0, &ColorHelper::CornflowerBlue[0]);
         glClearBufferfv(GL_DEPTH, 0, &one);
+        glEnable(GL_CULL_FACE);
+        FontManager::GetInstance()->setProjViewMatrix(m_Camera->ViewProjectionMatrixOrth());
         Game::Draw(gametime);
+        FontManager::GetInstance()->renderText("This is sample", 0.0f, 40.0f, 2.0f, glm::vec3(0.5, 0.8f, 0.2f));
         
         glfwSwapBuffers(m_Window);
     }

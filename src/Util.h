@@ -29,7 +29,7 @@ using namespace std;
 #define BlinnPhongFStr                  "../Resource/shader/BlinnPhongDemo.frag"
 #define FontVstr                        "../Resource/shader/font.vert"
 #define FontFstr                        "../Resource/shader/font.frag"
-
+#define FontTTFstr                         "../Resource/ttf/micross.ttf"
 
 #define imgxPos                         "../Resource/pic/posx.jpg"
 #define imgxNeg                         "../Resource/pic/negx.jpg"

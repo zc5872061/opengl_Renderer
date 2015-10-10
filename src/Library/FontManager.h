@@ -28,19 +28,21 @@ namespace Library {
     {
     public:
         static FontManager* GetInstance();
-        void RenderText();
-        
+        void renderText(std::string text,GLfloat x,GLfloat y,GLfloat scale,glm::vec3 color);
+        void setProjViewMatrix(glm::mat4 projViewMat) { mProjViewMat = projViewMat;}
         
     protected:
         FontManager();
         ~FontManager();
         void init();
         static FontManager* mInstance;
-        
+       
     protected:
         std::map<GLchar,FONT::Charactar> Characters;
         GLuint mVAO;
         GLuint mVBO;
+        GLint mWorldViewProjectionLocation;
         ShaderProgram mShaderProgram;
+        glm::mat4 mProjViewMat;
     };
 }

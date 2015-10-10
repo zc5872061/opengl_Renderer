@@ -1,13 +1,11 @@
-#version 410 core
+#version 330 core
+in vec2 TexCoords;
+out vec4 color;
 
-in VS_OUTPUT
-{
-	vec4 Color;
-} IN;
-
-out vec4 Color;
+uniform sampler2D text;
 
 void main()
 {
-	Color = IN.Color;
+    vec4 sampled = vec4(1.0, 1.0, 1.0, texture(text, TexCoords).r);
+    color = vec4(1.0,1.0,0.0, 1.0) * sampled;
 }

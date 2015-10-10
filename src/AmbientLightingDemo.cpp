@@ -57,7 +57,7 @@ namespace Library {
         CreateVertexBuffer(*mesh, mVertexBuffer);
         mesh->CreateIndexBuffer(mIndexBuffer);
         mIndexCount = mesh->Indices().size();
-        mWorldViewProjectionLocation = glGetUniformLocation(mShaderProgram.Program(), "WorldViewProjection");
+    
         assert(mWorldViewProjectionLocation != -1);
         mAmbientColorLocation = glGetUniformLocation(mShaderProgram.Program(), "AmbientColor");
         assert(mAmbientColorLocation != -1);

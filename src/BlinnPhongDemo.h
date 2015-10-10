@@ -14,6 +14,7 @@
 #include "DirectionalLight.h"
 #include "Model.h"
 #include "DrawableGameComponent.h"
+#include "FontManager.h"
 
 namespace Library {
     class BlinnPhongDemo:public DrawableGameComponent
@@ -46,5 +47,6 @@ namespace Library {
         glm::vec4 mSpecularColor;
         float mSpecularPower;
         Model* mModel;
+        FontManager* mFontManager;
     };
 }

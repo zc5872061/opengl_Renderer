@@ -32,7 +32,8 @@ namespace Library {
     mDirectionalLight(nullptr),
     mSpecularColor(ColorHelper::White),
     mSpecularPower(25.0),
-    mModel(nullptr)
+    mModel(nullptr),
+    mFontManager(nullptr)
     {
         
     }
@@ -74,6 +75,7 @@ namespace Library {
         mAmbientLight->SetColor(ColorHelper::Black);
         
         mDirectionalLight = new DirectionLight(mGame);
+        mFontManager = FontManager::GetInstance();
     }
     
     void BlinnPhongDemo::Update(GameTime gametime)
@@ -144,6 +146,8 @@ namespace Library {
         glDrawElements(GL_TRIANGLES, mIndexCount, GL_UNSIGNED_INT, 0);
         
         glBindVertexArray(0);
+        
+       
         
     }
     

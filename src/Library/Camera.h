@@ -37,7 +37,7 @@ namespace Library
         const glm::mat4& ViewMatrix() const;
         const glm::mat4& ProjectionMatrix() const;
         glm::mat4 ViewProjectionMatrix() const;
-        
+        glm::mat4 ViewProjectionMatrixOrth();
         virtual void SetPosition(float x, float y, float z);
         virtual void SetPosition(const glm::vec3& position);
         
@@ -46,6 +46,7 @@ namespace Library
         virtual void Update(GameTime gametime) override;
         virtual void UpdateViewMatrix();
         virtual void UpdateProjectionMatrix();
+        virtual void UpdateOrthProjectionMatrix();
         virtual void ApplyRotation(const glm::mat4& transform);
 //
         static const float DefaultFieldOfView;
@@ -65,7 +66,7 @@ namespace Library
         
         glm::mat4 mViewMatrix;
         glm::mat4 mProjectionMatrix;
-        
+        glm::mat4 mOrthoProjectionMatrix;
     private:
         Camera(const Camera& rhs);
         Camera& operator=(const Camera& rhs);

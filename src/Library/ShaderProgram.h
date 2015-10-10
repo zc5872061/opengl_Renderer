@@ -48,8 +48,7 @@ namespace Library
         std::map<std::string, Variable*> mVariablesByName;
         
     private:
-        ShaderProgram(const ShaderProgram& rhs);
-        ShaderProgram& operator=(const ShaderProgram& rhs);
+        
     };
     
     #define SHADER_VARIABLE_DECLARATION(VariableName)   \

@@ -29,7 +29,8 @@ namespace Library {
         mUp(),
         mRight(),
         mViewMatrix(),
-        mProjectionMatrix()
+        mProjectionMatrix(),
+        mOrthoProjectionMatrix()
     {
     }
     
@@ -44,7 +45,8 @@ namespace Library {
         mUp(),
         mRight(),
         mViewMatrix(),
-        mProjectionMatrix()
+        mProjectionMatrix(),
+        mOrthoProjectionMatrix()
     {
         
     }
@@ -103,6 +105,13 @@ namespace Library {
         return mProjectionMatrix;
     }
     
+    glm::mat4 Camera::ViewProjectionMatrixOrth()
+    {
+        glm::vec3 target = vec3(0) + Vector3Helper::Forward;
+        glm::mat4 viewMatrix = lookAt(vec3(0), target, Vector3Helper::Up);
+        return mOrthoProjectionMatrix * viewMatrix;
+    }
+    
     glm::mat4 Camera::ViewProjectionMatrix() const
     {
         return mProjectionMatrix * mViewMatrix;
@@ -131,6 +140,7 @@ namespace Library {
     void Camera::Initialize()
     {
         UpdateProjectionMatrix();
+        UpdateOrthProjectionMatrix();
         Reset();
     }
     
@@ -148,6 +158,11 @@ namespace Library {
     void Camera::UpdateProjectionMatrix()
     {
         mProjectionMatrix = perspective(mFieldOfView, mAspectRatio, mNearPlaneDistance, mFarPlaneDistance);
+    }
+    
+    void Camera::UpdateOrthProjectionMatrix()
+    {
+        mOrthoProjectionMatrix = glm::ortho(0.0f, static_cast<GLfloat>(SCREEN_WIDTH), 0.0f, static_cast<GLfloat>(SCREEN_HEIGHT));
     }
     
     void Camera::ApplyRotation(const glm::mat4& transform)
