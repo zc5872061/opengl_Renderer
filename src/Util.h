@@ -44,4 +44,4 @@ using namespace std;
 #define sphereModel                     "../Resource/model/Sphere.obj"
 #define dragonModel                     "../Resource/model/dragon.obj"
 #define spiderModel                     "../Resource/model/spider.obj"
-
+#define robotModel                     "../Resource/model/nanosuit/nanosuit.obj"

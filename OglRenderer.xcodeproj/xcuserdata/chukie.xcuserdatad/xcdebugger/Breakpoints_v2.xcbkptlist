@@ -169,13 +169,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "src/Library/FontManager.cpp"
-            timestampString = "466149326.035249"
+            filePath = "src/BlinnPhongDemo.cpp"
+            timestampString = "466162247.101025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
-            landmarkName = "FontManager::renderText(std::string text,GLfloat x,GLfloat y,GLfloat scale,glm::vec3 color)"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "BlinnPhongDemo::Initialize()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -185,13 +185,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "src/Library/FontManager.cpp"
-            timestampString = "466149356.906554"
+            filePath = "src/Library/Model.cpp"
+            timestampString = "466162264.785215"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "FontManager::renderText(std::string text,GLfloat x,GLfloat y,GLfloat scale,glm::vec3 color)"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "Model::Model(std::string modelFile,bool flipUVs)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/Library/Model.cpp"
+            timestampString = "466162299.018507"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "Model::Model(std::string modelFile,bool flipUVs)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
