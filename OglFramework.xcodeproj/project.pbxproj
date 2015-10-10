@@ -12,8 +12,6 @@
 		3FDE1F2E1B8C6429006C243F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2D1B8C6429006C243F /* Cocoa.framework */; };
 		3FDE1F301B8C6430006C243F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2F1B8C6430006C243F /* OpenGL.framework */; };
 		3FDE1F321B8C6437006C243F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F311B8C6437006C243F /* CoreVideo.framework */; };
-		3FDE1F361B8C87CB006C243F /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F351B8C87CB006C243F /* libglfw3.a */; };
-		3FDE1F3D1B8ED64B006C243F /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F3C1B8ED64B006C243F /* libGLEW.a */; };
 		3FE6D6EC1BC8097C00399A42 /* AmbientLightingDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6D6801BC8097C00399A42 /* AmbientLightingDemo.cpp */; };
 		3FE6D6ED1BC8097C00399A42 /* BlinnPhongDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6D6821BC8097C00399A42 /* BlinnPhongDemo.cpp */; };
 		3FE6D6EE1BC8097C00399A42 /* ColoredTriangleDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6D6841BC8097C00399A42 /* ColoredTriangleDemo.cpp */; };
@@ -51,12 +49,14 @@
 		3FE6D71A1BC8097C00399A42 /* PointDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6D6E51BC8097C00399A42 /* PointDemo.cpp */; };
 		3FE6D71B1BC8097C00399A42 /* RenderingGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6D6E71BC8097C00399A42 /* RenderingGame.cpp */; };
 		3FE6D71C1BC8097C00399A42 /* WrappingModesDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6D6EA1BC8097C00399A42 /* WrappingModesDemo.cpp */; };
-		3FE6D7291BC80AF200399A42 /* image_DXT.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6D71F1BC80AF200399A42 /* image_DXT.c */; };
-		3FE6D72A1BC80AF200399A42 /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6D7211BC80AF200399A42 /* image_helper.c */; };
-		3FE6D72B1BC80AF200399A42 /* SOIL.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6D7231BC80AF200399A42 /* SOIL.c */; };
-		3FE6D72C1BC80AF200399A42 /* stb_image_aug.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6D7251BC80AF200399A42 /* stb_image_aug.c */; };
-		3FEEDFEA1BA8729200389E97 /* libassimpd.3.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FEA52241BA7DE9400E7F0D8 /* libassimpd.3.1.1.dylib */; };
-		3FF48B481BC7D30500CB3B38 /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF48B471BC7D30500CB3B38 /* libfreetype.6.dylib */; };
+		3FF48B4A1BC8A4EC00CB3B38 /* libassimpd.3.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF48B491BC8A4EC00CB3B38 /* libassimpd.3.1.1.dylib */; };
+		3FF48B4C1BC8A4F800CB3B38 /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF48B4B1BC8A4F800CB3B38 /* libfreetype.6.dylib */; };
+		3FF48B4E1BC8A50100CB3B38 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF48B4D1BC8A50100CB3B38 /* libGLEW.a */; };
+		3FF48B501BC8A50C00CB3B38 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF48B4F1BC8A50C00CB3B38 /* libglfw3.a */; };
+		3FF48B5C1BC8A52B00CB3B38 /* image_DXT.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FF48B521BC8A52B00CB3B38 /* image_DXT.c */; };
+		3FF48B5D1BC8A52B00CB3B38 /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FF48B541BC8A52B00CB3B38 /* image_helper.c */; };
+		3FF48B5E1BC8A52B00CB3B38 /* SOIL.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FF48B561BC8A52B00CB3B38 /* SOIL.c */; };
+		3FF48B5F1BC8A52B00CB3B38 /* stb_image_aug.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FF48B581BC8A52B00CB3B38 /* stb_image_aug.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,8 +78,6 @@
 		3FDE1F2D1B8C6429006C243F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3FDE1F2F1B8C6430006C243F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		3FDE1F311B8C6437006C243F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		3FDE1F351B8C87CB006C243F /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = GLFW/lib/libglfw3.a; sourceTree = "<group>"; };
-		3FDE1F3C1B8ED64B006C243F /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = GLEW/lib/libGLEW.a; sourceTree = "<group>"; };
 		3FE6D6801BC8097C00399A42 /* AmbientLightingDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AmbientLightingDemo.cpp; sourceTree = "<group>"; };
 		3FE6D6811BC8097C00399A42 /* AmbientLightingDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmbientLightingDemo.h; sourceTree = "<group>"; };
 		3FE6D6821BC8097C00399A42 /* BlinnPhongDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlinnPhongDemo.cpp; sourceTree = "<group>"; };
@@ -155,20 +153,21 @@
 		3FE6D6E91BC8097C00399A42 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		3FE6D6EA1BC8097C00399A42 /* WrappingModesDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WrappingModesDemo.cpp; sourceTree = "<group>"; };
 		3FE6D6EB1BC8097C00399A42 /* WrappingModesDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrappingModesDemo.h; sourceTree = "<group>"; };
-		3FE6D71F1BC80AF200399A42 /* image_DXT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_DXT.c; sourceTree = "<group>"; };
-		3FE6D7201BC80AF200399A42 /* image_DXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_DXT.h; sourceTree = "<group>"; };
-		3FE6D7211BC80AF200399A42 /* image_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_helper.c; sourceTree = "<group>"; };
-		3FE6D7221BC80AF200399A42 /* image_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_helper.h; sourceTree = "<group>"; };
-		3FE6D7231BC80AF200399A42 /* SOIL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SOIL.c; sourceTree = "<group>"; };
-		3FE6D7241BC80AF200399A42 /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL.h; sourceTree = "<group>"; };
-		3FE6D7251BC80AF200399A42 /* stb_image_aug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_image_aug.c; sourceTree = "<group>"; };
-		3FE6D7261BC80AF200399A42 /* stb_image_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_aug.h; sourceTree = "<group>"; };
-		3FE6D7271BC80AF200399A42 /* stbi_DDS_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug.h; sourceTree = "<group>"; };
-		3FE6D7281BC80AF200399A42 /* stbi_DDS_aug_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug_c.h; sourceTree = "<group>"; };
-		3FEA52241BA7DE9400E7F0D8 /* libassimpd.3.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimpd.3.1.1.dylib; path = assimp/lib/libassimpd.3.1.1.dylib; sourceTree = "<group>"; };
 		3FF3BEE11BBD46C7008BD1AD /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resource; path = build/Resource; sourceTree = "<group>"; };
-		3FF48B451BC7D2F700CB3B38 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = freetype/lib/libfreetype.a; sourceTree = "<group>"; };
-		3FF48B471BC7D30500CB3B38 /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreetype.6.dylib; path = freetype/lib/libfreetype.6.dylib; sourceTree = "<group>"; };
+		3FF48B491BC8A4EC00CB3B38 /* libassimpd.3.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimpd.3.1.1.dylib; path = lib/assimp/lib/libassimpd.3.1.1.dylib; sourceTree = "<group>"; };
+		3FF48B4B1BC8A4F800CB3B38 /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreetype.6.dylib; path = lib/freetype/lib/libfreetype.6.dylib; sourceTree = "<group>"; };
+		3FF48B4D1BC8A50100CB3B38 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = lib/GLEW/lib/libGLEW.a; sourceTree = "<group>"; };
+		3FF48B4F1BC8A50C00CB3B38 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = lib/GLFW/lib/libglfw3.a; sourceTree = "<group>"; };
+		3FF48B521BC8A52B00CB3B38 /* image_DXT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_DXT.c; sourceTree = "<group>"; };
+		3FF48B531BC8A52B00CB3B38 /* image_DXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_DXT.h; sourceTree = "<group>"; };
+		3FF48B541BC8A52B00CB3B38 /* image_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_helper.c; sourceTree = "<group>"; };
+		3FF48B551BC8A52B00CB3B38 /* image_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_helper.h; sourceTree = "<group>"; };
+		3FF48B561BC8A52B00CB3B38 /* SOIL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SOIL.c; sourceTree = "<group>"; };
+		3FF48B571BC8A52B00CB3B38 /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL.h; sourceTree = "<group>"; };
+		3FF48B581BC8A52B00CB3B38 /* stb_image_aug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_image_aug.c; sourceTree = "<group>"; };
+		3FF48B591BC8A52B00CB3B38 /* stb_image_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_aug.h; sourceTree = "<group>"; };
+		3FF48B5A1BC8A52B00CB3B38 /* stbi_DDS_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug.h; sourceTree = "<group>"; };
+		3FF48B5B1BC8A52B00CB3B38 /* stbi_DDS_aug_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug_c.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,11 +175,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FF48B481BC7D30500CB3B38 /* libfreetype.6.dylib in Frameworks */,
+				3FF48B501BC8A50C00CB3B38 /* libglfw3.a in Frameworks */,
+				3FF48B4E1BC8A50100CB3B38 /* libGLEW.a in Frameworks */,
+				3FF48B4C1BC8A4F800CB3B38 /* libfreetype.6.dylib in Frameworks */,
+				3FF48B4A1BC8A4EC00CB3B38 /* libassimpd.3.1.1.dylib in Frameworks */,
 				3F82C2561BBA3C5E00A1B99C /* CoreFoundation.framework in Frameworks */,
-				3FEEDFEA1BA8729200389E97 /* libassimpd.3.1.1.dylib in Frameworks */,
-				3FDE1F3D1B8ED64B006C243F /* libGLEW.a in Frameworks */,
-				3FDE1F361B8C87CB006C243F /* libglfw3.a in Frameworks */,
 				3FDE1F321B8C6437006C243F /* CoreVideo.framework in Frameworks */,
 				3FDE1F301B8C6430006C243F /* OpenGL.framework in Frameworks */,
 				3FDE1F2E1B8C6429006C243F /* Cocoa.framework in Frameworks */,
@@ -194,12 +193,11 @@
 		3F9E8FE31B74791800659751 = {
 			isa = PBXGroup;
 			children = (
-				3FF48B471BC7D30500CB3B38 /* libfreetype.6.dylib */,
-				3FF48B451BC7D2F700CB3B38 /* libfreetype.a */,
+				3FF48B4F1BC8A50C00CB3B38 /* libglfw3.a */,
+				3FF48B4D1BC8A50100CB3B38 /* libGLEW.a */,
+				3FF48B4B1BC8A4F800CB3B38 /* libfreetype.6.dylib */,
+				3FF48B491BC8A4EC00CB3B38 /* libassimpd.3.1.1.dylib */,
 				3F82C2551BBA3C5E00A1B99C /* CoreFoundation.framework */,
-				3FEA52241BA7DE9400E7F0D8 /* libassimpd.3.1.1.dylib */,
-				3FDE1F3C1B8ED64B006C243F /* libGLEW.a */,
-				3FDE1F351B8C87CB006C243F /* libglfw3.a */,
 				3FE6D71D1BC80ADD00399A42 /* thirdpart */,
 				3FE6D67F1BC8097C00399A42 /* src */,
 				3FDE1F311B8C6437006C243F /* CoreVideo.framework */,
@@ -328,26 +326,27 @@
 		3FE6D71D1BC80ADD00399A42 /* thirdpart */ = {
 			isa = PBXGroup;
 			children = (
-				3FE6D71E1BC80AF200399A42 /* soil */,
+				3FF48B511BC8A52B00CB3B38 /* soil */,
 			);
 			name = thirdpart;
 			sourceTree = "<group>";
 		};
-		3FE6D71E1BC80AF200399A42 /* soil */ = {
+		3FF48B511BC8A52B00CB3B38 /* soil */ = {
 			isa = PBXGroup;
 			children = (
-				3FE6D71F1BC80AF200399A42 /* image_DXT.c */,
-				3FE6D7201BC80AF200399A42 /* image_DXT.h */,
-				3FE6D7211BC80AF200399A42 /* image_helper.c */,
-				3FE6D7221BC80AF200399A42 /* image_helper.h */,
-				3FE6D7231BC80AF200399A42 /* SOIL.c */,
-				3FE6D7241BC80AF200399A42 /* SOIL.h */,
-				3FE6D7251BC80AF200399A42 /* stb_image_aug.c */,
-				3FE6D7261BC80AF200399A42 /* stb_image_aug.h */,
-				3FE6D7271BC80AF200399A42 /* stbi_DDS_aug.h */,
-				3FE6D7281BC80AF200399A42 /* stbi_DDS_aug_c.h */,
+				3FF48B521BC8A52B00CB3B38 /* image_DXT.c */,
+				3FF48B531BC8A52B00CB3B38 /* image_DXT.h */,
+				3FF48B541BC8A52B00CB3B38 /* image_helper.c */,
+				3FF48B551BC8A52B00CB3B38 /* image_helper.h */,
+				3FF48B561BC8A52B00CB3B38 /* SOIL.c */,
+				3FF48B571BC8A52B00CB3B38 /* SOIL.h */,
+				3FF48B581BC8A52B00CB3B38 /* stb_image_aug.c */,
+				3FF48B591BC8A52B00CB3B38 /* stb_image_aug.h */,
+				3FF48B5A1BC8A52B00CB3B38 /* stbi_DDS_aug.h */,
+				3FF48B5B1BC8A52B00CB3B38 /* stbi_DDS_aug_c.h */,
 			);
-			path = soil;
+			name = soil;
+			path = lib/soil;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,11 +407,11 @@
 			files = (
 				3FE6D70C1BC8097C00399A42 /* md5.cpp in Sources */,
 				3FE6D7071BC8097C00399A42 /* Utility.cpp in Sources */,
-				3FE6D7291BC80AF200399A42 /* image_DXT.c in Sources */,
+				3FF48B5C1BC8A52B00CB3B38 /* image_DXT.c in Sources */,
 				3FE6D6FC1BC8097C00399A42 /* GameComponent.cpp in Sources */,
 				3FE6D7041BC8097C00399A42 /* ShaderProgram.cpp in Sources */,
 				3FE6D6EC1BC8097C00399A42 /* AmbientLightingDemo.cpp in Sources */,
-				3FE6D72A1BC80AF200399A42 /* image_helper.c in Sources */,
+				3FF48B5D1BC8A52B00CB3B38 /* image_helper.c in Sources */,
 				3FE6D6F51BC8097C00399A42 /* ColorHelper.cpp in Sources */,
 				3FE6D7001BC8097C00399A42 /* Mesh.cpp in Sources */,
 				3FE6D6EF1BC8097C00399A42 /* CubeDemo.cpp in Sources */,
@@ -424,7 +423,7 @@
 				3FE6D6FD1BC8097C00399A42 /* GameTime.cpp in Sources */,
 				3FE6D6F61BC8097C00399A42 /* DirectionalLight.cpp in Sources */,
 				3FE6D6FF1BC8097C00399A42 /* Light.cpp in Sources */,
-				3FE6D72C1BC80AF200399A42 /* stb_image_aug.c in Sources */,
+				3FF48B5F1BC8A52B00CB3B38 /* stb_image_aug.c in Sources */,
 				3FE6D7051BC8097C00399A42 /* SkyBox.cpp in Sources */,
 				3FE6D6F81BC8097C00399A42 /* FirstPersonCamera.cpp in Sources */,
 				3FE6D70D1BC8097C00399A42 /* ModelDemo.cpp in Sources */,
@@ -437,7 +436,7 @@
 				3FE6D6F01BC8097C00399A42 /* DiffuseLightingDemo.cpp in Sources */,
 				3FE6D7031BC8097C00399A42 /* ProxyModel.cpp in Sources */,
 				3FE6D7091BC8097C00399A42 /* VectorHelper.cpp in Sources */,
-				3FE6D72B1BC80AF200399A42 /* SOIL.c in Sources */,
+				3FF48B5E1BC8A52B00CB3B38 /* SOIL.c in Sources */,
 				3FE6D7011BC8097C00399A42 /* Model.cpp in Sources */,
 				3FE6D71A1BC8097C00399A42 /* PointDemo.cpp in Sources */,
 				3FE6D71C1BC8097C00399A42 /* WrappingModesDemo.cpp in Sources */,
@@ -538,11 +537,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(PROJECT_DIR)/GLFW/include",
-					"$(PROJECT_DIR)/glm",
-					"$(PROJECT_DIR)/GLEW/include/",
-					"$(PROJECT_DIR)/",
-					"$(PROJECT_DIR)/freetype/include",
+					"$(PROJECT_DIR)/lib/GLFW/include",
+					"$(PROJECT_DIR)/lib/glm",
+					"$(PROJECT_DIR)/lib/GLEW/include/",
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/lib/freetype/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/GLFW/lib",
@@ -550,6 +549,10 @@
 					"$(PROJECT_DIR)/assimp/lib",
 					"$(PROJECT_DIR)/soil/lib",
 					"$(PROJECT_DIR)/freetype/lib",
+					"$(PROJECT_DIR)/lib/assimp/lib",
+					"$(PROJECT_DIR)/lib/freetype/lib",
+					"$(PROJECT_DIR)/lib/GLEW/lib",
+					"$(PROJECT_DIR)/lib/GLFW/lib",
 				);
 				PRODUCT_NAME = OglFramework;
 				SYMROOT = "$(PROJECT_DIR)/build";
@@ -562,11 +565,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(PROJECT_DIR)/GLFW/include",
-					"$(PROJECT_DIR)/glm",
-					"$(PROJECT_DIR)/GLEW/include/",
-					"$(PROJECT_DIR)/",
-					"$(PROJECT_DIR)/freetype/include",
+					"$(PROJECT_DIR)/lib/GLFW/include",
+					"$(PROJECT_DIR)/lib/glm",
+					"$(PROJECT_DIR)/lib/GLEW/include/",
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/lib/freetype/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/GLFW/lib",
@@ -574,6 +577,10 @@
 					"$(PROJECT_DIR)/assimp/lib",
 					"$(PROJECT_DIR)/soil/lib",
 					"$(PROJECT_DIR)/freetype/lib",
+					"$(PROJECT_DIR)/lib/assimp/lib",
+					"$(PROJECT_DIR)/lib/freetype/lib",
+					"$(PROJECT_DIR)/lib/GLEW/lib",
+					"$(PROJECT_DIR)/lib/GLFW/lib",
 				);
 				PRODUCT_NAME = OglFramework;
 				SYMROOT = "$(PROJECT_DIR)/build";
