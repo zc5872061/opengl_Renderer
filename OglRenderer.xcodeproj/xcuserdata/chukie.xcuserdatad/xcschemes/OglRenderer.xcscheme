@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3F9E8FEB1B74791900659751"
                BuildableName = "OglFramework"
-               BlueprintName = "OglFramework"
-               ReferencedContainer = "container:OglFramework.xcodeproj">
+               BlueprintName = "OglRenderer"
+               ReferencedContainer = "container:OglRenderer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F9E8FEB1B74791900659751"
             BuildableName = "OglFramework"
-            BlueprintName = "OglFramework"
-            ReferencedContainer = "container:OglFramework.xcodeproj">
+            BlueprintName = "OglRenderer"
+            ReferencedContainer = "container:OglRenderer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -54,8 +54,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F9E8FEB1B74791900659751"
             BuildableName = "OglFramework"
-            BlueprintName = "OglFramework"
-            ReferencedContainer = "container:OglFramework.xcodeproj">
+            BlueprintName = "OglRenderer"
+            ReferencedContainer = "container:OglRenderer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -67,16 +67,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F9E8FEB1B74791900659751"
             BuildableName = "OglFramework"
-            BlueprintName = "OglFramework"
-            ReferencedContainer = "container:OglFramework.xcodeproj">
+            BlueprintName = "OglRenderer"
+            ReferencedContainer = "container:OglRenderer.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

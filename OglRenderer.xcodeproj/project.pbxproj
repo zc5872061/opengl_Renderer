@@ -73,7 +73,7 @@
 
 /* Begin PBXFileReference section */
 		3F82C2551BBA3C5E00A1B99C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		3F9E8FEC1B74791900659751 /* OglFramework */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OglFramework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F9E8FEC1B74791900659751 /* OglRenderer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OglRenderer; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDE1F2B1B8C6422006C243F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		3FDE1F2D1B8C6429006C243F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3FDE1F2F1B8C6430006C243F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -212,7 +212,7 @@
 		3F9E8FED1B74791900659751 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3F9E8FEC1B74791900659751 /* OglFramework */,
+				3F9E8FEC1B74791900659751 /* OglRenderer */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -352,9 +352,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3F9E8FEB1B74791900659751 /* OglFramework */ = {
+		3F9E8FEB1B74791900659751 /* OglRenderer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F9E8FF31B74791900659751 /* Build configuration list for PBXNativeTarget "OglFramework" */;
+			buildConfigurationList = 3F9E8FF31B74791900659751 /* Build configuration list for PBXNativeTarget "OglRenderer" */;
 			buildPhases = (
 				3F9E8FE81B74791900659751 /* Sources */,
 				3F9E8FE91B74791900659751 /* Frameworks */,
@@ -364,9 +364,9 @@
 			);
 			dependencies = (
 			);
-			name = OglFramework;
+			name = OglRenderer;
 			productName = test;
-			productReference = 3F9E8FEC1B74791900659751 /* OglFramework */;
+			productReference = 3F9E8FEC1B74791900659751 /* OglRenderer */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -383,7 +383,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3F9E8FE71B74791800659751 /* Build configuration list for PBXProject "OglFramework" */;
+			buildConfigurationList = 3F9E8FE71B74791800659751 /* Build configuration list for PBXProject "OglRenderer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -395,7 +395,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3F9E8FEB1B74791900659751 /* OglFramework */,
+				3F9E8FEB1B74791900659751 /* OglRenderer */,
 			);
 		};
 /* End PBXProject section */
@@ -554,7 +554,7 @@
 					"$(PROJECT_DIR)/lib/GLEW/lib",
 					"$(PROJECT_DIR)/lib/GLFW/lib",
 				);
-				PRODUCT_NAME = OglFramework;
+				PRODUCT_NAME = OglRenderer;
 				SYMROOT = "$(PROJECT_DIR)/build";
 			};
 			name = Debug;
@@ -582,7 +582,7 @@
 					"$(PROJECT_DIR)/lib/GLEW/lib",
 					"$(PROJECT_DIR)/lib/GLFW/lib",
 				);
-				PRODUCT_NAME = OglFramework;
+				PRODUCT_NAME = OglRenderer;
 				SYMROOT = "$(PROJECT_DIR)/build";
 			};
 			name = Release;
@@ -590,7 +590,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3F9E8FE71B74791800659751 /* Build configuration list for PBXProject "OglFramework" */ = {
+		3F9E8FE71B74791800659751 /* Build configuration list for PBXProject "OglRenderer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F9E8FF11B74791900659751 /* Debug */,
@@ -599,7 +599,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F9E8FF31B74791900659751 /* Build configuration list for PBXNativeTarget "OglFramework" */ = {
+		3F9E8FF31B74791900659751 /* Build configuration list for PBXNativeTarget "OglRenderer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F9E8FF41B74791900659751 /* Debug */,
