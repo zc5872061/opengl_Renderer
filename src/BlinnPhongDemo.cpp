@@ -57,7 +57,7 @@ namespace Library {
         shaders.push_back(ShaderDefinition(GL_FRAGMENT_SHADER,BlinnPhongFStr));
         mShaderProgram.BuildProgram(shaders);
         
-        mModel = new Model(robotModel,true);
+        mModel = new Model(dragonModel,true);
         Mesh* mesh = mModel->Meshes().at(0);
         mShaderProgram.createVertexBuffer(*mesh, mVertexBuffer);
         mesh->CreateIndexBuffer(mIndexBuffer);

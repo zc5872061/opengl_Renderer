@@ -39,7 +39,7 @@ int main(int argc, const char * argv[]) {
     }
 #endif
     //FILE * file = fopen("../Resource/Cover.jpg","rb");
-    RenderingGame* game = new RenderingGame("oglFrameWork",SCREEN_WIDTH,SCREEN_HEIGHT);
+    RenderingGame* game = new RenderingGame("oglRenderer",SCREEN_WIDTH,SCREEN_HEIGHT);
     
     if(!game->Run())
     {

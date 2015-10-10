@@ -45,7 +45,7 @@ namespace Rendering
         mColoredTriangleDemo = new ColoredTriangleDemo(this,m_Camera);
         //mComponents.push_back(mColoredTriangleDemo);
         mSkyBox = new SkyBox(this,m_Camera,imgxPos,imgxNeg,imgyPos,imgyNeg,imgzPos,imgzNeg,10.0);
-        //mComponents.push_back(mSkyBox);
+        mComponents.push_back(mSkyBox);
        
         mGrid = new Grid(this,m_Camera);
         //mComponents.push_back(mGrid);
@@ -67,7 +67,7 @@ namespace Rendering
         //mComponents.push_back(mDiffuseLightingDemo);
         
         mBlinnPhongDemo = new BlinnPhongDemo(this,m_Camera);
-        mComponents.push_back(mBlinnPhongDemo);
+        //mComponents.push_back(mBlinnPhongDemo);
         
         
         mProxyModel = new ProxyModel(this,m_Camera);
@@ -87,7 +87,7 @@ namespace Rendering
         glEnable(GL_CULL_FACE);
         FontManager::GetInstance()->setProjViewMatrix(m_Camera->ViewProjectionMatrixOrth());
         Game::Draw(gametime);
-        FontManager::GetInstance()->renderText("This is sample", 0.0f, 40.0f, 2.0f, glm::vec3(0.5, 0.8f, 0.2f));
+        FontManager::GetInstance()->renderText("This is phong sample", 0.0f, 40.0f, 1.0f, glm::vec3(0.5, 0.8f, 0.2f));
         
         glfwSwapBuffers(m_Window);
     }
