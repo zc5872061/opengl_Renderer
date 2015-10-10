@@ -33,38 +33,6 @@
             endingLineNumber = "49"
             landmarkName = "Camera::Camera(Game* game, float fieldOfView, float aspectRatio, float nearPlaneDistance, float farPlaneDistance)"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Library::Camera::Camera(Library::Game*, float, float, float, float)"
-                  moduleName = "OglFramework"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chukie/Study/WorkWork/opengl_framework/test/Library/Camera.cpp"
-                  timestampString = "465464267.520819"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "245">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Library::Camera::Camera(Library::Game*, float, float, float, float)"
-                  moduleName = "OglFramework"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chukie/Study/WorkWork/opengl_framework/test/Library/Camera.cpp"
-                  timestampString = "465464267.52112"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "40">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -113,68 +81,6 @@
             endingLineNumber = "44"
             landmarkName = "WrappingModesDemo::~WrappingModesDemo()"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Rendering::WrappingModesDemo::~WrappingModesDemo()"
-                  moduleName = "OglFramework"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chukie/Study/WorkWork/opengl_framework/test/WrappingModesDemo.cpp"
-                  timestampString = "465464267.563319"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "340">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Rendering::WrappingModesDemo::~WrappingModesDemo()"
-                  moduleName = "OglFramework"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chukie/Study/WorkWork/opengl_framework/test/WrappingModesDemo.cpp"
-                  timestampString = "465464267.563643"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "358">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Rendering::WrappingModesDemo::~WrappingModesDemo()"
-                  moduleName = "OglFramework"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chukie/Study/WorkWork/opengl_framework/test/WrappingModesDemo.cpp"
-                  timestampString = "465464267.563946"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "21">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Rendering::WrappingModesDemo::~WrappingModesDemo()"
-                  moduleName = "OglFramework"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chukie/Study/WorkWork/opengl_framework/test/WrappingModesDemo.cpp"
-                  timestampString = "465464267.564238"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "34">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -254,6 +160,38 @@
             startingLineNumber = "69"
             endingLineNumber = "69"
             landmarkName = "RenderingGame::Initialize()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/Library/FontManager.cpp"
+            timestampString = "466149326.035249"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "FontManager::renderText(std::string text,GLfloat x,GLfloat y,GLfloat scale,glm::vec3 color)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/Library/FontManager.cpp"
+            timestampString = "466149356.906554"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "FontManager::renderText(std::string text,GLfloat x,GLfloat y,GLfloat scale,glm::vec3 color)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
