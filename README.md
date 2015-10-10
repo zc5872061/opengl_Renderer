@@ -17,13 +17,17 @@ Dependencies:
 * Shader based (GLSL)
 * Component based scene graph
 * Model loading (ASSIMP)
-* font draw
+* First person Camera
 
 ## Todo
 * Particle system
 * finish some effect shading
 * Post processing effects (SSAO)
 
-
+##screenshot
+1.phong effect
+![screenshot](https://github.com/zc5872061/opengl_Renderer/blob/master/screenshot/1.png) 
+2.phong effect with skybox
+![screenshot](https://github.com/zc5872061/opengl_Renderer/blob/master/screenshot/2.png)
 
 
