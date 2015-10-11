@@ -24,5 +24,7 @@ const int SCREEN_HEIGHT = 480;
 
 typedef  unsigned int UINT;
 #define DeleteObject(object) if((object) != NULL) { delete object; object = NULL; }
+#define FOR(q,n) for(int q=0;q<n;q++)
+
 
 #endif
