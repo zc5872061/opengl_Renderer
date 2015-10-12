@@ -27,11 +27,11 @@ namespace Rendering {
     
     void BillboardDemo::Initialize()
     {
-         mTexture = SOIL_load_OGL_texture(imgStr, SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_NTSC_SAFE_RGB );
+         mTexture = SOIL_load_OGL_texture(testImg, SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_NTSC_SAFE_RGB );
         
         std::vector<ShaderDefinition> shaders;
         shaders.push_back(ShaderDefinition(GL_VERTEX_SHADER,BillboardVstr));
-        //shaders.push_back(ShaderDefinition(GL_GEOMETRY_SHADER,BillboardGstr));
+        shaders.push_back(ShaderDefinition(GL_GEOMETRY_SHADER,BillboardGstr));
         shaders.push_back(ShaderDefinition(GL_FRAGMENT_SHADER,BillboardFstr));
         
         mShaderProgram->BuildProgram(shaders);
@@ -46,7 +46,7 @@ namespace Rendering {
         {
             FOR(j, 10)
             {
-                VertexPosition pos(glm::vec4(i,0.0,j,1.0));
+                VertexPosition pos(glm::vec4(1.5*i,0.0,1.5*j,1.0));
                 vertices[j*10+i] = pos;
             }
         }
@@ -56,11 +56,13 @@ namespace Rendering {
     
     void BillboardDemo::Draw(GameTime gametime)
     {
-        glBindVertexArray(mVertexArrayObject);
+        glEnable(GL_DEPTH);
         mShaderProgram->Use();
+        glBindVertexArray(mVertexArrayObject);
+        
         glm::mat4 vp = mCamera->ViewProjectionMatrix();
-        //(*mShaderProgram->gVP())<<vp;
-        //(*mShaderProgram->gCameraPos())<<mCamera->Position();
+        (*mShaderProgram->gVP())<<vp;
+        (*mShaderProgram->gCameraPos())<<mCamera->Position();
         
         glBindTexture(GL_TEXTURE_2D, mTexture);
         
@@ -68,8 +70,10 @@ namespace Rendering {
         glEnableVertexAttribArray(0);
         glBindBuffer(GL_ARRAY_BUFFER,mVertexBuffer);
         glVertexAttribPointer(0,4,GL_FLOAT,GL_FALSE,0,0);
-        glDrawArrays(GL_POINTS, 0, 1);
+        glPointSize(80.0f);
+        glDrawArrays(GL_POINTS, 0, 10);
         glDisableVertexAttribArray(0);
         glBindVertexArray(0);
+        
     }
 }

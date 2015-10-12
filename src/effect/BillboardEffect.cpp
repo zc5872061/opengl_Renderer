@@ -22,8 +22,8 @@ namespace Library {
     void BillboardEffect::Initialize(GLuint vertexArrayObject)
     {
         ShaderProgram::Initialize(vertexArrayObject);
-        //SHADER_VARIABLE_INSTANTIATE(gVP)
-        //SHADER_VARIABLE_INSTANTIATE(gCameraPos)
+        SHADER_VARIABLE_INSTANTIATE(gVP)
+        SHADER_VARIABLE_INSTANTIATE(gCameraPos)
     }
     
     void BillboardEffect::createVertexBuffer(Mesh& mesh, GLuint& vertexBuffer)const

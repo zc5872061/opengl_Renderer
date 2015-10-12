@@ -45,6 +45,7 @@ using namespace std;
 #define imgzNeg                         "../Resource/pic/negz.jpg"
 #define imgStr                          "../Resource/pic/Cover.jpg"
 #define earthImgStr                     "../Resource/pic/EarthComposite.jpg"
+#define testImg                         "../Resource/pic/test.png"
 
 
 #define sphereModel                     "../Resource/model/Sphere.obj"

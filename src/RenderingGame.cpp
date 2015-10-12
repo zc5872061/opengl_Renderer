@@ -54,7 +54,7 @@ namespace Rendering
         //mComponents.push_back(mSkyBox);
        
         mGrid = new Grid(this,m_Camera);
-        //mComponents.push_back(mGrid);
+        mComponents.push_back(mGrid);
         
         mCubeDemo = new CubeDemo(this,m_Camera);
         //mComponents.push_back(mCubeDemo);
@@ -97,7 +97,7 @@ namespace Rendering
         glEnable(GL_CULL_FACE);
         FontManager::GetInstance()->setProjViewMatrix(m_Camera->ViewProjectionMatrixOrth());
         Game::Draw(gametime);
-        FontManager::GetInstance()->renderText("This is phong sample", 0.0f, 40.0f, 1.0f, glm::vec3(0.5, 0.8f, 0.2f));
+        FontManager::GetInstance()->renderText("This is billboard sample", 0.0f, 40.0f, 1.0f, glm::vec3(0.5, 0.8f, 0.2f));
         
         glfwSwapBuffers(m_Window);
     }
