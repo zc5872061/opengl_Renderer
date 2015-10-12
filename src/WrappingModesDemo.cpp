@@ -79,8 +79,8 @@ namespace Rendering {
         mWorldViewProjectionLocation = glGetUniformLocation(mShaderProgram->Program(), "WorldViewProjection");
         assert(mWorldViewProjectionLocation != -1);
         
-        mColorTexture = loadBMP_custom("/Users/chukie/Desktop/Demo/opengl_framework/test/resource/uvtemplate.bmp");
-        //mColorTexture = SOIL_load_OGL_texture(imgStr, SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_NTSC_SAFE_RGB );
+        //mColorTexture = loadBMP_custom("../Resource/pic/uvtemplate.bmp");
+        mColorTexture = SOIL_load_OGL_texture(imgStr, SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_NTSC_SAFE_RGB );
         assert(mColorTexture != 0);
         
 //        mTextureSamplers.resize(WrappingModeEnd);
@@ -149,6 +149,22 @@ namespace Rendering {
         glUseProgram(mShaderProgram->Program());
         
         mat4 wvp = mCamera->ViewProjectionMatrix() * mWorldMatrix;
+        mat4 viewMatrix = mCamera->ViewMatrix() * mWorldMatrix;
+        // Column 0:
+        viewMatrix[0][0] = 1;
+        viewMatrix[0][1] = 0;
+        viewMatrix[0][2] = 0;
+        
+        // Column 1:
+        viewMatrix[1][0] = 0;
+        viewMatrix[1][1] = 1;
+        viewMatrix[1][2] = 0;
+        
+        // Column 2:
+        viewMatrix[2][0] = 0;
+        viewMatrix[2][1] = 0;
+        viewMatrix[2][2] = 1;
+        wvp = mCamera->ProjectionMatrix()*viewMatrix;
         glUniformMatrix4fv(mWorldViewProjectionLocation, 1, GL_FALSE, &wvp[0][0]);
         
         glEnable(GL_CULL_FACE);

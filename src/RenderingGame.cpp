@@ -29,23 +29,29 @@ namespace Rendering
     mAmbientLightingDemo(nullptr),
     mDiffuseLightingDemo(nullptr),
     mBlinnPhongDemo(nullptr),
-    mProxyModel(nullptr)
+    mProxyModel(nullptr),
+    mBillboardDemo(nullptr)
     {
         
     }
     
+    RenderingGame::~RenderingGame()
+    {
+        
+    }
+
     void RenderingGame::Initialize()
     {
         m_Camera = new FirstPersonCamera(this);
         mComponents.push_back(m_Camera);
         mPointDemo = new PointDemo(this,m_Camera);
-        
+        //mComponents.push_back(mPointDemo);
         
         
         mColoredTriangleDemo = new ColoredTriangleDemo(this,m_Camera);
         //mComponents.push_back(mColoredTriangleDemo);
         mSkyBox = new SkyBox(this,m_Camera,imgxPos,imgxNeg,imgyPos,imgyNeg,imgzPos,imgzNeg,10.0);
-        mComponents.push_back(mSkyBox);
+        //mComponents.push_back(mSkyBox);
        
         mGrid = new Grid(this,m_Camera);
         //mComponents.push_back(mGrid);
@@ -72,6 +78,10 @@ namespace Rendering
         
         mProxyModel = new ProxyModel(this,m_Camera);
         //mComponents.push_back(mProxyModel);
+        
+        mBillboardDemo = new BillboardDemo(this,m_Camera);
+        mComponents.push_back(mBillboardDemo);
+        
         
         Game::Initialize();
         m_Camera->SetPosition(0, 5, 10);

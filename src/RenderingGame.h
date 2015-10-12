@@ -21,6 +21,7 @@
 #include "DiffuseLightingDemo.h"
 #include "BlinnPhongDemo.h"
 #include "ProxyModel.h"
+#include "BillboardDemo.h"
 
 using namespace Library;
 
@@ -34,6 +35,7 @@ namespace Rendering
     {
     public:
         RenderingGame(const char* title,float width,float height);
+        ~RenderingGame();
     protected:
         virtual void Initialize() override;
         virtual void Draw(GameTime gametime) override;
@@ -51,6 +53,7 @@ namespace Rendering
         DiffuseLightingDemo* mDiffuseLightingDemo;
         BlinnPhongDemo* mBlinnPhongDemo;
         ProxyModel* mProxyModel;
+        BillboardDemo* mBillboardDemo;
     };
 }
 

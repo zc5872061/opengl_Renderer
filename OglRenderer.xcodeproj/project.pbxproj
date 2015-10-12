@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F314C661BCBBCE600C5456E /* BillboardEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F314C641BCBBCE600C5456E /* BillboardEffect.cpp */; };
+		3F314C691BCBC33000C5456E /* BillboardDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F314C671BCBC33000C5456E /* BillboardDemo.cpp */; };
 		3F82C2561BBA3C5E00A1B99C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F82C2551BBA3C5E00A1B99C /* CoreFoundation.framework */; };
 		3FDE1F2C1B8C6422006C243F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2B1B8C6422006C243F /* IOKit.framework */; };
 		3FDE1F2E1B8C6429006C243F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2D1B8C6429006C243F /* Cocoa.framework */; };
@@ -72,6 +74,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F314C641BCBBCE600C5456E /* BillboardEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BillboardEffect.cpp; sourceTree = "<group>"; };
+		3F314C651BCBBCE600C5456E /* BillboardEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillboardEffect.h; sourceTree = "<group>"; };
+		3F314C671BCBC33000C5456E /* BillboardDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BillboardDemo.cpp; sourceTree = "<group>"; };
+		3F314C681BCBC33000C5456E /* BillboardDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillboardDemo.h; sourceTree = "<group>"; };
 		3F82C2551BBA3C5E00A1B99C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		3F9E8FEC1B74791900659751 /* OglRenderer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OglRenderer; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDE1F2B1B8C6422006C243F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
@@ -246,6 +252,8 @@
 				3FF48BAB1BC8A68900CB3B38 /* Util.h */,
 				3FF48BAC1BC8A68900CB3B38 /* WrappingModesDemo.cpp */,
 				3FF48BAD1BC8A68900CB3B38 /* WrappingModesDemo.h */,
+				3F314C671BCBC33000C5456E /* BillboardDemo.cpp */,
+				3F314C681BCBC33000C5456E /* BillboardDemo.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -281,6 +289,8 @@
 			children = (
 				3FF48B6B1BC8A68900CB3B38 /* BlinnPhongEffect.cpp */,
 				3FF48B6C1BC8A68900CB3B38 /* BlinnPhongEffect.h */,
+				3F314C641BCBBCE600C5456E /* BillboardEffect.cpp */,
+				3F314C651BCBBCE600C5456E /* BillboardEffect.h */,
 			);
 			path = effect;
 			sourceTree = "<group>";
@@ -437,6 +447,8 @@
 				3FF48B5E1BC8A52B00CB3B38 /* SOIL.c in Sources */,
 				3FF48BB21BC8A68900CB3B38 /* DiffuseLightingDemo.cpp in Sources */,
 				3FF48BC11BC8A68900CB3B38 /* Light.cpp in Sources */,
+				3F314C661BCBBCE600C5456E /* BillboardEffect.cpp in Sources */,
+				3F314C691BCBC33000C5456E /* BillboardDemo.cpp in Sources */,
 				3FF48C7E1BC8D69F00CB3B38 /* main.cpp in Sources */,
 				3FF48BC71BC8A68900CB3B38 /* SkyBox.cpp in Sources */,
 				3FF48BBB1BC8A68900CB3B38 /* FontManager.cpp in Sources */,

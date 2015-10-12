@@ -29,7 +29,7 @@ namespace Rendering
         GLint shader_ok;
         // Load and compile vertex shader
         std::vector<char> vertexShaderSource;
-        Utility::LoadBinaryFile("/Users/chukie/Study/WorkWork/opengl_framework/test/resource/PointDemo.vert", vertexShaderSource);
+        Utility::LoadBinaryFile("../Resource/shader/PointDemo.vert", vertexShaderSource);
         GLchar* sourcePointer = &vertexShaderSource[0];
         GLint length = (GLint)vertexShaderSource.size();
         
@@ -46,7 +46,7 @@ namespace Rendering
         
         // Load and compile fragment shader
         std::vector<char> fragmentShaderSource;
-        Utility::LoadBinaryFile("/Users/chukie/Study/WorkWork/opengl_framework/test/resource/PointDemo.frag", fragmentShaderSource);
+        Utility::LoadBinaryFile("../Resource/shader/PointDemo.frag", fragmentShaderSource);
         sourcePointer = &fragmentShaderSource[0];
         length = (GLint)fragmentShaderSource.size();
         
