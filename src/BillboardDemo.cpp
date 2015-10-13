@@ -9,6 +9,9 @@
 #include "BillboardDemo.h"
 #include "SOIL.h"
 #include "Camera.h"
+#include "VertexDeclarations.h"
+
+using namespace Library;
 
 namespace Rendering {
     BillboardDemo::BillboardDemo(Game* game, Camera* camera):
@@ -35,8 +38,12 @@ namespace Rendering {
         shaders.push_back(ShaderDefinition(GL_FRAGMENT_SHADER,BillboardFstr));
         
         mShaderProgram->BuildProgram(shaders);
+        
+        
         glGenVertexArrays(1, &mVertexArrayObject);
         mShaderProgram->Initialize(mVertexArrayObject);
+        glVertexAttribPointer(VertexAttributePosition,4,GL_FLOAT,GL_FALSE,sizeof(VertexPosition),(void*)offsetof(VertexPosition, Position));
+    
         glBindVertexArray(0);
         // Create the vertex buffer
         
@@ -66,13 +73,13 @@ namespace Rendering {
         
         glBindTexture(GL_TEXTURE_2D, mTexture);
         
-        
-        glEnableVertexAttribArray(0);
+        glEnableVertexAttribArray(VertexAttributePosition);
         glBindBuffer(GL_ARRAY_BUFFER,mVertexBuffer);
-        glVertexAttribPointer(0,4,GL_FLOAT,GL_FALSE,0,0);
+        glVertexAttribPointer(VertexAttributePosition,4,GL_FLOAT,GL_FALSE,sizeof(VertexPosition),(void*)offsetof(VertexPosition, Position));
         glPointSize(80.0f);
-        glDrawArrays(GL_POINTS, 0, 10);
-        glDisableVertexAttribArray(0);
+        glDrawArrays(GL_POINTS, VertexAttributePosition, 10);
+        glDisableVertexAttribArray(VertexAttributePosition);
+        glBindTexture(GL_TEXTURE_2D, 0);
         glBindVertexArray(0);
         
     }

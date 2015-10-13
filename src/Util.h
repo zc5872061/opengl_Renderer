@@ -32,6 +32,10 @@ using namespace std;
 #define BillboardVstr                   "../Resource/shader/Billboard.vert"
 #define BillboardFstr                   "../Resource/shader/Billboard.frag"
 #define BillboardGstr                   "../Resource/shader/Billboard.gs"
+#define PaticleUpVstr                   "../Resource/shader/ps_update.vert"
+#define PaticleUpFstr                   "../Resource/shader/ps_update.frag"
+#define PaticleUpGstr                   "../Resource/shader/ps_update.gs"
+
 
 
 #define FontTTFstr                         "../Resource/ttf/micross.ttf"
@@ -46,6 +50,7 @@ using namespace std;
 #define imgStr                          "../Resource/pic/Cover.jpg"
 #define earthImgStr                     "../Resource/pic/EarthComposite.jpg"
 #define testImg                         "../Resource/pic/test.png"
+#define fireImg                         "../Resource/pic/fireworks_red.jpg"
 
 
 #define sphereModel                     "../Resource/model/Sphere.obj"

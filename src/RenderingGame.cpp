@@ -11,6 +11,7 @@
 #include "ColorHelper.h"
 #include <glm/gtc/matrix_transform.hpp>
 #include "VectorHelper.h"
+#include "testDemo.h"
 
 using namespace glm;
 
@@ -30,7 +31,8 @@ namespace Rendering
     mDiffuseLightingDemo(nullptr),
     mBlinnPhongDemo(nullptr),
     mProxyModel(nullptr),
-    mBillboardDemo(nullptr)
+    mBillboardDemo(nullptr),
+    mPaticleSystem(nullptr)
     {
         
     }
@@ -54,7 +56,7 @@ namespace Rendering
         //mComponents.push_back(mSkyBox);
        
         mGrid = new Grid(this,m_Camera);
-        mComponents.push_back(mGrid);
+        //mComponents.push_back(mGrid);
         
         mCubeDemo = new CubeDemo(this,m_Camera);
         //mComponents.push_back(mCubeDemo);
@@ -80,12 +82,20 @@ namespace Rendering
         //mComponents.push_back(mProxyModel);
         
         mBillboardDemo = new BillboardDemo(this,m_Camera);
-        mComponents.push_back(mBillboardDemo);
+        //mComponents.push_back(mBillboardDemo);
         
+        mPaticleSystem = new PaticleSystem(this,m_Camera);
+        //mComponents.push_back(mPaticleSystem);
         
+
+        
+        Rendering::testDemo* test = new Rendering::testDemo(this,m_Camera);
+         mComponents.push_back(test);
         Game::Initialize();
         m_Camera->SetPosition(0, 5, 10);
         m_Camera->ApplyRotation(rotate(mat4(), 30.0f, Vector3Helper::Left));
+        
+        
         
     }
     
@@ -95,10 +105,10 @@ namespace Rendering
         glClearBufferfv(GL_COLOR, 0, &ColorHelper::CornflowerBlue[0]);
         glClearBufferfv(GL_DEPTH, 0, &one);
         glEnable(GL_CULL_FACE);
-        FontManager::GetInstance()->setProjViewMatrix(m_Camera->ViewProjectionMatrixOrth());
-        Game::Draw(gametime);
-        FontManager::GetInstance()->renderText("This is billboard sample", 0.0f, 40.0f, 1.0f, glm::vec3(0.5, 0.8f, 0.2f));
-        
+//        FontManager::GetInstance()->setProjViewMatrix(m_Camera->ViewProjectionMatrixOrth());
+//        Game::Draw(gametime);
+//        FontManager::GetInstance()->renderText("This is billboard sample", 0.0f, 40.0f, 1.0f, glm::vec3(0.5, 0.8f, 0.2f));
+//        
         glfwSwapBuffers(m_Window);
     }
     

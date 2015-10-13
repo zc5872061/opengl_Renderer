@@ -24,6 +24,11 @@ namespace Rendering {
         virtual void Initialize() override;
         virtual void Draw(GameTime gametime) override;
     protected:
+        enum VertexAttribute
+        {
+            VertexAttributePosition = 0,
+        };
+        
         BillboardEffect* mShaderProgram;
         
         GLuint mVertexArrayObject;

@@ -22,6 +22,7 @@
 #include "BlinnPhongDemo.h"
 #include "ProxyModel.h"
 #include "BillboardDemo.h"
+#include "PaticleSystem.h"
 
 using namespace Library;
 
@@ -54,6 +55,8 @@ namespace Rendering
         BlinnPhongDemo* mBlinnPhongDemo;
         ProxyModel* mProxyModel;
         BillboardDemo* mBillboardDemo;
+        PaticleSystem* mPaticleSystem;
+        
     };
 }
 

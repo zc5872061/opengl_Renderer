@@ -126,4 +126,21 @@ namespace Library
         VertexSkinnedPositionTextureNormal(const glm::vec4& position, const glm::vec2& textureCoordinates, const glm::vec3& normal, const glm::uvec4& boneIndices, const glm::vec4& boneWeights)
         : Position(position), TextureCoordinates(textureCoordinates), Normal(normal), BoneIndices(boneIndices), BoneWeights(boneWeights) { }
     };
+    
+    class VertexPaticle
+    {
+    public:
+        glm::vec3 Position;
+        float Type;
+        glm::vec3 Velocity;
+        float Age;
+        
+        VertexPaticle() {}
+        
+        VertexPaticle(const float type,const glm::vec3& position,const glm::vec3& velocity,const float age):
+        Type(type),
+        Position(position),
+        Velocity(velocity),
+        Age(age){ }
+    };
 }
