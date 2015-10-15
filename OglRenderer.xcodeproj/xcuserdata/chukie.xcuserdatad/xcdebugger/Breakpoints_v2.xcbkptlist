@@ -218,7 +218,7 @@
                   moduleName = "OglRenderer"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chukie/Desktop/Demo/opengl_framework/src/RenderingGame.cpp"
-                  timestampString = "466432333.852661"
+                  timestampString = "466480739.35652"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "43"
@@ -233,7 +233,7 @@
                   moduleName = "OglRenderer"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chukie/Desktop/Demo/opengl_framework/src/RenderingGame.cpp"
-                  timestampString = "466432333.852845"
+                  timestampString = "466480739.35664"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "41"
@@ -321,38 +321,6 @@
             endingLineNumber = "40"
             landmarkName = "testDemo::Draw(GameTime gametime)"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/testMain.cpp"
-            timestampString = "466432306.425989"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "RenderSceneCB()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/testMain.cpp"
-            timestampString = "466432307.999079"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "update_timer(void)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

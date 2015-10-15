@@ -78,15 +78,15 @@ namespace Rendering
         glDeleteShader(fragmentShader);
         
         // Create vertex array object
-        glGenVertexArrays(1, &mVertexArrayObject);
+        //glGenVertexArrays(1, &mVertexArrayObject);
     }
     
     void PointDemo::Draw(GameTime gametime)
     {
-        glBindVertexArray(mVertexArrayObject);
+        //glBindVertexArray(mVertexArrayObject);
         glUseProgram(mShaderProgram);
         glPointSize(80.0f);
         glDrawArrays(GL_POINTS, 0, 1);
-        glBindVertexArray(0);
+        //glBindVertexArray(0);
     }
 }

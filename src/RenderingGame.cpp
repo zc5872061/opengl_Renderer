@@ -47,16 +47,16 @@ namespace Rendering
         m_Camera = new FirstPersonCamera(this);
         mComponents.push_back(m_Camera);
         mPointDemo = new PointDemo(this,m_Camera);
-        //mComponents.push_back(mPointDemo);
+        mComponents.push_back(mPointDemo);
         
         
         mColoredTriangleDemo = new ColoredTriangleDemo(this,m_Camera);
         //mComponents.push_back(mColoredTriangleDemo);
         mSkyBox = new SkyBox(this,m_Camera,imgxPos,imgxNeg,imgyPos,imgyNeg,imgzPos,imgzNeg,10.0);
-        //mComponents.push_back(mSkyBox);
+        mComponents.push_back(mSkyBox);
        
         mGrid = new Grid(this,m_Camera);
-        //mComponents.push_back(mGrid);
+        mComponents.push_back(mGrid);
         
         mCubeDemo = new CubeDemo(this,m_Camera);
         //mComponents.push_back(mCubeDemo);
@@ -105,9 +105,9 @@ namespace Rendering
         glClearBufferfv(GL_COLOR, 0, &ColorHelper::CornflowerBlue[0]);
         glClearBufferfv(GL_DEPTH, 0, &one);
         glEnable(GL_CULL_FACE);
-//        FontManager::GetInstance()->setProjViewMatrix(m_Camera->ViewProjectionMatrixOrth());
-//        Game::Draw(gametime);
-//        FontManager::GetInstance()->renderText("This is billboard sample", 0.0f, 40.0f, 1.0f, glm::vec3(0.5, 0.8f, 0.2f));
+        FontManager::GetInstance()->setProjViewMatrix(m_Camera->ViewProjectionMatrixOrth());
+        Game::Draw(gametime);
+        FontManager::GetInstance()->renderText("This is billboard sample", 0.0f, 40.0f, 1.0f, glm::vec3(0.5, 0.8f, 0.2f));
 //        
         glfwSwapBuffers(m_Window);
     }
