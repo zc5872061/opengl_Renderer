@@ -9,7 +9,7 @@
 
 #include "DrawableGameComponent.h"
 #include "ShaderProgram.h"
-
+#include "Camera.h"
 
 using namespace Library;
 

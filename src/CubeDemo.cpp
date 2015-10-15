@@ -50,15 +50,15 @@ namespace Rendering
         // Create the vertex buffer object
         VertexPositionColor vertices[] =
         {
-            VertexPositionColor(vec4(-1.0f, +1.0f, -1.0f, 1.0f), ColorHelper::Green),
-            VertexPositionColor(vec4(+1.0f, +1.0f, -1.0f, 1.0f), ColorHelper::Yellow),
-            VertexPositionColor(vec4(+1.0f, +1.0f, +1.0f, 1.0f), ColorHelper::White),
-            VertexPositionColor(vec4(-1.0f, +1.0f, +1.0f, 1.0f), ColorHelper::BlueGreen),
+            VertexPositionColor(vec4(-.5f, +.5f, -.5f, 1.0f), ColorHelper::Green),
+            VertexPositionColor(vec4(+.5f, +.5f, -.5f, 1.0f), ColorHelper::Yellow),
+            VertexPositionColor(vec4(+.5f, +.5f, +.5f, 1.0f), ColorHelper::White),
+            VertexPositionColor(vec4(-.5f, +.5f, +.5f, 1.0f), ColorHelper::BlueGreen),
             
-            VertexPositionColor(vec4(-1.0f, -1.0f, +1.0f, 1.0f), ColorHelper::Blue),
-            VertexPositionColor(vec4(+1.0f, -1.0f, +1.0f, 1.0f), ColorHelper::Purple),
-            VertexPositionColor(vec4(+1.0f, -1.0f, -1.0f, 1.0f), ColorHelper::Red),
-            VertexPositionColor(vec4(-1.0f, -1.0f, -1.0f, 1.0f), ColorHelper::Black)
+            VertexPositionColor(vec4(-.5f, -.5f, +.5f, 1.0f), ColorHelper::Blue),
+            VertexPositionColor(vec4(+.5f, -.5f, +.5f, 1.0f), ColorHelper::Purple),
+            VertexPositionColor(vec4(+.5f, -.5f, -.5f, 1.0f), ColorHelper::Red),
+            VertexPositionColor(vec4(-.5f, -.5f, -.5f, 1.0f), ColorHelper::Black)
         };
         
         glGenBuffers(1, &mVertexBuffer);
@@ -111,6 +111,8 @@ namespace Rendering
     
     void CubeDemo::Draw(GameTime gametime)
     {
+       
+        glEnable(GL_DEPTH);
         glBindVertexArray(mVertexArrayObject);
         glBindBuffer(GL_ARRAY_BUFFER, mVertexBuffer);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, mIndexBuffer);
@@ -125,33 +127,33 @@ namespace Rendering
 //            }
 //            std::cout<<std::endl;
 //        }
+        // Positions all containers
+        glm::vec3 cubePositions[] = {
+            glm::vec3( 1.0f,  0.0f,  0.0f),
+            glm::vec3( 2.0f,  5.0f, -15.0f),
+            glm::vec3(-1.5f, -2.2f, -2.5f),
+            glm::vec3(-3.8f, -2.0f, -12.3f),
+            glm::vec3( 2.4f, -0.4f, -3.5f),
+            glm::vec3(-1.7f,  3.0f, -7.5f),
+            glm::vec3( 1.3f, -2.0f, -2.5f),
+            glm::vec3( 1.5f,  2.0f, -2.5f),
+            glm::vec3( 1.5f,  0.2f, -1.5f),
+            glm::vec3(-1.3f,  1.0f, -1.5f)
+        };
         
-        mat4 wvp = mCamera->ViewProjectionMatrix() * mWorldMatrix;
-//        for(int i = 0 ; i < 4; i ++)
-//        {
-//            for(int j = 0 ; j < 4; j ++)
-//            {
-//                std::cout<<wvp[i][j]<< "             ";
-//            }
-//            std::cout<<std::endl;
-//        }
-        glm::mat4 Projection = glm::perspective(45.0f, 4.0f / 3.0f, 0.1f, 100.0f);
-        // Camera matrix
-        glm::mat4 View       = glm::lookAt(
-                                           glm::vec3(5,5,5), // Camera is at (4,3,-3), in World Space
-                                           glm::vec3(0,0,0), // and looks at the origin
-                                           glm::vec3(0,1,0)  // Head is up (set to 0,-1,0 to look upside-down)
-                                           );
-        // Model matrix : an identity matrix (model will be at the origin)
-        glm::mat4 Model      = glm::mat4(1.0f);
-        // Our ModelViewProjection : multiplication of our 3 matrices
-        glm::mat4 MVP        = Projection * View * Model; // Remember, matrix multiplication
-        glUniformMatrix4fv(mWorldViewProjectionLocation, 1, GL_FALSE, &wvp[0][0]);
-        
-        glEnable(GL_CULL_FACE);
-        //glFrontFace(GL_CCW);
-        
-        glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
+        for (GLuint i = 0; i < 10; i++)
+        {
+            mat4 gMatrix = glm::translate(mWorldMatrix, cubePositions[i]);
+            mat4 wvp = mCamera->ViewProjectionMatrix() * gMatrix;
+
+            glUniformMatrix4fv(mWorldViewProjectionLocation, 1, GL_FALSE, &wvp[0][0]);
+           
+            
+            glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
+            
+        }
+       
         glBindVertexArray(0);
+        glEnable(GL_DEPTH);
     }
 }

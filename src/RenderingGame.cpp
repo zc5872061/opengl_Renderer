@@ -12,6 +12,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include "VectorHelper.h"
 #include "testDemo.h"
+#include "LightingDemo.h"
 
 using namespace glm;
 
@@ -47,16 +48,16 @@ namespace Rendering
         m_Camera = new FirstPersonCamera(this);
         mComponents.push_back(m_Camera);
         mPointDemo = new PointDemo(this,m_Camera);
-        mComponents.push_back(mPointDemo);
+        //mComponents.push_back(mPointDemo);
         
         
         mColoredTriangleDemo = new ColoredTriangleDemo(this,m_Camera);
         //mComponents.push_back(mColoredTriangleDemo);
         mSkyBox = new SkyBox(this,m_Camera,imgxPos,imgxNeg,imgyPos,imgyNeg,imgzPos,imgzNeg,10.0);
-        mComponents.push_back(mSkyBox);
+        //mComponents.push_back(mSkyBox);
        
         mGrid = new Grid(this,m_Camera);
-        mComponents.push_back(mGrid);
+        //mComponents.push_back(mGrid);
         
         mCubeDemo = new CubeDemo(this,m_Camera);
         //mComponents.push_back(mCubeDemo);
@@ -90,7 +91,12 @@ namespace Rendering
 
         
         Rendering::testDemo* test = new Rendering::testDemo(this,m_Camera);
-         mComponents.push_back(test);
+         //mComponents.push_back(test);
+        
+        Rendering::LightingDemo* light = new Rendering::LightingDemo(this,m_Camera);
+        mComponents.push_back(light);
+        
+        
         Game::Initialize();
         m_Camera->SetPosition(0, 5, 10);
         m_Camera->ApplyRotation(rotate(mat4(), 30.0f, Vector3Helper::Left));
@@ -101,13 +107,16 @@ namespace Rendering
     
     void RenderingGame::Draw(GameTime gametime)
     {
+        glEnable(GL_DEPTH_TEST);
+
         static const GLfloat one = 1.0f;
-        glClearBufferfv(GL_COLOR, 0, &ColorHelper::CornflowerBlue[0]);
-        glClearBufferfv(GL_DEPTH, 0, &one);
-        glEnable(GL_CULL_FACE);
+         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+        //glClearBufferfv(GL_COLOR, 0, &ColorHelper::CornflowerBlue[0]);
+        //glClearBufferfv(GL_DEPTH, 0, &one);
+
         FontManager::GetInstance()->setProjViewMatrix(m_Camera->ViewProjectionMatrixOrth());
         Game::Draw(gametime);
-        FontManager::GetInstance()->renderText("This is billboard sample", 0.0f, 40.0f, 1.0f, glm::vec3(0.5, 0.8f, 0.2f));
+        FontManager::GetInstance()->renderText("This is light sample", 0.0f, 40.0f, 1.0f, glm::vec3(0.5, 0.8f, 0.2f));
 //        
         glfwSwapBuffers(m_Window);
     }

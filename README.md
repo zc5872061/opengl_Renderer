@@ -31,4 +31,5 @@ Dependencies:
 ![screenshot](https://github.com/zc5872061/opengl_Renderer/blob/master/screenshot/2.png)
 3.bill board
 ![screenshot](https://github.com/zc5872061/opengl_Renderer/blob/master/screenshot/3.jpg) 
-
+4.light
+![screenshot](https://github.com/zc5872061/opengl_Renderer/blob/master/screenshot/4.png)

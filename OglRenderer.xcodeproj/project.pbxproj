@@ -10,6 +10,7 @@
 		3F314C661BCBBCE600C5456E /* BillboardEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F314C641BCBBCE600C5456E /* BillboardEffect.cpp */; };
 		3F314C691BCBC33000C5456E /* BillboardDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F314C671BCBC33000C5456E /* BillboardDemo.cpp */; };
 		3F82C2561BBA3C5E00A1B99C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F82C2551BBA3C5E00A1B99C /* CoreFoundation.framework */; };
+		3FDA8F601BD00E990049E754 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8F5F1BD00E990049E754 /* main.cpp */; };
 		3FDE1F2C1B8C6422006C243F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2B1B8C6422006C243F /* IOKit.framework */; };
 		3FDE1F2E1B8C6429006C243F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2D1B8C6429006C243F /* Cocoa.framework */; };
 		3FDE1F301B8C6430006C243F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2F1B8C6430006C243F /* OpenGL.framework */; };
@@ -21,7 +22,6 @@
 		3FEF47B21BCD286F00BAE0DB /* testDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF47B01BCD286F00BAE0DB /* testDemo.cpp */; };
 		3FEF47B61BCD2B7800BAE0DB /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FEF47B51BCD2B7800BAE0DB /* GLUT.framework */; };
 		3FEF47E61BCE45F200BAE0DB /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF47E41BCE45F200BAE0DB /* shader.cpp */; };
-		3FEF47E91BCF537800BAE0DB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF47E81BCF537800BAE0DB /* main.cpp */; };
 		3FEF47EC1BCF549F00BAE0DB /* LightingDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF47EA1BCF549F00BAE0DB /* LightingDemo.cpp */; };
 		3FF48B4A1BC8A4EC00CB3B38 /* libassimpd.3.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF48B491BC8A4EC00CB3B38 /* libassimpd.3.1.1.dylib */; };
 		3FF48B4C1BC8A4F800CB3B38 /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF48B4B1BC8A4F800CB3B38 /* libfreetype.6.dylib */; };
@@ -88,6 +88,7 @@
 		3F314C681BCBC33000C5456E /* BillboardDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillboardDemo.h; sourceTree = "<group>"; };
 		3F82C2551BBA3C5E00A1B99C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		3F9E8FEC1B74791900659751 /* OglRenderer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OglRenderer; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FDA8F5F1BD00E990049E754 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3FDE1F2B1B8C6422006C243F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		3FDE1F2D1B8C6429006C243F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3FDE1F2F1B8C6430006C243F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -105,7 +106,6 @@
 		3FEF47B51BCD2B7800BAE0DB /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		3FEF47E41BCE45F200BAE0DB /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
 		3FEF47E51BCE45F200BAE0DB /* shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shader.hpp; sourceTree = "<group>"; };
-		3FEF47E81BCF537800BAE0DB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3FEF47EA1BCF549F00BAE0DB /* LightingDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LightingDemo.cpp; sourceTree = "<group>"; };
 		3FEF47EB1BCF549F00BAE0DB /* LightingDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightingDemo.h; sourceTree = "<group>"; };
 		3FF3BEE11BBD46C7008BD1AD /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resource; path = build/Resource; sourceTree = "<group>"; };
@@ -248,10 +248,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3FDA8F591BD008EB0049E754 /* learnopengl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = learnopengl;
+			sourceTree = "<group>";
+		};
 		3FE6D67F1BC8097C00399A42 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				3FEF47E81BCF537800BAE0DB /* main.cpp */,
+				3FDA8F5F1BD00E990049E754 /* main.cpp */,
+				3FDA8F591BD008EB0049E754 /* learnopengl */,
 				3FEF47E41BCE45F200BAE0DB /* shader.cpp */,
 				3FEF47E51BCE45F200BAE0DB /* shader.hpp */,
 				3FF48B6A1BC8A68900CB3B38 /* effect */,
@@ -472,6 +480,7 @@
 				3FF48BB31BC8A68900CB3B38 /* BlinnPhongEffect.cpp in Sources */,
 				3FF48BB01BC8A68900CB3B38 /* ColoredTriangleDemo.cpp in Sources */,
 				3FF48BBF1BC8A68900CB3B38 /* GameTime.cpp in Sources */,
+				3FDA8F601BD00E990049E754 /* main.cpp in Sources */,
 				3FF48BAE1BC8A68900CB3B38 /* AmbientLightingDemo.cpp in Sources */,
 				3FF48BAF1BC8A68900CB3B38 /* BlinnPhongDemo.cpp in Sources */,
 				3FF48BB91BC8A68900CB3B38 /* DrawableGameComponent.cpp in Sources */,
@@ -479,7 +488,6 @@
 				3FF48BCE1BC8A68900CB3B38 /* md5.cpp in Sources */,
 				3FF48BC91BC8A68900CB3B38 /* Utility.cpp in Sources */,
 				3FF48BBC1BC8A68900CB3B38 /* Game.cpp in Sources */,
-				3FEF47E91BCF537800BAE0DB /* main.cpp in Sources */,
 				3FF48BBE1BC8A68900CB3B38 /* GameComponent.cpp in Sources */,
 				3FEF47AE1BCCCEB000BAE0DB /* Common.cpp in Sources */,
 				3FF48BC81BC8A68900CB3B38 /* CkThread.cpp in Sources */,

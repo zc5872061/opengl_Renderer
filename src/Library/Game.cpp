@@ -51,8 +51,8 @@ namespace Library {
 //            ratio = width / (float) height;
 //            glViewport(0, 0, width, height);
 //
-//            glClear(GL_COLOR_BUFFER_BIT);
-//            glClear(GL_DEPTH_BUFFER_BIT);
+            glClear(GL_COLOR_BUFFER_BIT);
+            glClear(GL_DEPTH_BUFFER_BIT);
             //glClearColor(255, 255, 255, 255);
             
            // glViewport(0, 0, width, height);
