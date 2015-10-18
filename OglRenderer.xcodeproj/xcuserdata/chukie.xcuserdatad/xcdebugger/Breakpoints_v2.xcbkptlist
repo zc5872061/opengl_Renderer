@@ -201,54 +201,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "src/RenderingGame.cpp"
-            timestampString = "466616242.964554"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "RenderingGame::~RenderingGame()"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Rendering::RenderingGame::~RenderingGame()"
-                  moduleName = "OglRenderer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chukie/Study/WorkWork/opengl_framework/src/RenderingGame.cpp"
-                  timestampString = "466622098.330583"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Rendering::RenderingGame::~RenderingGame()"
-                  moduleName = "OglRenderer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chukie/Study/WorkWork/opengl_framework/src/RenderingGame.cpp"
-                  timestampString = "466622098.330801"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "src/Library/Game.cpp"
             timestampString = "466431680.032913"
             startingColumnNumber = "9223372036854775807"
@@ -320,6 +272,22 @@
             startingLineNumber = "40"
             endingLineNumber = "40"
             landmarkName = "testDemo::Draw(GameTime gametime)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/CubeTextureDemo.cpp"
+            timestampString = "466870727.965609"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "CubeTextureDemo::Draw(GameTime gametime)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

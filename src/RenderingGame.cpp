@@ -13,6 +13,8 @@
 #include "VectorHelper.h"
 #include "testDemo.h"
 #include "LightingDemo.h"
+#include "CubeTextureDemo.h"
+
 
 using namespace glm;
 
@@ -94,8 +96,10 @@ namespace Rendering
          //mComponents.push_back(test);
         
         Rendering::LightingDemo* light = new Rendering::LightingDemo(this,m_Camera);
-        mComponents.push_back(light);
+        //mComponents.push_back(light);
         
+        Rendering::CubeTextureDemo* cubeTex = new Rendering::CubeTextureDemo(this,m_Camera);
+        mComponents.push_back(cubeTex);
         
         Game::Initialize();
         m_Camera->SetPosition(0, 5, 10);
@@ -110,13 +114,13 @@ namespace Rendering
         glEnable(GL_DEPTH_TEST);
 
         static const GLfloat one = 1.0f;
-         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+         glClearColor(49.0/255.0f, 77.0/255.0f, 121.0/255.0f, 1.0f);
         //glClearBufferfv(GL_COLOR, 0, &ColorHelper::CornflowerBlue[0]);
         //glClearBufferfv(GL_DEPTH, 0, &one);
 
         FontManager::GetInstance()->setProjViewMatrix(m_Camera->ViewProjectionMatrixOrth());
         Game::Draw(gametime);
-        FontManager::GetInstance()->renderText("This is light sample", 0.0f, 40.0f, 1.0f, glm::vec3(0.5, 0.8f, 0.2f));
+        FontManager::GetInstance()->renderText("This is stencil sample", 0.0f, 40.0f, 1.0f, glm::vec3(0.5, 0.8f, 0.2f));
 //        
         glfwSwapBuffers(m_Window);
     }

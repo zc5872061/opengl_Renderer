@@ -11,6 +11,7 @@
 		3F314C691BCBC33000C5456E /* BillboardDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F314C671BCBC33000C5456E /* BillboardDemo.cpp */; };
 		3F82C2561BBA3C5E00A1B99C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F82C2551BBA3C5E00A1B99C /* CoreFoundation.framework */; };
 		3FDA8F601BD00E990049E754 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8F5F1BD00E990049E754 /* main.cpp */; };
+		3FDA8F631BD3C80D0049E754 /* CubeTextureDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8F611BD3C80D0049E754 /* CubeTextureDemo.cpp */; };
 		3FDE1F2C1B8C6422006C243F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2B1B8C6422006C243F /* IOKit.framework */; };
 		3FDE1F2E1B8C6429006C243F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2D1B8C6429006C243F /* Cocoa.framework */; };
 		3FDE1F301B8C6430006C243F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2F1B8C6430006C243F /* OpenGL.framework */; };
@@ -89,6 +90,8 @@
 		3F82C2551BBA3C5E00A1B99C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		3F9E8FEC1B74791900659751 /* OglRenderer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OglRenderer; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDA8F5F1BD00E990049E754 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3FDA8F611BD3C80D0049E754 /* CubeTextureDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CubeTextureDemo.cpp; sourceTree = "<group>"; };
+		3FDA8F621BD3C80D0049E754 /* CubeTextureDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeTextureDemo.h; sourceTree = "<group>"; };
 		3FDE1F2B1B8C6422006C243F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		3FDE1F2D1B8C6429006C243F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3FDE1F2F1B8C6430006C243F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -293,6 +296,8 @@
 				3FEF47B11BCD286F00BAE0DB /* testDemo.h */,
 				3FEF47EA1BCF549F00BAE0DB /* LightingDemo.cpp */,
 				3FEF47EB1BCF549F00BAE0DB /* LightingDemo.h */,
+				3FDA8F611BD3C80D0049E754 /* CubeTextureDemo.cpp */,
+				3FDA8F621BD3C80D0049E754 /* CubeTextureDemo.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -476,6 +481,7 @@
 				3FEF47A91BCCB84A00BAE0DB /* PaticleSystem.cpp in Sources */,
 				3FF48BD11BC8A68900CB3B38 /* RenderingGame.cpp in Sources */,
 				3FF48BCF1BC8A68900CB3B38 /* ModelDemo.cpp in Sources */,
+				3FDA8F631BD3C80D0049E754 /* CubeTextureDemo.cpp in Sources */,
 				3FF48BBA1BC8A68900CB3B38 /* FirstPersonCamera.cpp in Sources */,
 				3FF48BB31BC8A68900CB3B38 /* BlinnPhongEffect.cpp in Sources */,
 				3FF48BB01BC8A68900CB3B38 /* ColoredTriangleDemo.cpp in Sources */,
