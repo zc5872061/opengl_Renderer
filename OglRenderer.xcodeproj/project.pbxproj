@@ -10,8 +10,9 @@
 		3F314C661BCBBCE600C5456E /* BillboardEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F314C641BCBBCE600C5456E /* BillboardEffect.cpp */; };
 		3F314C691BCBC33000C5456E /* BillboardDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F314C671BCBC33000C5456E /* BillboardDemo.cpp */; };
 		3F82C2561BBA3C5E00A1B99C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F82C2551BBA3C5E00A1B99C /* CoreFoundation.framework */; };
-		3FDA8F601BD00E990049E754 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8F5F1BD00E990049E754 /* main.cpp */; };
 		3FDA8F631BD3C80D0049E754 /* CubeTextureDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8F611BD3C80D0049E754 /* CubeTextureDemo.cpp */; };
+		3FDA8F661BD543F80049E754 /* FrameBufferDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8F641BD543F80049E754 /* FrameBufferDemo.cpp */; };
+		3FDA8F6A1BD7F3DD0049E754 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8F691BD7F3DD0049E754 /* main.cpp */; };
 		3FDE1F2C1B8C6422006C243F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2B1B8C6422006C243F /* IOKit.framework */; };
 		3FDE1F2E1B8C6429006C243F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2D1B8C6429006C243F /* Cocoa.framework */; };
 		3FDE1F301B8C6430006C243F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE1F2F1B8C6430006C243F /* OpenGL.framework */; };
@@ -89,9 +90,11 @@
 		3F314C681BCBC33000C5456E /* BillboardDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillboardDemo.h; sourceTree = "<group>"; };
 		3F82C2551BBA3C5E00A1B99C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		3F9E8FEC1B74791900659751 /* OglRenderer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OglRenderer; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FDA8F5F1BD00E990049E754 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3FDA8F611BD3C80D0049E754 /* CubeTextureDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CubeTextureDemo.cpp; sourceTree = "<group>"; };
 		3FDA8F621BD3C80D0049E754 /* CubeTextureDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeTextureDemo.h; sourceTree = "<group>"; };
+		3FDA8F641BD543F80049E754 /* FrameBufferDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FrameBufferDemo.cpp; sourceTree = "<group>"; };
+		3FDA8F651BD543F80049E754 /* FrameBufferDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameBufferDemo.h; sourceTree = "<group>"; };
+		3FDA8F691BD7F3DD0049E754 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3FDE1F2B1B8C6422006C243F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		3FDE1F2D1B8C6429006C243F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3FDE1F2F1B8C6430006C243F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -261,7 +264,7 @@
 		3FE6D67F1BC8097C00399A42 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				3FDA8F5F1BD00E990049E754 /* main.cpp */,
+				3FDA8F691BD7F3DD0049E754 /* main.cpp */,
 				3FDA8F591BD008EB0049E754 /* learnopengl */,
 				3FEF47E41BCE45F200BAE0DB /* shader.cpp */,
 				3FEF47E51BCE45F200BAE0DB /* shader.hpp */,
@@ -298,6 +301,8 @@
 				3FEF47EB1BCF549F00BAE0DB /* LightingDemo.h */,
 				3FDA8F611BD3C80D0049E754 /* CubeTextureDemo.cpp */,
 				3FDA8F621BD3C80D0049E754 /* CubeTextureDemo.h */,
+				3FDA8F641BD543F80049E754 /* FrameBufferDemo.cpp */,
+				3FDA8F651BD543F80049E754 /* FrameBufferDemo.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -477,6 +482,8 @@
 				3FF48BB11BC8A68900CB3B38 /* CubeDemo.cpp in Sources */,
 				3FF48BB41BC8A68900CB3B38 /* FogDemo.cpp in Sources */,
 				3FF48BC51BC8A68900CB3B38 /* ProxyModel.cpp in Sources */,
+				3FDA8F6A1BD7F3DD0049E754 /* main.cpp in Sources */,
+				3FDA8F661BD543F80049E754 /* FrameBufferDemo.cpp in Sources */,
 				3FF48B5D1BC8A52B00CB3B38 /* image_helper.c in Sources */,
 				3FEF47A91BCCB84A00BAE0DB /* PaticleSystem.cpp in Sources */,
 				3FF48BD11BC8A68900CB3B38 /* RenderingGame.cpp in Sources */,
@@ -486,7 +493,6 @@
 				3FF48BB31BC8A68900CB3B38 /* BlinnPhongEffect.cpp in Sources */,
 				3FF48BB01BC8A68900CB3B38 /* ColoredTriangleDemo.cpp in Sources */,
 				3FF48BBF1BC8A68900CB3B38 /* GameTime.cpp in Sources */,
-				3FDA8F601BD00E990049E754 /* main.cpp in Sources */,
 				3FF48BAE1BC8A68900CB3B38 /* AmbientLightingDemo.cpp in Sources */,
 				3FF48BAF1BC8A68900CB3B38 /* BlinnPhongDemo.cpp in Sources */,
 				3FF48BB91BC8A68900CB3B38 /* DrawableGameComponent.cpp in Sources */,

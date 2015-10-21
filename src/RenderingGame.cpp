@@ -14,6 +14,7 @@
 #include "testDemo.h"
 #include "LightingDemo.h"
 #include "CubeTextureDemo.h"
+#include "FrameBufferDemo.h"
 
 
 using namespace glm;
@@ -98,8 +99,11 @@ namespace Rendering
         Rendering::LightingDemo* light = new Rendering::LightingDemo(this,m_Camera);
         //mComponents.push_back(light);
         
-        Rendering::CubeTextureDemo* cubeTex = new Rendering::CubeTextureDemo(this,m_Camera);
-        mComponents.push_back(cubeTex);
+        //Rendering::CubeTextureDemo* cubeTex = new Rendering::CubeTextureDemo(this,m_Camera);
+        //mComponents.push_back(cubeTex);
+        
+        Rendering::FrameBufferDemo* mFrameBufferDemo = new Rendering::FrameBufferDemo(this,m_Camera);
+        mComponents.push_back(mFrameBufferDemo);
         
         Game::Initialize();
         m_Camera->SetPosition(0, 5, 10);
@@ -120,7 +124,7 @@ namespace Rendering
 
         FontManager::GetInstance()->setProjViewMatrix(m_Camera->ViewProjectionMatrixOrth());
         Game::Draw(gametime);
-        FontManager::GetInstance()->renderText("This is stencil sample", 0.0f, 40.0f, 1.0f, glm::vec3(0.5, 0.8f, 0.2f));
+        FontManager::GetInstance()->renderText("This is framebuffer sample", 0.0f, 40.0f, 1.0f, glm::vec3(0.5, 0.8f, 0.2f));
 //        
         glfwSwapBuffers(m_Window);
     }

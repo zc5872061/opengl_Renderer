@@ -82,12 +82,12 @@ namespace Rendering {
             -0.5f,  0.5f,  0.5f, 1.0f, 1.0f, 1.0f, 0.0f, 0.0f,
             -0.5f,  0.5f, -0.5f, 1.0f, 1.0f, 1.0f, 0.0f, 1.0f,
 
-            -1.0f, -.5f, -1.5f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f,
-             1.0f, -.5f, -1.5f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f,
-             1.0f,  -.5f, 1.5f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f,
-             1.0f,  -.5f, 1.5f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f,
-            -1.0f,  -.5f, 1.5f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f,
-            -1.0f, -.5f, -1.5f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f
+            -1.0f, -1.5f, -1.5f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f,
+             1.0f, -1.5f, -1.5f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f,
+             1.0f,  -1.5f, 1.5f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f,
+             1.0f,  -1.5f, 1.5f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f,
+            -1.0f,  -1.5f, 1.5f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+            -1.0f, -1.5f, -1.5f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f
         };
         glBindBuffer(GL_ARRAY_BUFFER, mVBO);
         glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
@@ -152,7 +152,7 @@ namespace Rendering {
         glStencilMask(0x00);
         glDepthMask(GL_TRUE);
         
-        mat4 model = glm::scale(glm::translate(mWorldMatrix, glm::vec3(0, -1, 0)), glm::vec3(1, -1, 1));
+        mat4 model = glm::scale(glm::translate(mWorldMatrix, glm::vec3(0, -1.5, 0)), glm::vec3(1, -1, 1));
         wvp = mCamera->ViewProjectionMatrix() * model;
 
         

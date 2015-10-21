@@ -35,3 +35,4 @@ Dependencies:
 ![screenshot](https://github.com/zc5872061/opengl_Renderer/blob/master/screenshot/4.png)
 5.stencil
 ![screenshot](https://github.com/zc5872061/opengl_Renderer/blob/master/screenshot/5.jpg)
+![screenshot](https://github.com/zc5872061/opengl_Renderer/blob/master/screenshot/6.jpg
